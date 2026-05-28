@@ -31,7 +31,6 @@ STOCKS = [
     {'code': '4280', 'ticker': '4280.SR', 'name': 'المملكة القابضة',     'sector': 'realestate',  'sector_ar': 'العقارات'},
     {'code': '2270', 'ticker': '2270.SR', 'name': 'المراعي', 'sector': 'industrial', 'sector_ar': 'الصناعة'},
     {'code': '2290', 'ticker': '2290.SR', 'name': 'يانساب',              'sector': 'energy',      'sector_ar': 'الطاقة'},
-    {'code': '9200', 'ticker': '9200.SR', 'name': 'تداول السعودية', 'sector': 'financial', 'sector_ar': 'الخدمات المالية'},
 ]
 
 # ==========================================
@@ -293,12 +292,39 @@ def fetch_stock(stock_info):
             'peers':            [],
         }
 
+        
+        # البيانات التاريخية
+        print(f"  📈 جاري جلب البيانات التاريخية...")
+        historical = fetch_historical(ticker_symbol, '1y')
+        stock_data['historical'] = historical
+        
         print(f"  ✅ {code} — السعر: {price} ر.س | التغير: {change_pct}%")
         return stock_data
 
     except Exception as e:
         print(f"  ❌ خطأ في {code}: {e}")
         return None
+
+def fetch_historical(ticker_symbol, period='1y'):
+    try:
+        ticker = yf.Ticker(ticker_symbol)
+        hist = ticker.history(period=period)
+        if hist.empty:
+            return []
+        
+        records = []
+        for date, row in hist.iterrows():
+            records.append({
+                'date': date.strftime('%Y-%m-%d'),
+                'open':  round(float(row['Open']),  2),
+                'high':  round(float(row['High']),  2),
+                'low':   round(float(row['Low']),   2),
+                'close': round(float(row['Close']), 2),
+                'volume': int(row['Volume'])
+            })
+        return records
+    except:
+        return []
 
 # ==========================================
 # الدالة الرئيسية
