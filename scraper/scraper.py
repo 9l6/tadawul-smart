@@ -12,12 +12,12 @@ STOCKS = [
     {'code': '1120', 'ticker': '1120.SR', 'name': 'مصرف الراجحي',       'sector': 'banking',     'sector_ar': 'البنوك'},
     {'code': '1180', 'ticker': '1180.SR', 'name': 'البنك الأهلي',        'sector': 'banking',     'sector_ar': 'البنوك'},
     {'code': '7010', 'ticker': '7010.SR', 'name': 'stc الاتصالات',       'sector': 'telecom',     'sector_ar': 'الاتصالات'},
-    {'code': '4003', 'ticker': '4003.SR', 'name': 'اتحاد الاتصالات',     'sector': 'telecom',     'sector_ar': 'الاتصالات'},
+    {'code': '4003', 'ticker': '4003.SR', 'name': 'اتحاد الاتصالات', 'sector': 'telecom', 'sector_ar': 'الاتصالات'},
     {'code': '2010', 'ticker': '2010.SR', 'name': 'سابك',                'sector': 'energy',      'sector_ar': 'الطاقة'},
-    {'code': '4061', 'ticker': '4061.SR', 'name': 'العثيم',              'sector': 'retail',      'sector_ar': 'التجزئة'},
-    {'code': '4240', 'ticker': '4240.SR', 'name': 'دله البركة',          'sector': 'health',      'sector_ar': 'الصحة'},
+    {'code': '4061', 'ticker': '4061.SR', 'name': 'العثيم', 'sector': 'retail', 'sector_ar': 'التجزئة'},
+    {'code': '4240', 'ticker': '4240.SR', 'name': 'دله البركة', 'sector': 'health', 'sector_ar': 'الصحة'},
     {'code': '1010', 'ticker': '1010.SR', 'name': 'بنك الرياض',          'sector': 'banking',     'sector_ar': 'البنوك'},
-    {'code': '4007', 'ticker': '4007.SR', 'name': 'نادك',                'sector': 'telecom',     'sector_ar': 'الاتصالات'},
+    {'code': '4007', 'ticker': '4007.SR', 'name': 'نادك', 'sector': 'telecom', 'sector_ar': 'الاتصالات'},
     {'code': '1060', 'ticker': '1060.SR', 'name': 'ساب',                 'sector': 'banking',     'sector_ar': 'البنوك'},
     {'code': '1140', 'ticker': '1140.SR', 'name': 'بنك البلاد',          'sector': 'banking',     'sector_ar': 'البنوك'},
     {'code': '1020', 'ticker': '1020.SR', 'name': 'بنك الجزيرة',         'sector': 'banking',     'sector_ar': 'البنوك'},
@@ -25,13 +25,13 @@ STOCKS = [
     {'code': '4190', 'ticker': '4190.SR', 'name': 'جرير للتسويق',        'sector': 'retail',      'sector_ar': 'التجزئة'},
     {'code': '4161', 'ticker': '4161.SR', 'name': 'بن داود التجارية',    'sector': 'retail',      'sector_ar': 'التجزئة'},
     {'code': '8010', 'ticker': '8010.SR', 'name': 'التعاونية للتأمين',   'sector': 'insurance',   'sector_ar': 'التأمين'},
-    {'code': '8150', 'ticker': '8150.SR', 'name': 'بوبا العربية',        'sector': 'insurance',   'sector_ar': 'التأمين'},
+    {'code': '8150', 'ticker': '8150.SR', 'name': 'بوبا العربية للتأمين', 'sector': 'insurance', 'sector_ar': 'التأمين'},
     {'code': '8030', 'ticker': '8030.SR', 'name': 'ميلاء للتأمين',       'sector': 'insurance',   'sector_ar': 'التأمين'},
     {'code': '4300', 'ticker': '4300.SR', 'name': 'دار الأركان',         'sector': 'realestate',  'sector_ar': 'العقارات'},
     {'code': '4280', 'ticker': '4280.SR', 'name': 'المملكة القابضة',     'sector': 'realestate',  'sector_ar': 'العقارات'},
-    {'code': '2270', 'ticker': '2270.SR', 'name': 'المراعي',             'sector': 'industrial',  'sector_ar': 'الصناعة'},
+    {'code': '2270', 'ticker': '2270.SR', 'name': 'المراعي', 'sector': 'industrial', 'sector_ar': 'الصناعة'},
     {'code': '2290', 'ticker': '2290.SR', 'name': 'يانساب',              'sector': 'energy',      'sector_ar': 'الطاقة'},
-    {'code': '9200', 'ticker': 'TADAWUL.SR', 'name': 'تداول السعودية',      'sector': 'financial',   'sector_ar': 'الخدمات المالية'},
+    {'code': '9200', 'ticker': '9200.SR', 'name': 'تداول السعودية', 'sector': 'financial', 'sector_ar': 'الخدمات المالية'},
 ]
 
 # ==========================================
@@ -105,7 +105,7 @@ def fetch_stock(stock_info):
         pe          = safe_float(info.get('trailingPE') or info.get('forwardPE'))
         eps         = safe_float(info.get('trailingEps'))
         pbv         = safe_float(info.get('priceToBook'))
-        div_yield   = safe_float(info.get('dividendYield', 0) * 100 if info.get('dividendYield') else 0)
+        div_yield = safe_float(info.get('dividendYield', 0) * 100 if info.get('dividendYield') and info.get('dividendYield') < 1 else info.get('dividendYield', 0) if info.get('dividendYield') else 0)
         div_amount  = safe_float(info.get('lastDividendValue') or info.get('dividendRate', 0))
         roe         = safe_float((info.get('returnOnEquity') or 0) * 100)
 
