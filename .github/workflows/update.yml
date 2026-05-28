@@ -23,13 +23,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: install-chrome
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
-
       - name: install-packages
-        run: pip install requests beautifulsoup4 selenium webdriver-manager
+        run: pip install yfinance requests
 
       - name: run-scraper
         run: python scraper/scraper.py
