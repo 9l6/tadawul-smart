@@ -1,15 +1,22 @@
 {
+<<<<<<< HEAD
   "lastUpdated": "2026-05-28 13:14:41",
   "totalStocks": 23,
   "failed": [
     "1090",
     "9200"
   ],
+=======
+  "lastUpdated": "2026-05-28 04:39:14",
+  "totalStocks": 25,
+  "failed": [],
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
   "stocks": [
     {
       "code": "2222",
       "name": "أرامكو السعودية",
       "sector": "energy",
+<<<<<<< HEAD
       "sector_ar": "الطاقة",
       "price": 27.9,
       "change": 0.14,
@@ -134,10 +141,61 @@
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -152,11 +210,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "1120",
       "name": "مصرف الراجحي",
       "sector": "banking",
+<<<<<<< HEAD
       "sector_ar": "البنوك",
       "price": 66.6,
       "change": -0.75,
@@ -269,10 +349,61 @@
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -287,11 +418,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "1180",
       "name": "البنك الأهلي",
       "sector": "banking",
+<<<<<<< HEAD
       "sector_ar": "البنوك",
       "price": 39.4,
       "change": 2.18,
@@ -398,10 +551,61 @@
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -416,11 +620,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "7010",
       "name": "stc الاتصالات",
       "sector": "telecom",
+<<<<<<< HEAD
       "sector_ar": "الاتصالات",
       "price": 44.04,
       "change": 0.5,
@@ -545,10 +771,61 @@
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -563,11 +840,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "4003",
       "name": "اتحاد الاتصالات",
       "sector": "telecom",
+<<<<<<< HEAD
       "sector_ar": "الاتصالات",
       "price": 79.5,
       "change": -1.12,
@@ -668,16 +967,65 @@
       "netIncomeB": 0.51,
       "debtToEquity": 124.92,
       "evEbitda": 11.93,
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
       "announcements": [
         {
           "date": "28 May 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
+<<<<<<< HEAD
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+=======
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -692,11 +1040,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "2010",
       "name": "سابك",
       "sector": "energy",
+<<<<<<< HEAD
       "sector_ar": "الطاقة",
       "price": 57.2,
       "change": -1.55,
@@ -821,10 +1191,61 @@
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -839,11 +1260,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "4061",
       "name": "العثيم",
       "sector": "retail",
+<<<<<<< HEAD
       "sector_ar": "التجزئة",
       "price": 10.16,
       "change": 0.3,
@@ -907,16 +1350,65 @@
       "netIncomeB": -0.02,
       "debtToEquity": 59.69,
       "evEbitda": 3464.03,
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
       "announcements": [
         {
           "date": "28 May 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
+<<<<<<< HEAD
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+=======
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -931,11 +1423,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "4240",
       "name": "دله البركة",
       "sector": "health",
+<<<<<<< HEAD
       "sector_ar": "الصحة",
       "price": 13.37,
       "change": 6.79,
@@ -1036,16 +1550,65 @@
       "netIncomeB": -0.52,
       "debtToEquity": 0.0,
       "evEbitda": 25.87,
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
       "announcements": [
         {
           "date": "28 May 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
+<<<<<<< HEAD
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+=======
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -1060,11 +1623,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "1010",
       "name": "بنك الرياض",
       "sector": "banking",
+<<<<<<< HEAD
       "sector_ar": "البنوك",
       "price": 20.14,
       "change": -0.98,
@@ -1189,10 +1774,61 @@
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+=======
+      "price": 5.83,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "open": 5.79,
+      "prevClose": 5.79,
+      "vol": "211,029.91",
+      "market": "(85.83 )",
+      "pbv": "0.71",
+      "dayHigh": 5.83,
+      "dayLow": 5.83,
+      "high52": 5.83,
+      "low52": 5.83,
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "roe": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -1207,11 +1843,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "4007",
       "name": "نادك",
       "sector": "telecom",
+<<<<<<< HEAD
       "sector_ar": "الاتصالات",
       "price": 26.36,
       "change": -0.38,
@@ -1312,16 +1970,65 @@
       "netIncomeB": 0.22,
       "debtToEquity": 14.28,
       "evEbitda": 13.95,
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
       "announcements": [
         {
           "date": "28 May 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
+<<<<<<< HEAD
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+=======
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -1336,11 +2043,109 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+    },
+    {
+      "code": "1090",
+      "name": "بنك سامبا",
+      "sector": "banking",
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "1060",
       "name": "ساب",
       "sector": "banking",
+<<<<<<< HEAD
       "sector_ar": "البنوك",
       "price": 34.12,
       "change": -0.7,
@@ -1465,10 +2270,61 @@
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -1483,11 +2339,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "1140",
       "name": "بنك البلاد",
       "sector": "banking",
+<<<<<<< HEAD
       "sector_ar": "البنوك",
       "price": 24.38,
       "change": 0.33,
@@ -1594,10 +2472,61 @@
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -1612,11 +2541,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "1020",
       "name": "بنك الجزيرة",
       "sector": "banking",
+<<<<<<< HEAD
       "sector_ar": "البنوك",
       "price": 11.4,
       "change": 0.0,
@@ -1735,10 +2686,61 @@
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -1753,11 +2755,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "1150",
       "name": "بنك الإنماء",
       "sector": "banking",
+<<<<<<< HEAD
       "sector_ar": "البنوك",
       "price": 24.0,
       "change": 0.59,
@@ -1864,10 +2888,61 @@
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -1882,11 +2957,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "4190",
       "name": "جرير للتسويق",
       "sector": "retail",
+<<<<<<< HEAD
       "sector_ar": "التجزئة",
       "price": 15.77,
       "change": 0.25,
@@ -1987,16 +3084,65 @@
       "netIncomeB": 1.09,
       "debtToEquity": 44.48,
       "evEbitda": 15.64,
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
       "announcements": [
         {
           "date": "28 May 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
+<<<<<<< HEAD
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+=======
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -2011,11 +3157,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "4161",
       "name": "بن داود التجارية",
       "sector": "retail",
+<<<<<<< HEAD
       "sector_ar": "التجزئة",
       "price": 4.93,
       "change": 1.65,
@@ -2122,10 +3290,61 @@
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -2140,11 +3359,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "8010",
       "name": "التعاونية للتأمين",
       "sector": "insurance",
+<<<<<<< HEAD
       "sector_ar": "التأمين",
       "price": 138.0,
       "change": 1.47,
@@ -2245,16 +3486,65 @@
       "netIncomeB": 1.13,
       "debtToEquity": 10.01,
       "evEbitda": 10.78,
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
       "announcements": [
         {
           "date": "28 May 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
+<<<<<<< HEAD
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+=======
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -2337,16 +3627,89 @@
       "netIncomeB": -0.07,
       "debtToEquity": 1.55,
       "evEbitda": 8.69,
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+    },
+    {
+      "code": "8150",
+      "name": "بوبا العربية للتأمين",
+      "sector": "insurance",
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
       "announcements": [
         {
           "date": "28 May 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
+<<<<<<< HEAD
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+=======
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -2361,11 +3724,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "8030",
       "name": "ميلاء للتأمين",
       "sector": "insurance",
+<<<<<<< HEAD
       "sector_ar": "التأمين",
       "price": 14.29,
       "change": 0.49,
@@ -2448,16 +3833,65 @@
       "netIncomeB": 0.06,
       "debtToEquity": 0.94,
       "evEbitda": 2.45,
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
       "announcements": [
         {
           "date": "28 May 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
+<<<<<<< HEAD
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+=======
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -2472,11 +3906,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "4300",
       "name": "دار الأركان",
       "sector": "realestate",
+<<<<<<< HEAD
       "sector_ar": "العقارات",
       "price": 16.78,
       "change": -2.16,
@@ -2547,16 +4003,65 @@
       "netIncomeB": 1.18,
       "debtToEquity": 64.81,
       "evEbitda": 14.92,
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
       "announcements": [
         {
           "date": "28 May 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
+<<<<<<< HEAD
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+=======
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -2571,11 +4076,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "4280",
       "name": "المملكة القابضة",
       "sector": "realestate",
+<<<<<<< HEAD
       "sector_ar": "العقارات",
       "price": 12.35,
       "change": 8.33,
@@ -2676,16 +4203,65 @@
       "netIncomeB": 1.98,
       "debtToEquity": 22.69,
       "evEbitda": 51.53,
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
       "announcements": [
         {
           "date": "28 May 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
+<<<<<<< HEAD
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+=======
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -2700,11 +4276,33 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     },
     {
       "code": "2270",
       "name": "المراعي",
       "sector": "industrial",
+<<<<<<< HEAD
       "sector_ar": "الصناعة",
       "price": 221.4,
       "change": -1.12,
@@ -2940,16 +4538,65 @@
       "netIncomeB": 0.08,
       "debtToEquity": 1.02,
       "evEbitda": 17.43,
+=======
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
       "announcements": [
         {
           "date": "28 May 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
+<<<<<<< HEAD
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+=======
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
         }
       ],
       "upcomingEvents": [],
       "boardMembers": [],
+<<<<<<< HEAD
       "majorShareholders": [
         {
           "name": "مساهمون مؤسسيون",
@@ -2964,6 +4611,179 @@
       ],
       "subsidiaries": [],
       "peers": []
+=======
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+    },
+    {
+      "code": "2290",
+      "name": "يانساب",
+      "sector": "energy",
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+    },
+    {
+      "code": "9200",
+      "name": "تداول السعودية",
+      "sector": "financial",
+      "price": 0.0,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 0.0,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "high52": 0.0,
+      "low52": 0.0,
+      "market": "غير متاح",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "eps": 0.0,
+      "pbv": "غير متاح",
+      "roe": "غير متاح",
+      "vol": "غير متاح",
+      "shares": "غير متاح",
+      "financials": {
+        "years": [
+          "2023",
+          "2022",
+          "2021",
+          "2020"
+        ],
+        "revenue": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "netIncome": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "غير متاح",
+        "equity": "غير متاح",
+        "dividendHistory": []
+      },
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة. للمزيد يرجى زيارة موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [],
+      "subsidiaries": [],
+      "peers": [],
+      "isin": "",
+      "exchange": "تداول",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "fiscalYearEnd": "31 ديسمبر",
+      "auditor": "",
+      "employees": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "address": "",
+      "website": "",
+      "desc": "",
+      "sector_ar": "",
+      "divAmount": 0.0
+>>>>>>> 52d05f479991c9c7dc190c4d8922ad19a7035635
     }
   ]
 }
