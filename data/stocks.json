@@ -1,0 +1,2969 @@
+{
+  "lastUpdated": "2026-05-28 13:14:41",
+  "totalStocks": 23,
+  "failed": [
+    "1090",
+    "9200"
+  ],
+  "stocks": [
+    {
+      "code": "2222",
+      "name": "أرامكو السعودية",
+      "sector": "energy",
+      "sector_ar": "الطاقة",
+      "price": 27.9,
+      "change": 0.14,
+      "changeAbs": 0.04,
+      "up": true,
+      "prevClose": 27.86,
+      "open": 27.84,
+      "dayHigh": 27.9,
+      "dayLow": 27.64,
+      "high52": 27.96,
+      "low52": 23.04,
+      "market": "6.75 تريليون",
+      "pe": "18.12x",
+      "div": "486.0%",
+      "divAmount": 0.34,
+      "eps": 1.54,
+      "pbv": "4.38x",
+      "roe": "21.88%",
+      "vol": "29.61M",
+      "shares": "241.91B",
+      "employees": "غير متاح",
+      "website": "https://www.aramco.com",
+      "address": "P.O. Box 5000، Dhahran، Saudi Arabia",
+      "desc": "Saudi Arabian Oil Company operates as an integrated energy and chemical company in the Kingdom of Saudi Arabia and internationally. The company operates through two segments, Upstream and Downstream. ",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "1671.2",
+          "1801.67",
+          "1856.37",
+          "2266.37"
+        ],
+        "netIncome": [
+          "348.04",
+          "393.89",
+          "452.75",
+          "597.22"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "379.53B",
+        "equity": "1.54 تريليون",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "0.34 ر.س",
+            "date": "24 March 2026",
+            "yield": "1.2%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.33 ر.س",
+            "date": "18 November 2025",
+            "yield": "1.2%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.33 ر.س",
+            "date": "20 August 2025",
+            "yield": "1.2%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.33 ر.س",
+            "date": "22 May 2025",
+            "yield": "1.2%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.33 ر.س",
+            "date": "18 March 2025",
+            "yield": "1.2%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.48 ر.س",
+            "date": "17 November 2024",
+            "yield": "1.7%"
+          }
+        ]
+      },
+      "operatingCashFlow": 507.13,
+      "freeCashFlow": 374.08,
+      "netIncomeB": 372.5,
+      "debtToEquity": 21.59,
+      "evEbitda": 8.22,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "1120",
+      "name": "مصرف الراجحي",
+      "sector": "banking",
+      "sector_ar": "البنوك",
+      "price": 66.6,
+      "change": -0.75,
+      "changeAbs": -0.5,
+      "up": false,
+      "prevClose": 67.1,
+      "open": 67.3,
+      "dayHigh": 67.6,
+      "dayLow": 66.6,
+      "high52": 73.4,
+      "low52": 58.53,
+      "market": "399.60B",
+      "pe": "16.57x",
+      "div": "350.0%",
+      "divAmount": 1.17,
+      "eps": 4.02,
+      "pbv": "3.31x",
+      "roe": "17.91%",
+      "vol": "14.42M",
+      "shares": "6.00B",
+      "employees": "24712",
+      "website": "https://www.alrajhibank.com.sa",
+      "address": "8467 King Fahd Road - Al Muruj District، Riyadh، Saudi Arabia",
+      "desc": "Al Rajhi Banking and Investment Corporation, together with its subsidiaries, provides banking and investment services in the Kingdom of Saudi Arabia and internationally. The company operates through f",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "38.97",
+          "31.91",
+          "27.43",
+          "28.55"
+        ],
+        "netIncome": [
+          "24.79",
+          "19.72",
+          "16.62",
+          "17.15"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "82.42B",
+        "equity": "120.76B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "1.17 ر.س",
+            "date": "21 April 2026",
+            "yield": "1.8%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.5 ر.س",
+            "date": "24 September 2025",
+            "yield": "0.8%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.97 ر.س",
+            "date": "14 April 2025",
+            "yield": "1.5%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.83 ر.س",
+            "date": "13 August 2024",
+            "yield": "1.3%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.77 ر.س",
+            "date": "25 March 2024",
+            "yield": "1.2%"
+          },
+          {
+            "period": "2023",
+            "amount": "0.77 ر.س",
+            "date": "01 August 2023",
+            "yield": "1.2%"
+          }
+        ]
+      },
+      "operatingCashFlow": -26.97,
+      "freeCashFlow": 0.0,
+      "netIncomeB": 24.12,
+      "debtToEquity": 0.0,
+      "evEbitda": 0.0,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "1180",
+      "name": "البنك الأهلي",
+      "sector": "banking",
+      "sector_ar": "البنوك",
+      "price": 39.4,
+      "change": 2.18,
+      "changeAbs": 0.84,
+      "up": true,
+      "prevClose": 38.56,
+      "open": 38.6,
+      "dayHigh": 39.48,
+      "dayLow": 38.6,
+      "high52": 45.24,
+      "low52": 33.3,
+      "market": "233.84B",
+      "pe": "9.59x",
+      "div": "584.0%",
+      "divAmount": 1.15,
+      "eps": 4.11,
+      "pbv": "1.22x",
+      "roe": "12.44%",
+      "vol": "13.79M",
+      "shares": "5.93B",
+      "employees": "15338",
+      "website": "https://www.alahli.com",
+      "address": "The Saudi National Bank Tower، Riyadh، Saudi Arabia",
+      "desc": "The Saudi National Bank, through its subsidiaries, provides banking and investment management services in the Kingdom of Saudi Arabia and internationally. The company offers current, Al Wessam, gold, ",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "40.84",
+          "37.4",
+          "35.89",
+          "34.07"
+        ],
+        "netIncome": [
+          "25.01",
+          "21.19",
+          "20.01",
+          "18.58"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "252.87B",
+        "equity": "190.96B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "1.15 ر.س",
+            "date": "16 April 2026",
+            "yield": "2.9%"
+          },
+          {
+            "period": "2025",
+            "amount": "1.0 ر.س",
+            "date": "04 August 2025",
+            "yield": "2.5%"
+          },
+          {
+            "period": "2025",
+            "amount": "1.0 ر.س",
+            "date": "10 February 2025",
+            "yield": "2.5%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.9 ر.س",
+            "date": "12 August 2024",
+            "yield": "2.3%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.9 ر.س",
+            "date": "02 May 2024",
+            "yield": "2.3%"
+          },
+          {
+            "period": "2023",
+            "amount": "0.85 ر.س",
+            "date": "02 August 2023",
+            "yield": "2.2%"
+          }
+        ]
+      },
+      "operatingCashFlow": -65.79,
+      "freeCashFlow": 0.0,
+      "netIncomeB": 24.38,
+      "debtToEquity": 0.0,
+      "evEbitda": 0.0,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "7010",
+      "name": "stc الاتصالات",
+      "sector": "telecom",
+      "sector_ar": "الاتصالات",
+      "price": 44.04,
+      "change": 0.5,
+      "changeAbs": 0.22,
+      "up": true,
+      "prevClose": 43.82,
+      "open": 43.82,
+      "dayHigh": 44.04,
+      "dayLow": 43.82,
+      "high52": 45.38,
+      "low52": 40.2,
+      "market": "219.75B",
+      "pe": "14.73x",
+      "div": "500.0%",
+      "divAmount": 0.55,
+      "eps": 2.99,
+      "pbv": "2.59x",
+      "roe": "16.79%",
+      "vol": "11.43M",
+      "shares": "4.99B",
+      "employees": "غير متاح",
+      "website": "https://www.stc.com.sa",
+      "address": "King Abdulaziz Complex، Riyadh، Saudi Arabia",
+      "desc": "Saudi Telecom Company, together with its subsidiaries, provides telecommunications, information, media, and digital payment services in the Kingdom of Saudi Arabia and internationally. The company est",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "77.82",
+          "75.89",
+          "71.78",
+          "67.43"
+        ],
+        "netIncome": [
+          "14.83",
+          "24.69",
+          "13.3",
+          "12.17"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "24.77B",
+        "equity": "84.74B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "0.55 ر.س",
+            "date": "03 May 2026",
+            "yield": "1.2%"
+          },
+          {
+            "period": "2026",
+            "amount": "0.55 ر.س",
+            "date": "24 February 2026",
+            "yield": "1.2%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.55 ر.س",
+            "date": "09 November 2025",
+            "yield": "1.2%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.55 ر.س",
+            "date": "31 July 2025",
+            "yield": "1.2%"
+          },
+          {
+            "period": "2025",
+            "amount": "2.0 ر.س",
+            "date": "14 May 2025",
+            "yield": "4.5%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.55 ر.س",
+            "date": "04 May 2025",
+            "yield": "1.2%"
+          }
+        ]
+      },
+      "operatingCashFlow": 21.55,
+      "freeCashFlow": 4.13,
+      "netIncomeB": 14.93,
+      "debtToEquity": 28.29,
+      "evEbitda": 9.96,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "4003",
+      "name": "اتحاد الاتصالات",
+      "sector": "telecom",
+      "sector_ar": "الاتصالات",
+      "price": 79.5,
+      "change": -1.12,
+      "changeAbs": -0.9,
+      "up": false,
+      "prevClose": 80.4,
+      "open": 80.15,
+      "dayHigh": 80.6,
+      "dayLow": 79.4,
+      "high52": 93.5,
+      "low52": 74.6,
+      "market": "6.15B",
+      "pe": "12.56x",
+      "div": "629.0%",
+      "divAmount": 3.0,
+      "eps": 6.33,
+      "pbv": "3.93x",
+      "roe": "29.85%",
+      "vol": "175,536",
+      "shares": "77.37M",
+      "employees": "غير متاح",
+      "website": "https://www.extra.com",
+      "address": "King Faisal bin Abdulaziz، Al Khobar، Saudi Arabia",
+      "desc": "United Electronics Company engages in the wholesale and retail trade of electric appliances, electronic gadgets, computers and their spare parts and accessories, furniture, and office equipment and to",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "7.45",
+          "6.78",
+          "6.2",
+          "6.03"
+        ],
+        "netIncome": [
+          "0.5",
+          "0.53",
+          "0.39",
+          "0.44"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "2.51B",
+        "equity": "1.57B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "3.0 ر.س",
+            "date": "05 March 2026",
+            "yield": "3.8%"
+          },
+          {
+            "period": "2025",
+            "amount": "2.0 ر.س",
+            "date": "04 August 2025",
+            "yield": "2.5%"
+          },
+          {
+            "period": "2025",
+            "amount": "3.0 ر.س",
+            "date": "19 March 2025",
+            "yield": "3.8%"
+          },
+          {
+            "period": "2024",
+            "amount": "5.0 ر.س",
+            "date": "24 December 2024",
+            "yield": "6.3%"
+          },
+          {
+            "period": "2024",
+            "amount": "2.0 ر.س",
+            "date": "04 August 2024",
+            "yield": "2.5%"
+          },
+          {
+            "period": "2024",
+            "amount": "2.0 ر.س",
+            "date": "12 March 2024",
+            "yield": "2.5%"
+          }
+        ]
+      },
+      "operatingCashFlow": 0.22,
+      "freeCashFlow": -0.19,
+      "netIncomeB": 0.51,
+      "debtToEquity": 124.92,
+      "evEbitda": 11.93,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "2010",
+      "name": "سابك",
+      "sector": "energy",
+      "sector_ar": "الطاقة",
+      "price": 57.2,
+      "change": -1.55,
+      "changeAbs": -0.9,
+      "up": false,
+      "prevClose": 58.1,
+      "open": 58.0,
+      "dayHigh": 58.0,
+      "dayLow": 57.2,
+      "high52": 64.0,
+      "low52": 48.2,
+      "market": "171.60B",
+      "pe": "15.5x",
+      "div": "524.0%",
+      "divAmount": 1.5,
+      "eps": -0.19,
+      "pbv": "1.38x",
+      "roe": "0.5%",
+      "vol": "4.48M",
+      "shares": "3.00B",
+      "employees": "غير متاح",
+      "website": "https://www.sabic.com",
+      "address": "PO Box 5101، Riyadh، Saudi Arabia",
+      "desc": "Saudi Basic Industries Corporation manufactures, markets, and distributes chemicals, polymers, plastics, and agri-nutrients in the Kingdom of Saudi Arabia, China, the Americas, Europe, Africa, rest of",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "116.53",
+          "117.74",
+          "141.54",
+          "183.08"
+        ],
+        "netIncome": [
+          "-25.78",
+          "1.54",
+          "-2.77",
+          "16.53"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "38.68B",
+        "equity": "123.94B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "1.5 ر.س",
+            "date": "09 March 2026",
+            "yield": "2.6%"
+          },
+          {
+            "period": "2025",
+            "amount": "1.5 ر.س",
+            "date": "20 August 2025",
+            "yield": "2.6%"
+          },
+          {
+            "period": "2025",
+            "amount": "1.7 ر.س",
+            "date": "12 February 2025",
+            "yield": "3.0%"
+          },
+          {
+            "period": "2024",
+            "amount": "1.7 ر.س",
+            "date": "04 September 2024",
+            "yield": "3.0%"
+          },
+          {
+            "period": "2024",
+            "amount": "1.6 ر.س",
+            "date": "13 February 2024",
+            "yield": "2.8%"
+          },
+          {
+            "period": "2023",
+            "amount": "1.8 ر.س",
+            "date": "13 September 2023",
+            "yield": "3.1%"
+          }
+        ]
+      },
+      "operatingCashFlow": 16.68,
+      "freeCashFlow": 7.88,
+      "netIncomeB": -0.44,
+      "debtToEquity": 25.95,
+      "evEbitda": 12.33,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "4061",
+      "name": "العثيم",
+      "sector": "retail",
+      "sector_ar": "التجزئة",
+      "price": 10.16,
+      "change": 0.3,
+      "changeAbs": 0.03,
+      "up": true,
+      "prevClose": 10.13,
+      "open": 10.17,
+      "dayHigh": 10.23,
+      "dayLow": 10.16,
+      "high52": 17.52,
+      "low52": 9.31,
+      "market": "320.04M",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "divAmount": 0.0,
+      "eps": -0.64,
+      "pbv": "1.3x",
+      "roe": "-6.65%",
+      "vol": "146,006",
+      "shares": "31.50M",
+      "employees": "غير متاح",
+      "website": "https://anaamgroup.com",
+      "address": "Anaam Building، Jeddah، Saudi Arabia",
+      "desc": "Anaam International Holding Group Company, through its subsidiaries, engages in the foodstuff trading, and other businesses. It is also involved in the entertainment and beauty businesses; marine tran",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "0.04",
+          "0.04",
+          "0.05",
+          "0.03"
+        ],
+        "netIncome": [
+          "-0.02",
+          "0.0",
+          "0.01",
+          "-0.03"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "146.85M",
+        "equity": "245.70M",
+        "dividendHistory": []
+      },
+      "operatingCashFlow": -0.0,
+      "freeCashFlow": -0.0,
+      "netIncomeB": -0.02,
+      "debtToEquity": 59.69,
+      "evEbitda": 3464.03,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "4240",
+      "name": "دله البركة",
+      "sector": "health",
+      "sector_ar": "الصحة",
+      "price": 13.37,
+      "change": 6.79,
+      "changeAbs": 0.85,
+      "up": true,
+      "prevClose": 12.52,
+      "open": 12.25,
+      "dayHigh": 13.7,
+      "dayLow": 12.25,
+      "high52": 35.38,
+      "low52": 12.24,
+      "market": "1.53B",
+      "pe": "-12.5x",
+      "div": "غير متاح",
+      "divAmount": 1.83,
+      "eps": -4.53,
+      "pbv": "-1.01x",
+      "roe": "غير متاح",
+      "vol": "7.29M",
+      "shares": "114.77M",
+      "employees": "4107",
+      "website": "https://www.cenomiretail.com",
+      "address": "A3 Building، Riyadh، Saudi Arabia",
+      "desc": "AFG International Company operates as a franchise retailer of fashion products in the Kingdom of Saudi Arabia, Jordan, Egypt, the Republic of Kazakhstan, Uzbekistan, the Republic of Azerbaijan, Georgi",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "5.1",
+          "4.85",
+          "4.67",
+          "4.53"
+        ],
+        "netIncome": [
+          "-0.51",
+          "-0.2",
+          "-1.18",
+          "0.09"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "4.42B",
+        "equity": "-1,523,409,831",
+        "dividendHistory": [
+          {
+            "period": "2015",
+            "amount": "1.83 ر.س",
+            "date": "01 July 2015",
+            "yield": "13.7%"
+          },
+          {
+            "period": "2014",
+            "amount": "2.29 ر.س",
+            "date": "26 October 2014",
+            "yield": "17.1%"
+          },
+          {
+            "period": "2014",
+            "amount": "2.74 ر.س",
+            "date": "27 April 2014",
+            "yield": "20.5%"
+          },
+          {
+            "period": "2013",
+            "amount": "1.37 ر.س",
+            "date": "07 November 2013",
+            "yield": "10.3%"
+          },
+          {
+            "period": "2013",
+            "amount": "1.83 ر.س",
+            "date": "27 April 2013",
+            "yield": "13.7%"
+          },
+          {
+            "period": "2012",
+            "amount": "1.22 ر.س",
+            "date": "18 January 2012",
+            "yield": "9.1%"
+          }
+        ]
+      },
+      "operatingCashFlow": -0.65,
+      "freeCashFlow": -0.79,
+      "netIncomeB": -0.52,
+      "debtToEquity": 0.0,
+      "evEbitda": 25.87,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "1010",
+      "name": "بنك الرياض",
+      "sector": "banking",
+      "sector_ar": "البنوك",
+      "price": 20.14,
+      "change": -0.98,
+      "changeAbs": -0.2,
+      "up": false,
+      "prevClose": 20.34,
+      "open": 20.37,
+      "dayHigh": 20.77,
+      "dayLow": 20.14,
+      "high52": 22.41,
+      "low52": 18.98,
+      "market": "80.23B",
+      "pe": "8.06x",
+      "div": "410.0%",
+      "divAmount": 0.41,
+      "eps": 2.5,
+      "pbv": "1.21x",
+      "roe": "13.9%",
+      "vol": "6.33M",
+      "shares": "3.98B",
+      "employees": "5583",
+      "website": "https://www.riyadbank.com",
+      "address": "Riyad Bank Tower, Building No. 3128، Riyadh، Saudi Arabia",
+      "desc": "Riyad Bank provides banking and investment services in the Kingdom of Saudi Arabia. It operates through the Retail Banking, Investment Banking and Brokerage, Corporate Banking, and Treasury and Invest",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "18.35",
+          "17.25",
+          "15.76",
+          "13.33"
+        ],
+        "netIncome": [
+          "10.41",
+          "9.32",
+          "8.05",
+          "7.02"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "57.32B",
+        "equity": "66.35B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "0.41 ر.س",
+            "date": "06 April 2026",
+            "yield": "2.0%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.64 ر.س",
+            "date": "05 August 2025",
+            "yield": "3.2%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.68 ر.س",
+            "date": "14 April 2025",
+            "yield": "3.4%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.6 ر.س",
+            "date": "12 August 2024",
+            "yield": "3.0%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.56 ر.س",
+            "date": "25 March 2024",
+            "yield": "2.8%"
+          },
+          {
+            "period": "2023",
+            "amount": "0.49 ر.س",
+            "date": "30 July 2023",
+            "yield": "2.4%"
+          }
+        ]
+      },
+      "operatingCashFlow": -41.14,
+      "freeCashFlow": 0.0,
+      "netIncomeB": 9.94,
+      "debtToEquity": 0.0,
+      "evEbitda": 0.0,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "4007",
+      "name": "نادك",
+      "sector": "telecom",
+      "sector_ar": "الاتصالات",
+      "price": 26.36,
+      "change": -0.38,
+      "changeAbs": -0.1,
+      "up": false,
+      "prevClose": 26.46,
+      "open": 26.46,
+      "dayHigh": 26.68,
+      "dayLow": 26.36,
+      "high52": 38.8,
+      "low52": 23.42,
+      "market": "4.22B",
+      "pe": "18.83x",
+      "div": "303.0%",
+      "divAmount": 0.2,
+      "eps": 1.4,
+      "pbv": "2.1x",
+      "roe": "غير متاح",
+      "vol": "174,371",
+      "shares": "160.00M",
+      "employees": "غير متاح",
+      "website": "https://alhammadi.com",
+      "address": "P.O. Box 10112، Riyadh، Saudi Arabia",
+      "desc": "Al Hammadi Holding Company, a healthcare group, provides healthcare services in the Kingdom of Saudi Arabia. The company operates through Medical Services and Pharmaceuticals Products segments. The co",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "1.23",
+          "1.15",
+          "1.18",
+          "1.12"
+        ],
+        "netIncome": [
+          "0.24",
+          "0.34",
+          "0.3",
+          "0.26"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "286.41M",
+        "equity": "2.01B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "0.2 ر.س",
+            "date": "30 March 2026",
+            "yield": "0.8%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.2 ر.س",
+            "date": "17 November 2025",
+            "yield": "0.8%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.35 ر.س",
+            "date": "13 August 2025",
+            "yield": "1.3%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.35 ر.س",
+            "date": "20 May 2025",
+            "yield": "1.3%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.35 ر.س",
+            "date": "03 March 2025",
+            "yield": "1.3%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.35 ر.س",
+            "date": "18 November 2024",
+            "yield": "1.3%"
+          }
+        ]
+      },
+      "operatingCashFlow": 0.06,
+      "freeCashFlow": 0.0,
+      "netIncomeB": 0.22,
+      "debtToEquity": 14.28,
+      "evEbitda": 13.95,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "1060",
+      "name": "ساب",
+      "sector": "banking",
+      "sector_ar": "البنوك",
+      "price": 34.12,
+      "change": -0.7,
+      "changeAbs": -0.24,
+      "up": false,
+      "prevClose": 34.36,
+      "open": 34.4,
+      "dayHigh": 34.86,
+      "dayLow": 34.12,
+      "high52": 37.92,
+      "low52": 29.9,
+      "market": "70.11B",
+      "pe": "8.96x",
+      "div": "586.0%",
+      "divAmount": 1.0,
+      "eps": 3.81,
+      "pbv": "1.02x",
+      "roe": "11.0%",
+      "vol": "4.38M",
+      "shares": "2.05B",
+      "employees": "4473",
+      "website": "https://www.sab.com",
+      "address": "7383 King Fahad Branch Road، Riyadh، Saudi Arabia",
+      "desc": "Saudi Awwal Bank, together with its subsidiaries, provides banking and financial services in the Kingdom of Saudi Arabia. The company operates through Wealth & Personal Banking, Corporate and Institut",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "14.84",
+          "14.14",
+          "12.81",
+          "9.65"
+        ],
+        "netIncome": [
+          "8.45",
+          "8.07",
+          "7.0",
+          "4.83"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "31.92B",
+        "equity": "68.62B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "1.0 ر.س",
+            "date": "22 April 2026",
+            "yield": "2.9%"
+          },
+          {
+            "period": "2025",
+            "amount": "1.0 ر.س",
+            "date": "21 August 2025",
+            "yield": "2.9%"
+          },
+          {
+            "period": "2025",
+            "amount": "1.0 ر.س",
+            "date": "01 May 2025",
+            "yield": "2.9%"
+          },
+          {
+            "period": "2024",
+            "amount": "1.0 ر.س",
+            "date": "18 August 2024",
+            "yield": "2.9%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.98 ر.س",
+            "date": "28 April 2024",
+            "yield": "2.9%"
+          },
+          {
+            "period": "2023",
+            "amount": "0.88 ر.س",
+            "date": "14 August 2023",
+            "yield": "2.6%"
+          }
+        ]
+      },
+      "operatingCashFlow": -42.49,
+      "freeCashFlow": 0.0,
+      "netIncomeB": 7.75,
+      "debtToEquity": 0.0,
+      "evEbitda": 0.0,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "1140",
+      "name": "بنك البلاد",
+      "sector": "banking",
+      "sector_ar": "البنوك",
+      "price": 24.38,
+      "change": 0.33,
+      "changeAbs": 0.08,
+      "up": true,
+      "prevClose": 24.3,
+      "open": 24.27,
+      "dayHigh": 24.5,
+      "dayLow": 24.17,
+      "high52": 30.16,
+      "low52": 23.38,
+      "market": "36.57B",
+      "pe": "12.13x",
+      "div": "410.0%",
+      "divAmount": 0.55,
+      "eps": 2.01,
+      "pbv": "1.53x",
+      "roe": "14.96%",
+      "vol": "5.43M",
+      "shares": "1.50B",
+      "employees": "3665",
+      "website": "https://www.bankalbilad.com.sa",
+      "address": "8229 Al Mutamarat، Riyadh، Saudi Arabia",
+      "desc": "Bank Albilad, through its subsidiaries, provides various banking products and services in the Kingdom of Saudi Arabia. The company operates in four segments: Retail Banking, Corporate Banking, Treasur",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "6.19",
+          "5.65",
+          "5.3",
+          "5.17"
+        ],
+        "netIncome": [
+          "3.05",
+          "2.81",
+          "2.37",
+          "2.08"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "3.09B",
+        "equity": "23.85B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "0.55 ر.س",
+            "date": "06 May 2026",
+            "yield": "2.3%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.45 ر.س",
+            "date": "06 August 2025",
+            "yield": "1.8%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.42 ر.س",
+            "date": "15 September 2024",
+            "yield": "1.7%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.33 ر.س",
+            "date": "30 April 2024",
+            "yield": "1.4%"
+          },
+          {
+            "period": "2023",
+            "amount": "0.33 ر.س",
+            "date": "02 May 2023",
+            "yield": "1.4%"
+          },
+          {
+            "period": "2020",
+            "amount": "0.25 ر.س",
+            "date": "27 April 2020",
+            "yield": "1.0%"
+          }
+        ]
+      },
+      "operatingCashFlow": -14.55,
+      "freeCashFlow": 0.0,
+      "netIncomeB": 3.0,
+      "debtToEquity": 0.0,
+      "evEbitda": 0.0,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "1020",
+      "name": "بنك الجزيرة",
+      "sector": "banking",
+      "sector_ar": "البنوك",
+      "price": 11.4,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 11.4,
+      "open": 11.44,
+      "dayHigh": 11.48,
+      "dayLow": 11.38,
+      "high52": 13.31,
+      "low52": 10.81,
+      "market": "14.54B",
+      "pe": "11.88x",
+      "div": "877.0%",
+      "divAmount": 0.5,
+      "eps": 0.96,
+      "pbv": "0.98x",
+      "roe": "7.4%",
+      "vol": "4.36M",
+      "shares": "1.28B",
+      "employees": "2770",
+      "website": "https://www.bankaljazira.com",
+      "address": "7724 King Abdulaziz Road، Jeddah، Saudi Arabia",
+      "desc": "AlJazira Bank provides a range of Shari'ah compliant banking products and services in the Kingdom of Saudi Arabia. The company operates through Personal Banking, Corporate Banking, Treasury, Brokerage",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "4.46",
+          "3.78",
+          "3.32",
+          "3.43"
+        ],
+        "netIncome": [
+          "1.51",
+          "1.23",
+          "1.02",
+          "1.11"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "23.53B",
+        "equity": "14.78B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "0.5 ر.س",
+            "date": "09 February 2026",
+            "yield": "4.4%"
+          },
+          {
+            "period": "2022",
+            "amount": "0.26 ر.س",
+            "date": "08 August 2022",
+            "yield": "2.2%"
+          },
+          {
+            "period": "2022",
+            "amount": "0.22 ر.س",
+            "date": "14 February 2022",
+            "yield": "2.0%"
+          },
+          {
+            "period": "2021",
+            "amount": "0.22 ر.س",
+            "date": "10 August 2021",
+            "yield": "2.0%"
+          },
+          {
+            "period": "2020",
+            "amount": "0.19 ر.س",
+            "date": "16 April 2020",
+            "yield": "1.7%"
+          },
+          {
+            "period": "2019",
+            "amount": "0.19 ر.س",
+            "date": "05 August 2019",
+            "yield": "1.7%"
+          }
+        ]
+      },
+      "operatingCashFlow": -11.19,
+      "freeCashFlow": 0.0,
+      "netIncomeB": 1.23,
+      "debtToEquity": 0.0,
+      "evEbitda": 0.0,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "1150",
+      "name": "بنك الإنماء",
+      "sector": "banking",
+      "sector_ar": "البنوك",
+      "price": 24.0,
+      "change": 0.59,
+      "changeAbs": 0.14,
+      "up": true,
+      "prevClose": 23.86,
+      "open": 23.9,
+      "dayHigh": 24.08,
+      "dayLow": 23.86,
+      "high52": 25.53,
+      "low52": 19.95,
+      "market": "72.00B",
+      "pe": "12.0x",
+      "div": "417.0%",
+      "divAmount": 0.25,
+      "eps": 2.0,
+      "pbv": "1.93x",
+      "roe": "14.19%",
+      "vol": "7.25M",
+      "shares": "3.00B",
+      "employees": "4216",
+      "website": "https://www.alinma.com",
+      "address": "Al Anoud Tower، Riyadh، Saudi Arabia",
+      "desc": "Alinma Bank provides banking and investment services in the Kingdom of Saudi Arabia. It operates through Retail Banking, Corporate Banking, Treasury, and Investment and Brokerage segments. The company",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "11.84",
+          "10.93",
+          "9.69",
+          "7.97"
+        ],
+        "netIncome": [
+          "6.4",
+          "5.83",
+          "4.84",
+          "3.6"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "19.17B",
+        "equity": "37.25B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "0.25 ر.س",
+            "date": "07 May 2026",
+            "yield": "1.0%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.25 ر.س",
+            "date": "05 November 2025",
+            "yield": "1.0%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.25 ر.س",
+            "date": "10 August 2025",
+            "yield": "1.0%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.25 ر.س",
+            "date": "14 May 2025",
+            "yield": "1.0%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.25 ر.س",
+            "date": "27 April 2025",
+            "yield": "1.0%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.25 ر.س",
+            "date": "10 November 2024",
+            "yield": "1.0%"
+          }
+        ]
+      },
+      "operatingCashFlow": -24.9,
+      "freeCashFlow": 0.0,
+      "netIncomeB": 6.0,
+      "debtToEquity": 0.0,
+      "evEbitda": 0.0,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "4190",
+      "name": "جرير للتسويق",
+      "sector": "retail",
+      "sector_ar": "التجزئة",
+      "price": 15.77,
+      "change": 0.25,
+      "changeAbs": 0.04,
+      "up": true,
+      "prevClose": 15.73,
+      "open": 15.73,
+      "dayHigh": 15.77,
+      "dayLow": 15.6,
+      "high52": 15.77,
+      "low52": 12.0,
+      "market": "18.92B",
+      "pe": "17.52x",
+      "div": "533.0%",
+      "divAmount": 0.21,
+      "eps": 0.9,
+      "pbv": "11.13x",
+      "roe": "64.1%",
+      "vol": "5.04M",
+      "shares": "1.20B",
+      "employees": "غير متاح",
+      "website": "https://www.jarir.com",
+      "address": "Olaya Main Street، Riyadh، Saudi Arabia",
+      "desc": "Jarir Marketing Company, together with its subsidiaries, engages in the retail and wholesale trading of office and school supplies in the Kingdom of Saudi Arabia, Egypt, and other Gulf countries. It o",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "11.37",
+          "10.62",
+          "10.59",
+          "9.39"
+        ],
+        "netIncome": [
+          "1.05",
+          "0.97",
+          "0.97",
+          "0.97"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "756.34M",
+        "equity": "1.70B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "0.26 ر.س",
+            "date": "07 April 2026",
+            "yield": "1.6%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.28 ر.س",
+            "date": "11 November 2025",
+            "yield": "1.8%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.16 ر.س",
+            "date": "12 August 2025",
+            "yield": "1.0%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.19 ر.س",
+            "date": "13 May 2025",
+            "yield": "1.2%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.23 ر.س",
+            "date": "08 April 2025",
+            "yield": "1.5%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.26 ر.س",
+            "date": "12 November 2024",
+            "yield": "1.6%"
+          }
+        ]
+      },
+      "operatingCashFlow": 1.64,
+      "freeCashFlow": 1.22,
+      "netIncomeB": 1.09,
+      "debtToEquity": 44.48,
+      "evEbitda": 15.64,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "4161",
+      "name": "بن داود التجارية",
+      "sector": "retail",
+      "sector_ar": "التجزئة",
+      "price": 4.93,
+      "change": 1.65,
+      "changeAbs": 0.08,
+      "up": true,
+      "prevClose": 4.85,
+      "open": 4.85,
+      "dayHigh": 4.97,
+      "dayLow": 4.85,
+      "high52": 6.69,
+      "low52": 4.1,
+      "market": "5.63B",
+      "pe": "20.54x",
+      "div": "162.0%",
+      "divAmount": 0.04,
+      "eps": 0.24,
+      "pbv": "3.52x",
+      "roe": "17.43%",
+      "vol": "1.27M",
+      "shares": "1.14B",
+      "employees": "غير متاح",
+      "website": "https://www.bindawoodholding.com",
+      "address": "Al-Madinah Al-Munawarah Rd، Jeddah، Saudi Arabia",
+      "desc": "BinDawood Holding Company operates hypermarkets and supermarkets in Qatar, and the Kingdom of Saudi Arabia. The company provides loyalty management; information technology and communication; delivery,",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "6.35",
+          "5.68",
+          "5.6",
+          "4.9"
+        ],
+        "netIncome": [
+          "0.27",
+          "0.27",
+          "0.28",
+          "0.12"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "3.10B",
+        "equity": "1.60B",
+        "dividendHistory": [
+          {
+            "period": "2025",
+            "amount": "0.04 ر.س",
+            "date": "07 December 2025",
+            "yield": "0.8%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.1 ر.س",
+            "date": "18 May 2025",
+            "yield": "2.0%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.1 ر.س",
+            "date": "26 November 2024",
+            "yield": "2.0%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.1 ر.س",
+            "date": "27 May 2024",
+            "yield": "2.0%"
+          },
+          {
+            "period": "2023",
+            "amount": "0.1 ر.س",
+            "date": "19 November 2023",
+            "yield": "2.0%"
+          },
+          {
+            "period": "2023",
+            "amount": "0.1 ر.س",
+            "date": "01 June 2023",
+            "yield": "2.0%"
+          }
+        ]
+      },
+      "operatingCashFlow": 0.75,
+      "freeCashFlow": 0.26,
+      "netIncomeB": 0.27,
+      "debtToEquity": 178.99,
+      "evEbitda": 14.32,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "8010",
+      "name": "التعاونية للتأمين",
+      "sector": "insurance",
+      "sector_ar": "التأمين",
+      "price": 138.0,
+      "change": 1.47,
+      "changeAbs": 2.0,
+      "up": true,
+      "prevClose": 136.0,
+      "open": 137.0,
+      "dayHigh": 140.1,
+      "dayLow": 136.6,
+      "high52": 161.0,
+      "low52": 111.8,
+      "market": "20.67B",
+      "pe": "18.33x",
+      "div": "145.0%",
+      "divAmount": 2.0,
+      "eps": 7.53,
+      "pbv": "3.66x",
+      "roe": "21.75%",
+      "vol": "383,029",
+      "shares": "149.80M",
+      "employees": "غير متاح",
+      "website": "https://www.tawuniya.com",
+      "address": "6507 Thomamah Road، Riyadh، Saudi Arabia",
+      "desc": "The Company for Cooperative Insurance operates as an insurance company in the Kingdom of Saudi Arabia. The company operates through Medical, Medical Umrah, Motor, Property and Casualty, General Accide",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "19.65",
+          "16.63",
+          "13.86",
+          "9.99"
+        ],
+        "netIncome": [
+          "1.1",
+          "1.02",
+          "0.62",
+          "0.3"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "565.25M",
+        "equity": "5.66B",
+        "dividendHistory": [
+          {
+            "period": "2025",
+            "amount": "1.5 ر.س",
+            "date": "28 May 2025",
+            "yield": "1.1%"
+          },
+          {
+            "period": "2024",
+            "amount": "1.0 ر.س",
+            "date": "24 June 2024",
+            "yield": "0.7%"
+          },
+          {
+            "period": "2023",
+            "amount": "0.83 ر.س",
+            "date": "08 June 2023",
+            "yield": "0.6%"
+          },
+          {
+            "period": "2021",
+            "amount": "0.67 ر.س",
+            "date": "02 May 2021",
+            "yield": "0.5%"
+          },
+          {
+            "period": "2017",
+            "amount": "2.67 ر.س",
+            "date": "22 March 2017",
+            "yield": "1.9%"
+          },
+          {
+            "period": "2016",
+            "amount": "0.67 ر.س",
+            "date": "22 March 2016",
+            "yield": "0.5%"
+          }
+        ]
+      },
+      "operatingCashFlow": 1.09,
+      "freeCashFlow": -4.33,
+      "netIncomeB": 1.13,
+      "debtToEquity": 10.01,
+      "evEbitda": 10.78,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "8150",
+      "name": "بوبا العربية",
+      "sector": "insurance",
+      "sector_ar": "التأمين",
+      "price": 5.79,
+      "change": 0.87,
+      "changeAbs": 0.05,
+      "up": true,
+      "prevClose": 5.74,
+      "open": 5.7,
+      "dayHigh": 5.85,
+      "dayLow": 5.7,
+      "high52": 12.98,
+      "low52": 5.65,
+      "market": "168.49M",
+      "pe": "غير متاح",
+      "div": "غير متاح",
+      "divAmount": 0.0,
+      "eps": -2.51,
+      "pbv": "0.76x",
+      "roe": "غير متاح",
+      "vol": "98,172",
+      "shares": "29.10M",
+      "employees": "غير متاح",
+      "website": "https://www.acig.com.sa",
+      "address": "RRHA7143، Riyadh، Saudi Arabia",
+      "desc": "Allied Cooperative Insurance Group engages in cooperative insurance operations and related activities in the Kingdom of Saudi Arabia. The company operates through Medical Insurance; Motor Insurance; P",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "0.92",
+          "0.84",
+          "0.94",
+          "0.61"
+        ],
+        "netIncome": [
+          "-0.04",
+          "-0.02",
+          "0.06",
+          "-0.02"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "3.44M",
+        "equity": "222.21M",
+        "dividendHistory": []
+      },
+      "operatingCashFlow": 0.07,
+      "freeCashFlow": 0.0,
+      "netIncomeB": -0.07,
+      "debtToEquity": 1.55,
+      "evEbitda": 8.69,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "8030",
+      "name": "ميلاء للتأمين",
+      "sector": "insurance",
+      "sector_ar": "التأمين",
+      "price": 14.29,
+      "change": 0.49,
+      "changeAbs": 0.07,
+      "up": true,
+      "prevClose": 14.22,
+      "open": 14.29,
+      "dayHigh": 14.42,
+      "dayLow": 14.17,
+      "high52": 20.75,
+      "low52": 11.04,
+      "market": "1.97B",
+      "pe": "38.62x",
+      "div": "غير متاح",
+      "divAmount": 3.0,
+      "eps": 0.37,
+      "pbv": "1.22x",
+      "roe": "4.33%",
+      "vol": "678,857",
+      "shares": "138.16M",
+      "employees": "غير متاح",
+      "website": "https://www.medgulf.com.sa",
+      "address": "Futuro Tower، Riyadh، Saudi Arabia",
+      "desc": "The Mediterranean and Gulf Cooperative Insurance and Reinsurance Company provides medical, motor, and other general insurance in the Kingdom of Saudi Arabia. The company offers third party and compreh",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "4.1",
+          "3.35",
+          "2.89",
+          "2.22"
+        ],
+        "netIncome": [
+          "0.04",
+          "0.1",
+          "0.2",
+          "-0.4"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "15.09M",
+        "equity": "1.61B",
+        "dividendHistory": [
+          {
+            "period": "2012",
+            "amount": "3.0 ر.س",
+            "date": "01 April 2012",
+            "yield": "21.0%"
+          },
+          {
+            "period": "2011",
+            "amount": "1.88 ر.س",
+            "date": "09 May 2011",
+            "yield": "13.1%"
+          },
+          {
+            "period": "2010",
+            "amount": "1.13 ر.س",
+            "date": "06 April 2010",
+            "yield": "7.9%"
+          }
+        ]
+      },
+      "operatingCashFlow": -0.16,
+      "freeCashFlow": 0.12,
+      "netIncomeB": 0.06,
+      "debtToEquity": 0.94,
+      "evEbitda": 2.45,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "4300",
+      "name": "دار الأركان",
+      "sector": "realestate",
+      "sector_ar": "العقارات",
+      "price": 16.78,
+      "change": -2.16,
+      "changeAbs": -0.37,
+      "up": false,
+      "prevClose": 17.15,
+      "open": 17.16,
+      "dayHigh": 17.26,
+      "dayLow": 16.78,
+      "high52": 20.97,
+      "low52": 14.58,
+      "market": "18.12B",
+      "pe": "15.25x",
+      "div": "غير متاح",
+      "divAmount": 0.5,
+      "eps": 1.1,
+      "pbv": "0.81x",
+      "roe": "5.41%",
+      "vol": "7.12M",
+      "shares": "1.08B",
+      "employees": "غير متاح",
+      "website": "https://www.daralarkan.com",
+      "address": "Makkah Road، Riyadh، Saudi Arabia",
+      "desc": "Dar Al Arkan Real Estate Development Company, together with its subsidiaries, primarily engages in the development, management, lease, and sale of real estate projects and associated activities in the",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "3.9",
+          "3.76",
+          "2.71",
+          "3.93"
+        ],
+        "netIncome": [
+          "1.13",
+          "0.81",
+          "0.61",
+          "0.44"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "14.56B",
+        "equity": "22.47B",
+        "dividendHistory": [
+          {
+            "period": "2018",
+            "amount": "0.5 ر.س",
+            "date": "16 May 2018",
+            "yield": "3.0%"
+          }
+        ]
+      },
+      "operatingCashFlow": -3.38,
+      "freeCashFlow": 0.77,
+      "netIncomeB": 1.18,
+      "debtToEquity": 64.81,
+      "evEbitda": 14.92,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "4280",
+      "name": "المملكة القابضة",
+      "sector": "realestate",
+      "sector_ar": "العقارات",
+      "price": 12.35,
+      "change": 8.33,
+      "changeAbs": 0.95,
+      "up": true,
+      "prevClose": 11.4,
+      "open": 11.5,
+      "dayHigh": 12.54,
+      "dayLow": 11.42,
+      "high52": 12.54,
+      "low52": 7.03,
+      "market": "45.77B",
+      "pe": "23.3x",
+      "div": "227.0%",
+      "divAmount": 0.07,
+      "eps": 0.53,
+      "pbv": "0.8x",
+      "roe": "3.92%",
+      "vol": "5.09M",
+      "shares": "3.71B",
+      "employees": "غير متاح",
+      "website": "https://www.kingdom.com.sa/homepage",
+      "address": "Kingdom Centre، Riyadh، Saudi Arabia",
+      "desc": "Kingdom Holding Company is a public equity firm specializing in making investments in equities, private investments, real estate and hospitality assets, supported by robust risk management, governance",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "2.69",
+          "2.39",
+          "2.7",
+          "2.49"
+        ],
+        "netIncome": [
+          "2.14",
+          "1.24",
+          "1.01",
+          "6.96"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "13.16B",
+        "equity": "56.86B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "0.07 ر.س",
+            "date": "13 May 2026",
+            "yield": "0.6%"
+          },
+          {
+            "period": "2026",
+            "amount": "0.07 ر.س",
+            "date": "01 January 2026",
+            "yield": "0.6%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.07 ر.س",
+            "date": "02 October 2025",
+            "yield": "0.6%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.07 ر.س",
+            "date": "03 August 2025",
+            "yield": "0.6%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.07 ر.س",
+            "date": "15 June 2025",
+            "yield": "0.6%"
+          },
+          {
+            "period": "2025",
+            "amount": "0.07 ر.س",
+            "date": "01 January 2025",
+            "yield": "0.6%"
+          }
+        ]
+      },
+      "operatingCashFlow": 0.8,
+      "freeCashFlow": -0.19,
+      "netIncomeB": 1.98,
+      "debtToEquity": 22.69,
+      "evEbitda": 51.53,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "2270",
+      "name": "المراعي",
+      "sector": "industrial",
+      "sector_ar": "الصناعة",
+      "price": 221.4,
+      "change": -1.12,
+      "changeAbs": -2.5,
+      "up": false,
+      "prevClose": 223.9,
+      "open": 227.9,
+      "dayHigh": 227.9,
+      "dayLow": 221.4,
+      "high52": 297.2,
+      "low52": 187.0,
+      "market": "7.08B",
+      "pe": "15.93x",
+      "div": "723.0%",
+      "divAmount": 8.0,
+      "eps": 13.9,
+      "pbv": "4.52x",
+      "roe": "27.65%",
+      "vol": "30,042",
+      "shares": "31.96M",
+      "employees": "غير متاح",
+      "website": "https://www.sadafco.com",
+      "address": "Sari Branch Road، Jeddah، Saudi Arabia",
+      "desc": "Saudia Dairy & Foodstuff Company, together with its subsidiaries, produces and distributes dairy products, beverages, and various foodstuffs in the Kingdom of Saudi Arabia, Poland, Other Gulf countrie",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "3.0",
+          "2.86",
+          "2.65",
+          "2.17"
+        ],
+        "netIncome": [
+          "0.48",
+          "0.48",
+          "0.31",
+          "0.21"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "69.56M",
+        "equity": "1.57B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "8.0 ر.س",
+            "date": "23 February 2026",
+            "yield": "3.6%"
+          },
+          {
+            "period": "2025",
+            "amount": "8.0 ر.س",
+            "date": "28 September 2025",
+            "yield": "3.6%"
+          },
+          {
+            "period": "2025",
+            "amount": "9.0 ر.س",
+            "date": "20 March 2025",
+            "yield": "4.1%"
+          },
+          {
+            "period": "2024",
+            "amount": "6.0 ر.س",
+            "date": "18 September 2024",
+            "yield": "2.7%"
+          },
+          {
+            "period": "2024",
+            "amount": "6.0 ر.س",
+            "date": "14 May 2024",
+            "yield": "2.7%"
+          },
+          {
+            "period": "2024",
+            "amount": "6.0 ر.س",
+            "date": "03 March 2024",
+            "yield": "2.7%"
+          }
+        ]
+      },
+      "operatingCashFlow": 0.44,
+      "freeCashFlow": -0.12,
+      "netIncomeB": 0.44,
+      "debtToEquity": 4.44,
+      "evEbitda": 14.84,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        },
+        {
+          "date": "28 May 2026",
+          "type": "أحداث",
+          "title": "خبر الشركة",
+          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    },
+    {
+      "code": "2290",
+      "name": "يانساب",
+      "sector": "energy",
+      "sector_ar": "الطاقة",
+      "price": 34.04,
+      "change": 0.12,
+      "changeAbs": 0.04,
+      "up": true,
+      "prevClose": 34.0,
+      "open": 34.0,
+      "dayHigh": 34.24,
+      "dayLow": 33.82,
+      "high52": 38.44,
+      "low52": 24.0,
+      "market": "19.15B",
+      "pe": "243.14x",
+      "div": "588.0%",
+      "divAmount": 1.0,
+      "eps": 0.14,
+      "pbv": "1.88x",
+      "roe": "0.72%",
+      "vol": "903,138",
+      "shares": "562.50M",
+      "employees": "غير متاح",
+      "website": "https://www.yansab.com.sa",
+      "address": "PO Box 31396، Yanbu، Saudi Arabia",
+      "desc": "Yanbu National Petrochemical Company manufactures and sells petrochemical products in the Kingdom of Saudi Arabia. The company's products portfolio includes ethylene, propylene, mono ethylene glycol, ",
+      "exchange": "تداول",
+      "fiscalYearEnd": "31 ديسمبر",
+      "isin": "",
+      "listingDate": "",
+      "foundDate": "",
+      "foundPlace": "",
+      "auditor": "",
+      "irContact": "",
+      "irOfficer": "",
+      "irPhone": "",
+      "financials": {
+        "years": [
+          "2025",
+          "2024",
+          "2023",
+          "2022"
+        ],
+        "revenue": [
+          "5.6",
+          "6.16",
+          "4.53",
+          "7.02"
+        ],
+        "netIncome": [
+          "0.08",
+          "0.42",
+          "-0.49",
+          "0.41"
+        ],
+        "totalAssets": "غير متاح",
+        "totalDebt": "103.91M",
+        "equity": "10.17B",
+        "dividendHistory": [
+          {
+            "period": "2026",
+            "amount": "1.0 ر.س",
+            "date": "18 February 2026",
+            "yield": "2.9%"
+          },
+          {
+            "period": "2025",
+            "amount": "1.0 ر.س",
+            "date": "25 August 2025",
+            "yield": "2.9%"
+          },
+          {
+            "period": "2025",
+            "amount": "1.0 ر.س",
+            "date": "26 February 2025",
+            "yield": "2.9%"
+          },
+          {
+            "period": "2024",
+            "amount": "1.0 ر.س",
+            "date": "01 August 2024",
+            "yield": "2.9%"
+          },
+          {
+            "period": "2024",
+            "amount": "0.75 ر.س",
+            "date": "26 February 2024",
+            "yield": "2.2%"
+          },
+          {
+            "period": "2023",
+            "amount": "1.0 ر.س",
+            "date": "19 July 2023",
+            "yield": "2.9%"
+          }
+        ]
+      },
+      "operatingCashFlow": 1.15,
+      "freeCashFlow": 0.73,
+      "netIncomeB": 0.08,
+      "debtToEquity": 1.02,
+      "evEbitda": 17.43,
+      "announcements": [
+        {
+          "date": "28 May 2026",
+          "type": "تحديث",
+          "title": "تحديث بيانات الشركة",
+          "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
+        }
+      ],
+      "upcomingEvents": [],
+      "boardMembers": [],
+      "majorShareholders": [
+        {
+          "name": "مساهمون مؤسسيون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        },
+        {
+          "name": "مساهمون عامون",
+          "pct": "غير متاح",
+          "shares": "غير متاح"
+        }
+      ],
+      "subsidiaries": [],
+      "peers": []
+    }
+  ]
+}
