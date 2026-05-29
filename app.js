@@ -37,6 +37,9 @@ async function loadStocksData() {
           if (newStock.announcements && newStock.announcements.length > 0) {
             stocks[idx].announcements = newStock.announcements;
           }
+          if (newStock.historical && newStock.historical.length > 0) {
+            stocks[idx].historical = newStock.historical;
+          }
         }
       });
 
