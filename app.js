@@ -529,8 +529,8 @@ function buildChart(period) {
   const gradEnd = isUp ? 'rgba(15,110,86,0.00)' : 'rgba(153,60,29,0.00)';
   const gridColor = isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.04)';
   const tickColor = isDark ? '#5c5f66' : '#9ca3af';
-  const { labels, data, volume: volumeData } = genPriceData(period);
-  const gradient = context.createLinearGradient(0, 0, 0, 340);
+  const { labels, data, volume: volumeData = [] } = genPriceData(period);
+  const safeVolumeData = volumeData.length > 0 ? volumeData : data.map(() => Math.round(Math.random() * 80 + 20)); const gradient = context.createLinearGradient(0, 0, 0, 340);
   gradient.addColorStop(0, gradStart);
   gradient.addColorStop(1, gradEnd);
 
