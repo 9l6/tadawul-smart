@@ -525,21 +525,137 @@ function buildChart(period) {
   const context = ctx.getContext('2d');
   if (priceChart) priceChart.destroy();
 
-  const { labels, data, volume: volumeData = [] } = genPriceData(period);
+  const { labels, data, highs, lows, opens, volume: volumeData = [] } = genPriceData(period);
 
   const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
   const isUp = data[data.length - 1] >= data[0];
-  const lineColor = isUp ? '#0F6E56' : '#993C1D';
-  const gradStart = isUp ? 'rgba(15,110,86,0.22)' : 'rgba(153,60,29,0.22)';
-  const gradEnd = isUp ? 'rgba(15,110,86,0.00)' : 'rgba(153,60,29,0.00)';
+  const upColor = '#0F6E56';
+  const downColor = '#993C1D';
   const gridColor = isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.04)';
   const tickColor = isDark ? '#5c5f66' : '#9ca3af';
+  const bgColor = isDark ? '#1a1b1e' : '#ffffff';
+
+  // بناء بيانات OHLC
+  const ohlcData = data.map((close, i) => ({
+    x: labels[i] || i,
+    o: opens[i] || close,
+    h: highs[i] || close,
+    l: lows[i] || close,
+    c: close,
+  }));
+
+  // حساب هيكن آشي
+  const haData = [];
+  for (let i = 0; i < ohlcData.length; i++) {
+    const cur = ohlcData[i];
+    const prev = haData[i - 1];
+    const haClose = (cur.o + cur.h + cur.l + cur.c) / 4;
+    const haOpen = prev ? (prev.o + prev.c) / 2 : (cur.o + cur.c) / 2;
+    const haHigh = Math.max(cur.h, haOpen, haClose);
+    const haLow = Math.min(cur.l, haOpen, haClose);
+    haData.push({ x: cur.x, o: haOpen, h: haHigh, l: haLow, c: haClose });
+  }
 
   const gradient = context.createLinearGradient(0, 0, 0, 340);
-  gradient.addColorStop(0, gradStart);
-  gradient.addColorStop(1, gradEnd);
+  gradient.addColorStop(0, isUp ? 'rgba(15,110,86,0.22)' : 'rgba(153,60,29,0.22)');
+  gradient.addColorStop(1, isUp ? 'rgba(15,110,86,0.00)' : 'rgba(153,60,29,0.00)');
+
+  const lineColor = isUp ? upColor : downColor;
   const volColor = isUp ? 'rgba(15,110,86,0.25)' : 'rgba(153,60,29,0.25)';
 
+  // اختيار نوع الرسم
+  let mainDataset;
+
+  if (currentChartType === 'candle') {
+    mainDataset = {
+      type: 'candlestick',
+      label: 'السعر',
+      data: ohlcData,
+      color: {
+        up: upColor,
+        down: downColor,
+        unchanged: '#888',
+      },
+      borderColor: {
+        up: upColor,
+        down: downColor,
+        unchanged: '#888',
+      },
+      yAxisID: 'yPrice',
+      order: 1,
+    };
+  } else if (currentChartType === 'heikinashi') {
+    mainDataset = {
+      type: 'candlestick',
+      label: 'هيكن آشي',
+      data: haData,
+      color: {
+        up: upColor,
+        down: downColor,
+        unchanged: '#888',
+      },
+      borderColor: {
+        up: upColor,
+        down: downColor,
+        unchanged: '#888',
+      },
+      yAxisID: 'yPrice',
+      order: 1,
+    };
+  } else if (currentChartType === 'bar') {
+    mainDataset = {
+      type: 'ohlc',
+      label: 'السعر',
+      data: ohlcData,
+      color: {
+        up: upColor,
+        down: downColor,
+        unchanged: '#888',
+      },
+      yAxisID: 'yPrice',
+      order: 1,
+    };
+  } else if (currentChartType === 'area') {
+    mainDataset = {
+      type: 'line',
+      label: 'السعر',
+      data,
+      borderColor: lineColor,
+      borderWidth: 2,
+      fill: true,
+      backgroundColor: gradient,
+      tension: 0.3,
+      pointRadius: 0,
+      pointHoverRadius: 6,
+      pointHoverBackgroundColor: lineColor,
+      pointHoverBorderColor: bgColor,
+      pointHoverBorderWidth: 2,
+      yAxisID: 'yPrice',
+      order: 1,
+    };
+  } else {
+    // line (default)
+    mainDataset = {
+      type: 'line',
+      label: 'السعر',
+      data,
+      borderColor: lineColor,
+      borderWidth: 2,
+      fill: false,
+      tension: 0.3,
+      pointRadius: 0,
+      pointHoverRadius: 6,
+      pointHoverBackgroundColor: lineColor,
+      pointHoverBorderColor: bgColor,
+      pointHoverBorderWidth: 2,
+      yAxisID: 'yPrice',
+      order: 1,
+    };
+  }
+
+  const datasets = [mainDataset];
+
+  // المتوسطات المتحركة
   const calcMA = (arr, n) => arr.map((_, i) => {
     if (i < n - 1) return null;
     return arr.slice(i - n + 1, i + 1).reduce((s, v) => s + v, 0) / n;
@@ -558,103 +674,52 @@ function buildChart(period) {
   const ma200 = calcMA(data, Math.min(200, Math.floor(data.length * 0.8)));
   const bb = calcBB(data);
 
-  const datasets = [];
-
-  datasets.push({
-    type: currentChartType === 'bar' ? 'bar' : 'line',
-    label: 'السعر',
-    data,
-    borderColor: lineColor,
-    borderWidth: 2,
-    fill: currentChartType === 'area',
-    backgroundColor: currentChartType === 'area' ? gradient : lineColor,
-    tension: 0.3,
-    pointRadius: 0,
-    pointHoverRadius: 6,
-    pointHoverBackgroundColor: lineColor,
-    pointHoverBorderColor: '#fff',
-    pointHoverBorderWidth: 2,
-    yAxisID: 'yPrice',
-    order: 1,
+  if (activeOverlays.ma20) datasets.push({
+    type: 'line', label: 'MA20', data: ma20,
+    borderColor: 'rgba(15,110,86,0.80)', borderWidth: 1.5,
+    borderDash: [3, 2], fill: false, pointRadius: 0,
+    tension: 0.3, yAxisID: 'yPrice', order: 2,
   });
 
-  if (activeOverlays.ma20) {
-    datasets.push({
-      type: 'line',
-      label: 'MA20',
-      data: ma20,
-      borderColor: 'rgba(15,110,86,0.80)',
-      borderWidth: 1.5,
-      borderDash: [3, 2],
-      fill: false,
-      pointRadius: 0,
-      tension: 0.3,
-      yAxisID: 'yPrice',
-      order: 2,
-    });
-  }
+  if (activeOverlays.ma50) datasets.push({
+    type: 'line', label: 'MA50', data: ma50,
+    borderColor: 'rgba(27,79,114,0.75)', borderWidth: 1.5,
+    borderDash: [4, 2], fill: false, pointRadius: 0,
+    tension: 0.3, yAxisID: 'yPrice', order: 2,
+  });
 
-  if (activeOverlays.ma50) {
-    datasets.push({
-      type: 'line',
-      label: 'MA50',
-      data: ma50,
-      borderColor: 'rgba(27,79,114,0.75)',
-      borderWidth: 1.5,
-      borderDash: [4, 2],
-      fill: false,
-      pointRadius: 0,
-      tension: 0.3,
-      yAxisID: 'yPrice',
-      order: 2,
-    });
-  }
-
-  if (activeOverlays.ma200) {
-    datasets.push({
-      type: 'line',
-      label: 'MA200',
-      data: ma200,
-      borderColor: 'rgba(133,79,11,0.75)',
-      borderWidth: 1.5,
-      borderDash: [6, 3],
-      fill: false,
-      pointRadius: 0,
-      tension: 0.3,
-      yAxisID: 'yPrice',
-      order: 3,
-    });
-  }
+  if (activeOverlays.ma200) datasets.push({
+    type: 'line', label: 'MA200', data: ma200,
+    borderColor: 'rgba(133,79,11,0.75)', borderWidth: 1.5,
+    borderDash: [6, 3], fill: false, pointRadius: 0,
+    tension: 0.3, yAxisID: 'yPrice', order: 3,
+  });
 
   if (activeOverlays.bb) {
     datasets.push({
       type: 'line', label: 'BB Upper',
       data: bb.map(b => b.upper),
-      borderColor: 'rgba(107,63,160,0.5)',
-      borderWidth: 1, borderDash: [3, 3],
-      fill: false, pointRadius: 0, yAxisID: 'yPrice', order: 4,
+      borderColor: 'rgba(107,63,160,0.5)', borderWidth: 1,
+      borderDash: [3, 3], fill: false, pointRadius: 0,
+      yAxisID: 'yPrice', order: 4,
     });
     datasets.push({
       type: 'line', label: 'BB Lower',
       data: bb.map(b => b.lower),
-      borderColor: 'rgba(107,63,160,0.5)',
-      borderWidth: 1, borderDash: [3, 3],
-      fill: false, pointRadius: 0, yAxisID: 'yPrice', order: 4,
+      borderColor: 'rgba(107,63,160,0.5)', borderWidth: 1,
+      borderDash: [3, 3], fill: false, pointRadius: 0,
+      yAxisID: 'yPrice', order: 4,
     });
   }
 
-  if (activeOverlays.vol) {
-    datasets.push({
-      type: 'bar',
-      label: 'الحجم',
-      data: volumeData,
-      backgroundColor: volumeData.map(() => volColor),
-      borderColor: 'transparent',
-      borderRadius: 2,
-      yAxisID: 'yVolume',
-      order: 10,
-    });
-  }
+  if (activeOverlays.vol) datasets.push({
+    type: 'bar', label: 'الحجم',
+    data: volumeData,
+    backgroundColor: volColor,
+    borderColor: 'transparent',
+    borderRadius: 2,
+    yAxisID: 'yVolume', order: 10,
+  });
 
   priceChart = new Chart(context, {
     type: 'bar',
@@ -676,21 +741,24 @@ function buildChart(period) {
           callbacks: {
             title: items => items[0]?.label || '',
             label: item => {
-              if (item.dataset.label === 'السعر') return ' السعر: ' + item.parsed.y.toFixed(2) + ' ر.س';
-              if (item.dataset.label === 'الحجم') return ' الحجم: ' + item.parsed.y + 'M ر.س';
-              if (item.dataset.label === 'MA20') return ' MA20: ' + (item.parsed.y?.toFixed(2) || '-');
-              if (item.dataset.label === 'MA50') return ' MA50: ' + (item.parsed.y?.toFixed(2) || '-');
-              if (item.dataset.label === 'MA200') return ' MA200: ' + (item.parsed.y?.toFixed(2) || '-');
+              const d = item.raw;
+              if (d && typeof d === 'object' && 'o' in d) {
+                return [
+                  ` افتتاح: ${d.o?.toFixed(2)} ر.س`,
+                  ` أعلى: ${d.h?.toFixed(2)} ر.س`,
+                  ` أدنى: ${d.l?.toFixed(2)} ر.س`,
+                  ` إغلاق: ${d.c?.toFixed(2)} ر.س`,
+                ];
+              }
+              if (item.dataset.label === 'السعر' || item.dataset.label === 'هيكن آشي') {
+                return ` السعر: ${item.parsed.y?.toFixed(2)} ر.س`;
+              }
+              if (item.dataset.label === 'الحجم') return ` الحجم: ${item.parsed.y}M`;
+              if (item.dataset.label === 'MA20') return ` MA20: ${item.parsed.y?.toFixed(2)}`;
+              if (item.dataset.label === 'MA50') return ` MA50: ${item.parsed.y?.toFixed(2)}`;
+              if (item.dataset.label === 'MA200') return ` MA200: ${item.parsed.y?.toFixed(2)}`;
               return '';
             },
-            afterBody: items => {
-              const price = items.find(i => i.dataset.label === 'السعر');
-              if (price && data[0]) {
-                const chg = ((price.parsed.y - data[0]) / data[0] * 100).toFixed(2);
-                return [' التغير: ' + (chg >= 0 ? '+' : '') + chg + '%'];
-              }
-              return [];
-            }
           }
         },
       },
@@ -698,19 +766,33 @@ function buildChart(period) {
         x: {
           grid: { display: false },
           border: { display: false },
-          ticks: { font: { size: 11, family: 'inherit' }, maxTicksLimit: 8, color: tickColor, maxRotation: 0 }
+          ticks: {
+            font: { size: 11, family: 'inherit' },
+            maxTicksLimit: 8,
+            color: tickColor,
+            maxRotation: 0,
+          }
         },
         yPrice: {
           position: 'right',
           grid: { color: gridColor, drawBorder: false },
           border: { display: false, dash: [4, 4] },
-          ticks: { font: { size: 11, family: 'inherit' }, callback: v => v.toFixed(1), color: tickColor, maxTicksLimit: 6 }
+          ticks: {
+            font: { size: 11, family: 'inherit' },
+            callback: v => v.toFixed(1),
+            color: tickColor,
+            maxTicksLimit: 6,
+          }
         },
         yVolume: {
           position: 'left',
           grid: { display: false },
           border: { display: false },
-          ticks: { font: { size: 10, family: 'inherit' }, color: tickColor, maxTicksLimit: 3 },
+          ticks: {
+            font: { size: 10, family: 'inherit' },
+            color: tickColor,
+            maxTicksLimit: 3,
+          },
           max: activeOverlays.vol ? Math.max(...volumeData) * 5 : 100,
           display: activeOverlays.vol,
         }
