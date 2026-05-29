@@ -320,6 +320,8 @@
                         class="ti ti-chart-area"></i></button>
                     <button class="chart-type-btn" onclick="setChartType('bar',this)" title="أعمدة"><i
                         class="ti ti-chart-bar"></i></button>
+                    <button class="chart-type-btn" onclick="setChartType('heikinashi',this)"
+                      title="هيكن آشي">HA</button>
                   </div>
                   <button class="consult-btn"
                     onclick="sendQuick('حلل لي ' + selectedStock.name + ' (' + selectedStock.code + ') بسعر ' + selectedStock.price.toFixed(2) + ' ريال')"><i
@@ -394,7 +396,8 @@
                 <div
                   style="font-size:13px;color:var(--text-secondary);background:var(--blue-bg);border-radius:8px;padding:10px 14px;border:0.5px solid rgba(24,95,165,0.2)">
                   <i class="ti ti-info-circle" style="color:var(--blue-text)"></i> التحليل الجوهري يقيّم القيمة الحقيقية
-                  للشركة بناءً على أرباحها وأصولها وديونها وتدفقاتها النقدية.</div>
+                  للشركة بناءً على أرباحها وأصولها وديونها وتدفقاتها النقدية.
+                </div>
               </div>
               <div id="valContent" style="padding:18px"></div>
             </div>
@@ -684,7 +687,8 @@
             </div>
           </div>
           <div class="api-notice"><i class="ti ti-info-circle"></i> لتفعيل مستشار AI، أضف مفتاح Anthropic API في ملف
-            <code>app.js</code> (متغير <code>API_KEY</code>)</div>
+            <code>app.js</code> (متغير <code>API_KEY</code>)
+          </div>
         </div>
 
         <div class="guide-view" id="guideView">
