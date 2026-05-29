@@ -421,52 +421,92 @@ function renderPeers() {
 // ==========================================
 // دالة توليد بيانات الرسم البياني (تم استخلاصها لحل التداخل)
 // ==========================================
+// ==========================================
+// توليد بيانات الرسم البياني من البيانات الحقيقية
+// ==========================================
 function genPriceData(period) {
+  const s = selectedStock;
+  const historical = s.historical || [];
+
+  // تحديد عدد الأيام حسب الفترة
+  const periodDays = {
+    '1W': 7, '1M': 30, '3M': 90,
+    '6M': 180, '1Y': 252, '3Y': 756
+  };
+  const days = periodDays[period] || 7;
+
+  // فلترة البيانات حسب الفترة
+  let filtered = historical.slice(-days);
+
+  // إذا ما في بيانات كافية — نستخدم كل المتاح
+  if (filtered.length === 0) {
+    return genPriceDataFallback(period);
+  }
+
+  const months = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو',
+    'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
+  const weekdays = ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس'];
+
+  const labels = filtered.map((d, i) => {
+    const date = new Date(d.date);
+    const dow = date.getDay();
+
+    if (period === '1W') {
+      return weekdays[dow] || d.date;
+    } else if (days <= 30) {
+      return date.getDate() + ' ' + months[date.getMonth()];
+    } else if (days <= 90) {
+      return i % 7 === 0 ? date.getDate() + ' ' + months[date.getMonth()] : '';
+    } else {
+      return i % 30 === 0 ? months[date.getMonth()] + ' ' + date.getFullYear() : '';
+    }
+  });
+
+  const data = filtered.map(d => d.close);
+  const highs = filtered.map(d => d.high);
+  const lows = filtered.map(d => d.low);
+  const opens = filtered.map(d => d.open);
+  const volume = filtered.map(d => Math.round(d.volume / 1_000_000));
+
+  return { labels, data, highs, lows, opens, volume };
+}
+
+// Fallback للبيانات العشوائية إذا ما في بيانات حقيقية
+function genPriceDataFallback(period) {
   const counts = { '1W': 7, '1M': 30, '3M': 90, '6M': 180, '1Y': 252, '3Y': 756 };
   const n = counts[period] || 7;
   const s = selectedStock;
   const base = parseFloat(s.low52) * 1.05;
   let v = base;
-  const labels = [], data = [];
-
-  // تواريخ حقيقية مبنية على اليوم الحالي
-  const today = new Date(2026, 4, 27); // مايو 2026
-  const msPerDay = 86400000;
+  const labels = [], data = [], volume = [];
+  const today = new Date();
+  const months = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو',
+    'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
   const weekdays = ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس'];
-  const months = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
-
-  // أحداث سوقية محاكاة للواقعية
   const trendBias = s.up ? 0.0015 : -0.0010;
 
   for (let i = 0; i < n; i++) {
     const dayOffset = n - 1 - i;
-    const d = new Date(today.getTime() - dayOffset * msPerDay);
-
-    // تجاوز عطل نهاية الأسبوع
+    const d = new Date(today.getTime() - dayOffset * 86400000);
     const dow = d.getDay();
-    if (dow === 5 || dow === 6) { // جمعة وسبت
+    if (dow === 5 || dow === 6) {
       data.push(data.length > 0 ? data[data.length - 1] : parseFloat(v.toFixed(2)));
       labels.push('');
+      volume.push(0);
       continue;
     }
-
     v += (Math.random() - 0.47 + trendBias) * v * 0.013;
     v = Math.max(v, parseFloat(s.low52) * 0.88);
     v = Math.min(v, parseFloat(s.high52) * 1.05);
     data.push(parseFloat(v.toFixed(2)));
-
-    if (period === '1W') {
-      labels.push(weekdays[dow === 0 ? 4 : dow - 0]);
-    } else if (n <= 30) {
-      labels.push(d.getDate() + ' ' + months[d.getMonth()]);
-    } else if (n <= 90) {
-      labels.push(i % 7 === 0 ? d.getDate() + ' ' + months[d.getMonth()] : '');
-    } else {
-      labels.push(i % 30 === 0 ? months[d.getMonth()] + ' ' + d.getFullYear() : '');
-    }
+    volume.push(Math.round(Math.random() * 80 + 20));
+    if (period === '1W') labels.push(weekdays[dow]);
+    else if (n <= 30) labels.push(d.getDate() + ' ' + months[d.getMonth()]);
+    else if (n <= 90) labels.push(i % 7 === 0 ? d.getDate() + ' ' + months[d.getMonth()] : '');
+    else labels.push(i % 30 === 0 ? months[d.getMonth()] + ' ' + d.getFullYear() : '');
   }
   data[data.length - 1] = s.price;
-  return { labels, data };
+  return { labels, data, highs: data, lows: data, opens: data, volume };
 }
 
 // ==========================================
@@ -482,7 +522,6 @@ function buildChart(period) {
   const context = ctx.getContext('2d');
   if (priceChart) priceChart.destroy();
 
-  const { labels, data } = genPriceData(period);
   const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
   const isUp = data[data.length - 1] >= data[0];
   const lineColor = isUp ? '#0F6E56' : '#993C1D';
@@ -490,12 +529,11 @@ function buildChart(period) {
   const gradEnd = isUp ? 'rgba(15,110,86,0.00)' : 'rgba(153,60,29,0.00)';
   const gridColor = isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.04)';
   const tickColor = isDark ? '#5c5f66' : '#9ca3af';
-
+  const { labels, data, volume: volumeData } = genPriceData(period);
   const gradient = context.createLinearGradient(0, 0, 0, 340);
   gradient.addColorStop(0, gradStart);
   gradient.addColorStop(1, gradEnd);
 
-  const volumeData = data.map(() => Math.round(Math.random() * 80 + 20));
   const volColor = isUp ? 'rgba(15,110,86,0.25)' : 'rgba(153,60,29,0.25)';
 
   const calcMA = (arr, n) => arr.map((_, i) => {
