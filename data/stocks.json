@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-09 17:20:07",
+  "lastUpdated": "2026-06-10 17:54:17",
   "totalStocks": 23,
   "failed": [],
   "stocks": [
@@ -8,24 +8,24 @@
       "name": "أرامكو السعودية",
       "sector": "energy",
       "sector_ar": "الطاقة",
-      "price": 27.16,
-      "change": 0.0,
-      "changeAbs": 0.0,
-      "up": true,
+      "price": 27.06,
+      "change": -0.37,
+      "changeAbs": -0.1,
+      "up": false,
       "prevClose": 27.16,
-      "open": 27.1,
-      "dayHigh": 27.16,
-      "dayLow": 26.92,
+      "open": 27.14,
+      "dayHigh": 27.14,
+      "dayLow": 26.94,
       "high52": 27.96,
       "low52": 23.04,
-      "market": "6.57 تريليون",
-      "pe": "17.64x",
+      "market": "6.55 تريليون",
+      "pe": "17.57x",
       "div": "5.0%",
       "divAmount": 0.34,
       "eps": 1.54,
-      "pbv": "4.26x",
+      "pbv": "4.24x",
       "roe": "21.88%",
-      "vol": "13.52M",
+      "vol": "13.03M",
       "shares": "241.91B",
       "employees": "غير متاح",
       "website": "https://www.aramco.com",
@@ -68,13 +68,13 @@
             "period": "2026",
             "amount": "0.34 ر.س",
             "date": "02 June 2026",
-            "yield": "1.2%"
+            "yield": "1.3%"
           },
           {
             "period": "2026",
             "amount": "0.34 ر.س",
             "date": "24 March 2026",
-            "yield": "1.2%"
+            "yield": "1.3%"
           },
           {
             "period": "2025",
@@ -106,28 +106,28 @@
       "freeCashFlow": 374.08,
       "netIncomeB": 372.5,
       "debtToEquity": 21.59,
-      "evEbitda": 8.01,
+      "evEbitda": 7.98,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -2173,6 +2173,14 @@
           "low": 26.92,
           "close": 27.16,
           "volume": 13520361
+        },
+        {
+          "date": "2026-06-10",
+          "open": 27.14,
+          "high": 27.14,
+          "low": 26.94,
+          "close": 27.06,
+          "volume": 13025272
         }
       ]
     },
@@ -2181,24 +2189,24 @@
       "name": "مصرف الراجحي",
       "sector": "banking",
       "sector_ar": "البنوك",
-      "price": 67.45,
-      "change": 0.9,
-      "changeAbs": 0.6,
-      "up": true,
-      "prevClose": 66.85,
-      "open": 66.85,
-      "dayHigh": 68.0,
-      "dayLow": 66.8,
+      "price": 66.8,
+      "change": -0.96,
+      "changeAbs": -0.65,
+      "up": false,
+      "prevClose": 67.45,
+      "open": 67.45,
+      "dayHigh": 67.45,
+      "dayLow": 66.65,
       "high52": 73.4,
       "low52": 58.73,
-      "market": "404.70B",
-      "pe": "16.78x",
-      "div": "3.49%",
+      "market": "400.80B",
+      "pe": "16.62x",
+      "div": "3.46%",
       "divAmount": 1.17,
       "eps": 4.02,
-      "pbv": "3.35x",
+      "pbv": "3.32x",
       "roe": "17.91%",
-      "vol": "16.30M",
+      "vol": "7.04M",
       "shares": "6.00B",
       "employees": "24712",
       "website": "https://www.alrajhibank.com.sa",
@@ -2253,7 +2261,7 @@
             "period": "2025",
             "amount": "0.97 ر.س",
             "date": "14 April 2025",
-            "yield": "1.4%"
+            "yield": "1.5%"
           },
           {
             "period": "2024",
@@ -2282,13 +2290,13 @@
       "evEbitda": 0.0,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -4334,6 +4342,14 @@
           "low": 66.8,
           "close": 67.45,
           "volume": 16300658
+        },
+        {
+          "date": "2026-06-10",
+          "open": 67.45,
+          "high": 67.45,
+          "low": 66.65,
+          "close": 66.8,
+          "volume": 7038643
         }
       ]
     },
@@ -4342,24 +4358,24 @@
       "name": "البنك الأهلي",
       "sector": "banking",
       "sector_ar": "البنوك",
-      "price": 41.08,
-      "change": 4.21,
-      "changeAbs": 1.66,
-      "up": true,
-      "prevClose": 39.42,
-      "open": 39.8,
-      "dayHigh": 41.3,
-      "dayLow": 39.7,
+      "price": 40.14,
+      "change": -2.29,
+      "changeAbs": -0.94,
+      "up": false,
+      "prevClose": 41.08,
+      "open": 41.2,
+      "dayHigh": 41.2,
+      "dayLow": 40.14,
       "high52": 45.24,
       "low52": 33.3,
-      "market": "243.81B",
-      "pe": "10.0x",
-      "div": "5.83%",
+      "market": "238.23B",
+      "pe": "9.77x",
+      "div": "5.6%",
       "divAmount": 1.15,
       "eps": 4.11,
-      "pbv": "1.28x",
+      "pbv": "1.25x",
       "roe": "12.44%",
-      "vol": "11.56M",
+      "vol": "7.79M",
       "shares": "5.93B",
       "employees": "15338",
       "website": "https://www.alahli.com",
@@ -4402,19 +4418,19 @@
             "period": "2026",
             "amount": "1.15 ر.س",
             "date": "16 April 2026",
-            "yield": "2.8%"
+            "yield": "2.9%"
           },
           {
             "period": "2025",
             "amount": "1.0 ر.س",
             "date": "04 August 2025",
-            "yield": "2.4%"
+            "yield": "2.5%"
           },
           {
             "period": "2025",
             "amount": "1.0 ر.س",
             "date": "10 February 2025",
-            "yield": "2.4%"
+            "yield": "2.5%"
           },
           {
             "period": "2024",
@@ -4443,7 +4459,7 @@
       "evEbitda": 0.0,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -6489,6 +6505,14 @@
           "low": 39.7,
           "close": 41.08,
           "volume": 11564392
+        },
+        {
+          "date": "2026-06-10",
+          "open": 41.2,
+          "high": 41.2,
+          "low": 40.14,
+          "close": 40.14,
+          "volume": 7787925
         }
       ]
     },
@@ -6497,24 +6521,24 @@
       "name": "stc الاتصالات",
       "sector": "telecom",
       "sector_ar": "الاتصالات",
-      "price": 44.16,
-      "change": 0.36,
-      "changeAbs": 0.16,
-      "up": true,
-      "prevClose": 44.0,
-      "open": 44.0,
-      "dayHigh": 44.36,
+      "price": 44.0,
+      "change": -0.36,
+      "changeAbs": -0.16,
+      "up": false,
+      "prevClose": 44.16,
+      "open": 44.1,
+      "dayHigh": 44.18,
       "dayLow": 43.94,
       "high52": 45.38,
       "low52": 40.2,
-      "market": "220.35B",
-      "pe": "14.77x",
-      "div": "5.0%",
+      "market": "219.55B",
+      "pe": "14.72x",
+      "div": "4.98%",
       "divAmount": 0.55,
       "eps": 2.99,
-      "pbv": "2.6x",
+      "pbv": "2.59x",
       "roe": "16.79%",
-      "vol": "2.97M",
+      "vol": "1.59M",
       "shares": "4.99B",
       "employees": "غير متاح",
       "website": "https://www.stc.com.sa",
@@ -6595,28 +6619,28 @@
       "freeCashFlow": 4.13,
       "netIncomeB": 14.93,
       "debtToEquity": 28.29,
-      "evEbitda": 9.99,
+      "evEbitda": 9.95,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -8662,6 +8686,14 @@
           "low": 43.94,
           "close": 44.16,
           "volume": 2972500
+        },
+        {
+          "date": "2026-06-10",
+          "open": 44.1,
+          "high": 44.18,
+          "low": 43.94,
+          "close": 44.0,
+          "volume": 1588313
         }
       ]
     },
@@ -8670,24 +8702,24 @@
       "name": "اتحاد الاتصالات",
       "sector": "telecom",
       "sector_ar": "الاتصالات",
-      "price": 75.1,
-      "change": 1.28,
-      "changeAbs": 0.95,
-      "up": true,
-      "prevClose": 74.15,
-      "open": 74.2,
-      "dayHigh": 75.45,
-      "dayLow": 74.2,
+      "price": 74.8,
+      "change": -0.4,
+      "changeAbs": -0.3,
+      "up": false,
+      "prevClose": 75.1,
+      "open": 75.1,
+      "dayHigh": 75.2,
+      "dayLow": 74.6,
       "high52": 93.5,
       "low52": 74.05,
-      "market": "5.81B",
-      "pe": "11.86x",
-      "div": "6.74%",
+      "market": "5.79B",
+      "pe": "11.82x",
+      "div": "6.66%",
       "divAmount": 3.0,
       "eps": 6.33,
-      "pbv": "3.71x",
+      "pbv": "3.69x",
       "roe": "29.85%",
-      "vol": "255,480",
+      "vol": "111,742",
       "shares": "77.37M",
       "employees": "غير متاح",
       "website": "https://www.extra.com",
@@ -8768,10 +8800,10 @@
       "freeCashFlow": -0.19,
       "netIncomeB": 0.51,
       "debtToEquity": 124.92,
-      "evEbitda": 11.47,
+      "evEbitda": 11.44,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -10817,6 +10849,14 @@
           "low": 74.2,
           "close": 75.1,
           "volume": 255480
+        },
+        {
+          "date": "2026-06-10",
+          "open": 75.1,
+          "high": 75.2,
+          "low": 74.6,
+          "close": 74.8,
+          "volume": 111742
         }
       ]
     },
@@ -10825,24 +10865,24 @@
       "name": "سابك",
       "sector": "energy",
       "sector_ar": "الطاقة",
-      "price": 56.3,
-      "change": 0.72,
-      "changeAbs": 0.4,
-      "up": true,
-      "prevClose": 55.9,
-      "open": 56.05,
-      "dayHigh": 57.7,
-      "dayLow": 55.95,
+      "price": 55.2,
+      "change": -1.95,
+      "changeAbs": -1.1,
+      "up": false,
+      "prevClose": 56.3,
+      "open": 56.35,
+      "dayHigh": 56.35,
+      "dayLow": 54.9,
       "high52": 64.0,
       "low52": 48.2,
-      "market": "168.90B",
-      "pe": "15.26x",
-      "div": "5.37%",
+      "market": "165.60B",
+      "pe": "14.96x",
+      "div": "5.33%",
       "divAmount": 1.5,
       "eps": -0.19,
-      "pbv": "1.36x",
+      "pbv": "1.34x",
       "roe": "0.5%",
-      "vol": "3.71M",
+      "vol": "2.76M",
       "shares": "3.00B",
       "employees": "غير متاح",
       "website": "https://www.sabic.com",
@@ -10897,25 +10937,25 @@
             "period": "2025",
             "amount": "1.7 ر.س",
             "date": "12 February 2025",
-            "yield": "3.0%"
+            "yield": "3.1%"
           },
           {
             "period": "2024",
             "amount": "1.7 ر.س",
             "date": "04 September 2024",
-            "yield": "3.0%"
+            "yield": "3.1%"
           },
           {
             "period": "2024",
             "amount": "1.6 ر.س",
             "date": "13 February 2024",
-            "yield": "2.8%"
+            "yield": "2.9%"
           },
           {
             "period": "2023",
             "amount": "1.8 ر.س",
             "date": "13 September 2023",
-            "yield": "3.2%"
+            "yield": "3.3%"
           }
         ]
       },
@@ -10926,25 +10966,25 @@
       "evEbitda": 12.16,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -12990,6 +13030,14 @@
           "low": 55.95,
           "close": 56.3,
           "volume": 3712829
+        },
+        {
+          "date": "2026-06-10",
+          "open": 56.35,
+          "high": 56.35,
+          "low": 54.9,
+          "close": 55.2,
+          "volume": 2757613
         }
       ]
     },
@@ -12998,24 +13046,24 @@
       "name": "العثيم",
       "sector": "retail",
       "sector_ar": "التجزئة",
-      "price": 10.83,
-      "change": 0.28,
-      "changeAbs": 0.03,
-      "up": true,
-      "prevClose": 10.8,
-      "open": 10.85,
-      "dayHigh": 11.03,
-      "dayLow": 10.82,
+      "price": 10.74,
+      "change": -0.83,
+      "changeAbs": -0.09,
+      "up": false,
+      "prevClose": 10.83,
+      "open": 10.86,
+      "dayHigh": 10.97,
+      "dayLow": 10.74,
       "high52": 17.52,
       "low52": 9.31,
-      "market": "341.14M",
+      "market": "338.31M",
       "pe": "غير متاح",
       "div": "غير متاح",
       "divAmount": 0.0,
       "eps": -0.49,
-      "pbv": "1.39x",
+      "pbv": "1.38x",
       "roe": "-6.65%",
-      "vol": "204,973",
+      "vol": "313,682",
       "shares": "31.50M",
       "employees": "غير متاح",
       "website": "https://anaamgroup.com",
@@ -13059,10 +13107,10 @@
       "freeCashFlow": -0.0,
       "netIncomeB": -0.02,
       "debtToEquity": 59.69,
-      "evEbitda": 3620.7,
+      "evEbitda": 3599.66,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -15108,6 +15156,14 @@
           "low": 10.82,
           "close": 10.83,
           "volume": 204973
+        },
+        {
+          "date": "2026-06-10",
+          "open": 10.86,
+          "high": 10.97,
+          "low": 10.74,
+          "close": 10.74,
+          "volume": 313682
         }
       ]
     },
@@ -15116,24 +15172,24 @@
       "name": "دله البركة",
       "sector": "health",
       "sector_ar": "الصحة",
-      "price": 14.8,
-      "change": 1.72,
-      "changeAbs": 0.25,
-      "up": true,
-      "prevClose": 14.55,
-      "open": 14.7,
-      "dayHigh": 15.32,
-      "dayLow": 14.7,
+      "price": 14.56,
+      "change": -1.62,
+      "changeAbs": -0.24,
+      "up": false,
+      "prevClose": 14.8,
+      "open": 14.98,
+      "dayHigh": 15.17,
+      "dayLow": 14.54,
       "high52": 35.38,
       "low52": 12.24,
-      "market": "1.70B",
-      "pe": "-13.83x",
+      "market": "1.67B",
+      "pe": "-13.61x",
       "div": "غير متاح",
       "divAmount": 1.83,
       "eps": -4.53,
-      "pbv": "-1.11x",
+      "pbv": "-1.1x",
       "roe": "غير متاح",
-      "vol": "2.06M",
+      "vol": "1.04M",
       "shares": "114.77M",
       "employees": "4107",
       "website": "https://www.cenomiretail.com",
@@ -15176,37 +15232,37 @@
             "period": "2015",
             "amount": "1.83 ر.س",
             "date": "01 July 2015",
-            "yield": "12.4%"
+            "yield": "12.6%"
           },
           {
             "period": "2014",
             "amount": "2.29 ر.س",
             "date": "26 October 2014",
-            "yield": "15.5%"
+            "yield": "15.7%"
           },
           {
             "period": "2014",
             "amount": "2.74 ر.س",
             "date": "27 April 2014",
-            "yield": "18.5%"
+            "yield": "18.9%"
           },
           {
             "period": "2013",
             "amount": "1.37 ر.س",
             "date": "07 November 2013",
-            "yield": "9.3%"
+            "yield": "9.4%"
           },
           {
             "period": "2013",
             "amount": "1.83 ر.س",
             "date": "27 April 2013",
-            "yield": "12.4%"
+            "yield": "12.6%"
           },
           {
             "period": "2012",
             "amount": "1.22 ر.س",
             "date": "18 January 2012",
-            "yield": "8.2%"
+            "yield": "8.4%"
           }
         ]
       },
@@ -15214,10 +15270,10 @@
       "freeCashFlow": -0.79,
       "netIncomeB": -0.52,
       "debtToEquity": 0.0,
-      "evEbitda": 26.61,
+      "evEbitda": 26.48,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -17263,6 +17319,14 @@
           "low": 14.7,
           "close": 14.8,
           "volume": 2063397
+        },
+        {
+          "date": "2026-06-10",
+          "open": 14.98,
+          "high": 15.17,
+          "low": 14.54,
+          "close": 14.56,
+          "volume": 1041586
         }
       ]
     },
@@ -17271,24 +17335,24 @@
       "name": "بنك الرياض",
       "sector": "banking",
       "sector_ar": "البنوك",
-      "price": 20.76,
-      "change": 2.82,
-      "changeAbs": 0.57,
-      "up": true,
-      "prevClose": 20.19,
-      "open": 20.19,
-      "dayHigh": 20.76,
-      "dayLow": 20.15,
+      "price": 20.21,
+      "change": -2.65,
+      "changeAbs": -0.55,
+      "up": false,
+      "prevClose": 20.76,
+      "open": 20.78,
+      "dayHigh": 20.78,
+      "dayLow": 20.18,
       "high52": 22.41,
       "low52": 18.98,
-      "market": "82.69B",
-      "pe": "8.3x",
-      "div": "4.09%",
+      "market": "80.50B",
+      "pe": "8.08x",
+      "div": "3.97%",
       "divAmount": 0.41,
       "eps": 2.5,
-      "pbv": "1.25x",
+      "pbv": "1.21x",
       "roe": "13.9%",
-      "vol": "4.23M",
+      "vol": "2.75M",
       "shares": "3.98B",
       "employees": "5583",
       "website": "https://www.riyadbank.com",
@@ -17337,7 +17401,7 @@
             "period": "2025",
             "amount": "0.64 ر.س",
             "date": "05 August 2025",
-            "yield": "3.1%"
+            "yield": "3.2%"
           },
           {
             "period": "2025",
@@ -17349,19 +17413,19 @@
             "period": "2024",
             "amount": "0.6 ر.س",
             "date": "12 August 2024",
-            "yield": "2.9%"
+            "yield": "3.0%"
           },
           {
             "period": "2024",
             "amount": "0.56 ر.س",
             "date": "25 March 2024",
-            "yield": "2.7%"
+            "yield": "2.8%"
           },
           {
             "period": "2023",
             "amount": "0.49 ر.س",
             "date": "30 July 2023",
-            "yield": "2.3%"
+            "yield": "2.4%"
           }
         ]
       },
@@ -17372,25 +17436,25 @@
       "evEbitda": 0.0,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -19436,6 +19500,14 @@
           "low": 20.15,
           "close": 20.76,
           "volume": 4229408
+        },
+        {
+          "date": "2026-06-10",
+          "open": 20.78,
+          "high": 20.78,
+          "low": 20.18,
+          "close": 20.21,
+          "volume": 2746564
         }
       ]
     },
@@ -19444,24 +19516,24 @@
       "name": "نادك",
       "sector": "telecom",
       "sector_ar": "الاتصالات",
-      "price": 28.52,
-      "change": 1.13,
-      "changeAbs": 0.32,
-      "up": true,
-      "prevClose": 28.2,
-      "open": 28.1,
-      "dayHigh": 28.74,
+      "price": 28.2,
+      "change": -1.12,
+      "changeAbs": -0.32,
+      "up": false,
+      "prevClose": 28.52,
+      "open": 28.8,
+      "dayHigh": 28.8,
       "dayLow": 28.1,
       "high52": 38.8,
       "low52": 23.42,
-      "market": "4.56B",
-      "pe": "20.37x",
-      "div": "2.84%",
+      "market": "4.51B",
+      "pe": "20.14x",
+      "div": "2.81%",
       "divAmount": 0.2,
       "eps": 1.4,
-      "pbv": "2.28x",
+      "pbv": "2.25x",
       "roe": "غير متاح",
-      "vol": "294,432",
+      "vol": "107,777",
       "shares": "160.00M",
       "employees": "غير متاح",
       "website": "https://alhammadi.com",
@@ -19542,10 +19614,10 @@
       "freeCashFlow": 0.0,
       "netIncomeB": 0.22,
       "debtToEquity": 14.28,
-      "evEbitda": 15.05,
+      "evEbitda": 14.89,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -21591,6 +21663,14 @@
           "low": 28.1,
           "close": 28.52,
           "volume": 294432
+        },
+        {
+          "date": "2026-06-10",
+          "open": 28.8,
+          "high": 28.8,
+          "low": 28.1,
+          "close": 28.2,
+          "volume": 107777
         }
       ]
     },
@@ -21599,24 +21679,24 @@
       "name": "ساب",
       "sector": "banking",
       "sector_ar": "البنوك",
-      "price": 33.94,
-      "change": 1.01,
-      "changeAbs": 0.34,
-      "up": true,
-      "prevClose": 33.6,
-      "open": 33.8,
-      "dayHigh": 34.12,
-      "dayLow": 33.54,
+      "price": 33.4,
+      "change": -1.59,
+      "changeAbs": -0.54,
+      "up": false,
+      "prevClose": 33.94,
+      "open": 33.92,
+      "dayHigh": 34.04,
+      "dayLow": 33.14,
       "high52": 37.92,
       "low52": 29.9,
-      "market": "69.74B",
-      "pe": "8.91x",
-      "div": "5.95%",
+      "market": "68.63B",
+      "pe": "8.77x",
+      "div": "5.89%",
       "divAmount": 1.0,
       "eps": 3.81,
-      "pbv": "1.02x",
+      "pbv": "1.0x",
       "roe": "11.0%",
-      "vol": "1.59M",
+      "vol": "1.55M",
       "shares": "2.05B",
       "employees": "4473",
       "website": "https://www.sab.com",
@@ -21659,25 +21739,25 @@
             "period": "2026",
             "amount": "1.0 ر.س",
             "date": "22 April 2026",
-            "yield": "2.9%"
+            "yield": "3.0%"
           },
           {
             "period": "2025",
             "amount": "1.0 ر.س",
             "date": "21 August 2025",
-            "yield": "2.9%"
+            "yield": "3.0%"
           },
           {
             "period": "2025",
             "amount": "1.0 ر.س",
             "date": "01 May 2025",
-            "yield": "2.9%"
+            "yield": "3.0%"
           },
           {
             "period": "2024",
             "amount": "1.0 ر.س",
             "date": "18 August 2024",
-            "yield": "2.9%"
+            "yield": "3.0%"
           },
           {
             "period": "2024",
@@ -21700,25 +21780,25 @@
       "evEbitda": 0.0,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -23764,6 +23844,14 @@
           "low": 33.54,
           "close": 33.94,
           "volume": 1589799
+        },
+        {
+          "date": "2026-06-10",
+          "open": 33.92,
+          "high": 34.04,
+          "low": 33.14,
+          "close": 33.4,
+          "volume": 1551872
         }
       ]
     },
@@ -23772,24 +23860,24 @@
       "name": "بنك البلاد",
       "sector": "banking",
       "sector_ar": "البنوك",
-      "price": 25.12,
-      "change": 1.7,
-      "changeAbs": 0.42,
-      "up": true,
-      "prevClose": 24.7,
-      "open": 24.7,
-      "dayHigh": 25.3,
-      "dayLow": 24.67,
+      "price": 24.75,
+      "change": -1.47,
+      "changeAbs": -0.37,
+      "up": false,
+      "prevClose": 25.12,
+      "open": 25.12,
+      "dayHigh": 25.38,
+      "dayLow": 24.66,
       "high52": 30.16,
       "low52": 23.38,
-      "market": "37.68B",
-      "pe": "12.5x",
-      "div": "4.05%",
+      "market": "37.13B",
+      "pe": "12.31x",
+      "div": "3.98%",
       "divAmount": 0.55,
       "eps": 2.01,
-      "pbv": "1.58x",
+      "pbv": "1.56x",
       "roe": "14.96%",
-      "vol": "2.09M",
+      "vol": "1.89M",
       "shares": "1.50B",
       "employees": "3665",
       "website": "https://www.bankalbilad.com.sa",
@@ -23873,7 +23961,7 @@
       "evEbitda": 0.0,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -25919,6 +26007,14 @@
           "low": 24.67,
           "close": 25.12,
           "volume": 2093065
+        },
+        {
+          "date": "2026-06-10",
+          "open": 25.12,
+          "high": 25.38,
+          "low": 24.66,
+          "close": 24.75,
+          "volume": 1891375
         }
       ]
     },
@@ -25927,24 +26023,24 @@
       "name": "بنك الجزيرة",
       "sector": "banking",
       "sector_ar": "البنوك",
-      "price": 11.74,
-      "change": 2.0,
-      "changeAbs": 0.23,
-      "up": true,
-      "prevClose": 11.51,
-      "open": 11.51,
+      "price": 11.61,
+      "change": -1.11,
+      "changeAbs": -0.13,
+      "up": false,
+      "prevClose": 11.74,
+      "open": 11.77,
       "dayHigh": 11.77,
-      "dayLow": 11.51,
+      "dayLow": 11.61,
       "high52": 13.31,
       "low52": 10.81,
-      "market": "14.98B",
-      "pe": "12.23x",
-      "div": "8.69%",
+      "market": "14.81B",
+      "pe": "12.09x",
+      "div": "8.52%",
       "divAmount": 0.5,
       "eps": 0.96,
-      "pbv": "1.01x",
+      "pbv": "1.0x",
       "roe": "7.4%",
-      "vol": "3.29M",
+      "vol": "2.03M",
       "shares": "1.28B",
       "employees": "2770",
       "website": "https://www.bankaljazira.com",
@@ -26011,13 +26107,13 @@
             "period": "2020",
             "amount": "0.19 ر.س",
             "date": "16 April 2020",
-            "yield": "1.6%"
+            "yield": "1.7%"
           },
           {
             "period": "2019",
             "amount": "0.19 ر.س",
             "date": "05 August 2019",
-            "yield": "1.6%"
+            "yield": "1.7%"
           }
         ]
       },
@@ -26028,19 +26124,19 @@
       "evEbitda": 0.0,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -28086,6 +28182,14 @@
           "low": 11.51,
           "close": 11.74,
           "volume": 3287109
+        },
+        {
+          "date": "2026-06-10",
+          "open": 11.77,
+          "high": 11.77,
+          "low": 11.61,
+          "close": 11.61,
+          "volume": 2030344
         }
       ]
     },
@@ -28094,24 +28198,24 @@
       "name": "بنك الإنماء",
       "sector": "banking",
       "sector_ar": "البنوك",
-      "price": 24.83,
-      "change": 1.6,
-      "changeAbs": 0.39,
-      "up": true,
-      "prevClose": 24.44,
-      "open": 24.5,
-      "dayHigh": 24.9,
-      "dayLow": 24.5,
+      "price": 24.63,
+      "change": -0.81,
+      "changeAbs": -0.2,
+      "up": false,
+      "prevClose": 24.83,
+      "open": 24.82,
+      "dayHigh": 24.88,
+      "dayLow": 24.63,
       "high52": 25.53,
       "low52": 19.95,
-      "market": "74.49B",
-      "pe": "12.41x",
-      "div": "4.09%",
+      "market": "73.89B",
+      "pe": "12.31x",
+      "div": "4.03%",
       "divAmount": 0.25,
       "eps": 2.0,
-      "pbv": "2.0x",
+      "pbv": "1.98x",
       "roe": "14.19%",
-      "vol": "9.25M",
+      "vol": "6.74M",
       "shares": "3.00B",
       "employees": "4216",
       "website": "https://www.alinma.com",
@@ -28195,7 +28299,7 @@
       "evEbitda": 0.0,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -30241,6 +30345,14 @@
           "low": 24.5,
           "close": 24.83,
           "volume": 9246510
+        },
+        {
+          "date": "2026-06-10",
+          "open": 24.82,
+          "high": 24.88,
+          "low": 24.63,
+          "close": 24.63,
+          "volume": 6738970
         }
       ]
     },
@@ -30249,24 +30361,24 @@
       "name": "جرير للتسويق",
       "sector": "retail",
       "sector_ar": "التجزئة",
-      "price": 16.14,
-      "change": 1.77,
-      "changeAbs": 0.28,
+      "price": 16.16,
+      "change": 0.12,
+      "changeAbs": 0.02,
       "up": true,
-      "prevClose": 15.86,
-      "open": 15.91,
-      "dayHigh": 16.14,
-      "dayLow": 15.88,
-      "high52": 16.18,
+      "prevClose": 16.14,
+      "open": 16.1,
+      "dayHigh": 16.3,
+      "dayLow": 16.08,
+      "high52": 16.3,
       "low52": 12.0,
-      "market": "19.37B",
-      "pe": "17.93x",
-      "div": "5.3%",
+      "market": "19.39B",
+      "pe": "17.96x",
+      "div": "5.2%",
       "divAmount": 0.21,
       "eps": 0.9,
-      "pbv": "11.39x",
+      "pbv": "11.4x",
       "roe": "64.1%",
-      "vol": "3.54M",
+      "vol": "3.91M",
       "shares": "1.20B",
       "employees": "غير متاح",
       "website": "https://www.jarir.com",
@@ -30347,10 +30459,10 @@
       "freeCashFlow": 1.22,
       "netIncomeB": 1.09,
       "debtToEquity": 44.48,
-      "evEbitda": 16.01,
+      "evEbitda": 16.02,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -32396,6 +32508,14 @@
           "low": 15.88,
           "close": 16.14,
           "volume": 3536929
+        },
+        {
+          "date": "2026-06-10",
+          "open": 16.1,
+          "high": 16.3,
+          "low": 16.08,
+          "close": 16.16,
+          "volume": 3914184
         }
       ]
     },
@@ -32404,24 +32524,24 @@
       "name": "بن داود التجارية",
       "sector": "retail",
       "sector_ar": "التجزئة",
-      "price": 4.87,
-      "change": 0.62,
-      "changeAbs": 0.03,
-      "up": true,
-      "prevClose": 4.84,
-      "open": 4.84,
-      "dayHigh": 4.91,
-      "dayLow": 4.82,
+      "price": 4.85,
+      "change": -0.41,
+      "changeAbs": -0.02,
+      "up": false,
+      "prevClose": 4.87,
+      "open": 4.87,
+      "dayHigh": 4.87,
+      "dayLow": 4.81,
       "high52": 6.69,
       "low52": 4.1,
-      "market": "5.57B",
-      "pe": "20.29x",
-      "div": "1.65%",
+      "market": "5.54B",
+      "pe": "20.21x",
+      "div": "1.64%",
       "divAmount": 0.04,
       "eps": 0.24,
-      "pbv": "3.48x",
+      "pbv": "3.47x",
       "roe": "17.43%",
-      "vol": "443,622",
+      "vol": "342,154",
       "shares": "1.14B",
       "employees": "غير متاح",
       "website": "https://www.bindawoodholding.com",
@@ -32502,10 +32622,10 @@
       "freeCashFlow": 0.26,
       "netIncomeB": 0.27,
       "debtToEquity": 178.99,
-      "evEbitda": 14.21,
+      "evEbitda": 14.17,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -34551,6 +34671,14 @@
           "low": 4.82,
           "close": 4.87,
           "volume": 443622
+        },
+        {
+          "date": "2026-06-10",
+          "open": 4.87,
+          "high": 4.87,
+          "low": 4.81,
+          "close": 4.85,
+          "volume": 342154
         }
       ]
     },
@@ -34559,24 +34687,24 @@
       "name": "التعاونية للتأمين",
       "sector": "insurance",
       "sector_ar": "التأمين",
-      "price": 157.9,
-      "change": 2.87,
-      "changeAbs": 4.4,
-      "up": true,
-      "prevClose": 153.5,
-      "open": 153.5,
-      "dayHigh": 158.9,
-      "dayLow": 153.3,
+      "price": 157.5,
+      "change": -0.25,
+      "changeAbs": -0.4,
+      "up": false,
+      "prevClose": 157.9,
+      "open": 158.0,
+      "dayHigh": 160.4,
+      "dayLow": 156.5,
       "high52": 161.0,
       "low52": 111.8,
-      "market": "23.65B",
-      "pe": "20.94x",
-      "div": "1.3%",
+      "market": "23.59B",
+      "pe": "20.92x",
+      "div": "1.27%",
       "divAmount": 2.0,
-      "eps": 7.54,
-      "pbv": "4.18x",
+      "eps": 7.53,
+      "pbv": "4.17x",
       "roe": "21.75%",
-      "vol": "591,838",
+      "vol": "602,963",
       "shares": "149.80M",
       "employees": "غير متاح",
       "website": "https://www.tawuniya.com",
@@ -34619,7 +34747,7 @@
             "period": "2025",
             "amount": "1.5 ر.س",
             "date": "28 May 2025",
-            "yield": "0.9%"
+            "yield": "1.0%"
           },
           {
             "period": "2024",
@@ -34657,10 +34785,10 @@
       "freeCashFlow": -4.33,
       "netIncomeB": 1.13,
       "debtToEquity": 10.01,
-      "evEbitda": 12.87,
+      "evEbitda": 12.82,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -36706,6 +36834,14 @@
           "low": 153.3,
           "close": 157.9,
           "volume": 591838
+        },
+        {
+          "date": "2026-06-10",
+          "open": 158.0,
+          "high": 160.4,
+          "low": 156.5,
+          "close": 157.5,
+          "volume": 602963
         }
       ]
     },
@@ -36714,24 +36850,24 @@
       "name": "بوبا العربية للتأمين",
       "sector": "insurance",
       "sector_ar": "التأمين",
-      "price": 6.29,
-      "change": 4.14,
-      "changeAbs": 0.25,
-      "up": true,
-      "prevClose": 6.04,
-      "open": 6.01,
-      "dayHigh": 6.5,
-      "dayLow": 6.01,
+      "price": 6.23,
+      "change": -0.95,
+      "changeAbs": -0.06,
+      "up": false,
+      "prevClose": 6.29,
+      "open": 6.1,
+      "dayHigh": 6.44,
+      "dayLow": 6.1,
       "high52": 12.98,
       "low52": 5.65,
-      "market": "183.04M",
+      "market": "181.29M",
       "pe": "غير متاح",
       "div": "غير متاح",
       "divAmount": 0.0,
       "eps": -2.51,
       "pbv": "0.82x",
       "roe": "غير متاح",
-      "vol": "918,061",
+      "vol": "245,105",
       "shares": "29.10M",
       "employees": "غير متاح",
       "website": "https://www.acig.com.sa",
@@ -36775,10 +36911,10 @@
       "freeCashFlow": 0.0,
       "netIncomeB": -0.07,
       "debtToEquity": 1.55,
-      "evEbitda": 8.48,
+      "evEbitda": 8.51,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -38824,6 +38960,14 @@
           "low": 6.01,
           "close": 6.29,
           "volume": 918061
+        },
+        {
+          "date": "2026-06-10",
+          "open": 6.1,
+          "high": 6.44,
+          "low": 6.1,
+          "close": 6.23,
+          "volume": 245105
         }
       ]
     },
@@ -38832,24 +38976,24 @@
       "name": "ميلاء للتأمين",
       "sector": "insurance",
       "sector_ar": "التأمين",
-      "price": 15.7,
-      "change": 4.11,
-      "changeAbs": 0.62,
+      "price": 16.0,
+      "change": 1.91,
+      "changeAbs": 0.3,
       "up": true,
-      "prevClose": 15.08,
-      "open": 15.12,
-      "dayHigh": 15.71,
-      "dayLow": 15.12,
+      "prevClose": 15.7,
+      "open": 15.7,
+      "dayHigh": 16.27,
+      "dayLow": 15.5,
       "high52": 20.75,
       "low52": 11.04,
-      "market": "2.17B",
-      "pe": "42.43x",
+      "market": "2.21B",
+      "pe": "43.24x",
       "div": "غير متاح",
       "divAmount": 3.0,
       "eps": 0.37,
-      "pbv": "1.35x",
+      "pbv": "1.37x",
       "roe": "4.33%",
-      "vol": "2.16M",
+      "vol": "3.08M",
       "shares": "138.16M",
       "employees": "غير متاح",
       "website": "https://www.medgulf.com.sa",
@@ -38892,19 +39036,19 @@
             "period": "2012",
             "amount": "3.0 ر.س",
             "date": "01 April 2012",
-            "yield": "19.1%"
+            "yield": "18.8%"
           },
           {
             "period": "2011",
             "amount": "1.88 ر.س",
             "date": "09 May 2011",
-            "yield": "12.0%"
+            "yield": "11.7%"
           },
           {
             "period": "2010",
             "amount": "1.13 ر.س",
             "date": "06 April 2010",
-            "yield": "7.2%"
+            "yield": "7.0%"
           }
         ]
       },
@@ -38912,10 +39056,10 @@
       "freeCashFlow": 0.12,
       "netIncomeB": 0.06,
       "debtToEquity": 0.94,
-      "evEbitda": 5.25,
+      "evEbitda": 5.85,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -40961,6 +41105,14 @@
           "low": 15.12,
           "close": 15.7,
           "volume": 2157035
+        },
+        {
+          "date": "2026-06-10",
+          "open": 15.7,
+          "high": 16.27,
+          "low": 15.5,
+          "close": 16.0,
+          "volume": 3084150
         }
       ]
     },
@@ -40969,24 +41121,24 @@
       "name": "دار الأركان",
       "sector": "realestate",
       "sector_ar": "العقارات",
-      "price": 17.75,
-      "change": 2.01,
-      "changeAbs": 0.35,
-      "up": true,
-      "prevClose": 17.4,
-      "open": 17.38,
-      "dayHigh": 17.88,
-      "dayLow": 17.38,
+      "price": 17.6,
+      "change": -0.85,
+      "changeAbs": -0.15,
+      "up": false,
+      "prevClose": 17.75,
+      "open": 17.8,
+      "dayHigh": 17.9,
+      "dayLow": 17.59,
       "high52": 20.97,
       "low52": 14.58,
-      "market": "19.17B",
-      "pe": "16.14x",
+      "market": "19.01B",
+      "pe": "16.0x",
       "div": "غير متاح",
       "divAmount": 0.5,
       "eps": 1.1,
       "pbv": "0.85x",
       "roe": "5.41%",
-      "vol": "1.17M",
+      "vol": "335,999",
       "shares": "1.08B",
       "employees": "غير متاح",
       "website": "https://www.daralarkan.com",
@@ -41037,10 +41189,10 @@
       "freeCashFlow": 0.77,
       "netIncomeB": 1.18,
       "debtToEquity": 64.81,
-      "evEbitda": 15.3,
+      "evEbitda": 15.42,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -43086,6 +43238,14 @@
           "low": 17.38,
           "close": 17.75,
           "volume": 1166177
+        },
+        {
+          "date": "2026-06-10",
+          "open": 17.8,
+          "high": 17.9,
+          "low": 17.59,
+          "close": 17.6,
+          "volume": 335999
         }
       ]
     },
@@ -43094,24 +43254,24 @@
       "name": "المملكة القابضة",
       "sector": "realestate",
       "sector_ar": "العقارات",
-      "price": 13.3,
-      "change": -1.85,
-      "changeAbs": -0.25,
-      "up": false,
-      "prevClose": 13.55,
-      "open": 13.4,
-      "dayHigh": 13.77,
-      "dayLow": 13.22,
+      "price": 13.6,
+      "change": 2.26,
+      "changeAbs": 0.3,
+      "up": true,
+      "prevClose": 13.3,
+      "open": 13.36,
+      "dayHigh": 13.94,
+      "dayLow": 13.21,
       "high52": 15.94,
       "low52": 7.03,
-      "market": "49.29B",
-      "pe": "25.09x",
-      "div": "2.07%",
+      "market": "50.40B",
+      "pe": "25.66x",
+      "div": "2.11%",
       "divAmount": 0.07,
       "eps": 0.53,
-      "pbv": "0.87x",
+      "pbv": "0.89x",
       "roe": "3.92%",
-      "vol": "2.24M",
+      "vol": "3.60M",
       "shares": "3.71B",
       "employees": "غير متاح",
       "website": "https://www.kingdom.com.sa/homepage",
@@ -43195,7 +43355,7 @@
       "evEbitda": 54.7,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -45241,6 +45401,14 @@
           "low": 13.22,
           "close": 13.3,
           "volume": 2244242
+        },
+        {
+          "date": "2026-06-10",
+          "open": 13.36,
+          "high": 13.95,
+          "low": 13.21,
+          "close": 13.6,
+          "volume": 3595283
         }
       ]
     },
@@ -45249,24 +45417,24 @@
       "name": "المراعي",
       "sector": "industrial",
       "sector_ar": "الصناعة",
-      "price": 222.9,
-      "change": 0.95,
-      "changeAbs": 2.1,
+      "price": 223.5,
+      "change": 0.27,
+      "changeAbs": 0.6,
       "up": true,
-      "prevClose": 220.8,
-      "open": 220.8,
+      "prevClose": 222.9,
+      "open": 222.9,
       "dayHigh": 224.2,
-      "dayLow": 220.5,
+      "dayLow": 222.0,
       "high52": 297.2,
       "low52": 187.0,
-      "market": "7.12B",
-      "pe": "16.02x",
-      "div": "7.25%",
+      "market": "7.14B",
+      "pe": "16.07x",
+      "div": "7.18%",
       "divAmount": 8.0,
       "eps": 13.91,
-      "pbv": "4.55x",
+      "pbv": "4.56x",
       "roe": "27.65%",
-      "vol": "39,510",
+      "vol": "20,956",
       "shares": "31.96M",
       "employees": "غير متاح",
       "website": "https://www.sadafco.com",
@@ -45347,16 +45515,16 @@
       "freeCashFlow": -0.12,
       "netIncomeB": 0.44,
       "debtToEquity": 4.44,
-      "evEbitda": 14.94,
+      "evEbitda": 14.98,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -47402,6 +47570,14 @@
           "low": 220.5,
           "close": 222.9,
           "volume": 39510
+        },
+        {
+          "date": "2026-06-10",
+          "open": 222.9,
+          "high": 224.2,
+          "low": 222.0,
+          "close": 223.5,
+          "volume": 20956
         }
       ]
     },
@@ -47410,24 +47586,24 @@
       "name": "يانساب",
       "sector": "energy",
       "sector_ar": "الطاقة",
-      "price": 31.68,
-      "change": -0.88,
-      "changeAbs": -0.28,
+      "price": 30.54,
+      "change": -3.6,
+      "changeAbs": -1.14,
       "up": false,
-      "prevClose": 31.96,
-      "open": 31.94,
-      "dayHigh": 32.12,
-      "dayLow": 31.6,
+      "prevClose": 31.68,
+      "open": 31.54,
+      "dayHigh": 31.54,
+      "dayLow": 30.42,
       "high52": 38.44,
       "low52": 24.0,
-      "market": "17.82B",
-      "pe": "226.29x",
-      "div": "6.26%",
+      "market": "17.18B",
+      "pe": "218.14x",
+      "div": "6.31%",
       "divAmount": 1.0,
       "eps": 0.14,
-      "pbv": "1.75x",
+      "pbv": "1.69x",
       "roe": "0.72%",
-      "vol": "822,512",
+      "vol": "1.55M",
       "shares": "562.50M",
       "employees": "غير متاح",
       "website": "https://www.yansab.com.sa",
@@ -47470,37 +47646,37 @@
             "period": "2026",
             "amount": "1.0 ر.س",
             "date": "18 February 2026",
-            "yield": "3.2%"
+            "yield": "3.3%"
           },
           {
             "period": "2025",
             "amount": "1.0 ر.س",
             "date": "25 August 2025",
-            "yield": "3.2%"
+            "yield": "3.3%"
           },
           {
             "period": "2025",
             "amount": "1.0 ر.س",
             "date": "26 February 2025",
-            "yield": "3.2%"
+            "yield": "3.3%"
           },
           {
             "period": "2024",
             "amount": "1.0 ر.س",
             "date": "01 August 2024",
-            "yield": "3.2%"
+            "yield": "3.3%"
           },
           {
             "period": "2024",
             "amount": "0.75 ر.س",
             "date": "26 February 2024",
-            "yield": "2.4%"
+            "yield": "2.5%"
           },
           {
             "period": "2023",
             "amount": "1.0 ر.س",
             "date": "19 July 2023",
-            "yield": "3.2%"
+            "yield": "3.3%"
           }
         ]
       },
@@ -47508,10 +47684,10 @@
       "freeCashFlow": 0.73,
       "netIncomeB": 0.08,
       "debtToEquity": 1.02,
-      "evEbitda": 16.22,
+      "evEbitda": 15.39,
       "announcements": [
         {
-          "date": "09 June 2026",
+          "date": "10 June 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -49557,6 +49733,14 @@
           "low": 31.6,
           "close": 31.68,
           "volume": 822512
+        },
+        {
+          "date": "2026-06-10",
+          "open": 31.54,
+          "high": 31.54,
+          "low": 30.42,
+          "close": 30.54,
+          "volume": 1552540
         }
       ]
     }
