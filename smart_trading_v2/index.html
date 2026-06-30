@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تداول ذكي - منصة تحليل الأسهم السعودية</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.1.1/dist/chartjs-chart-financial.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.3.1/dist/chartjs-adapter-luxon.umd.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="tadawol.css" />
+</head>
+
+<body>
+
+  <div class="app">
+    <div class="topbar">
+      <div class="topbar-logo">
+        <div class="logo-icon"><i class="ti ti-chart-candle"></i></div>
+        تداول ذكي
+      </div>
+      <div class="topbar-tabs">
+        <button class="tab-btn active" onclick="switchTab('home',this)">السوق</button>
+        <button class="tab-btn" onclick="switchTab('analysis',this)">تحليل السهم</button>
+        <button class="tab-btn" onclick="switchTab('news',this)"><i class="ti ti-news"></i> الأخبار</button>
+        <button class="tab-btn" onclick="switchTab('chat',this)"><i class="ti ti-robot"></i> مستشار AI</button>
+        <button class="tab-btn" onclick="switchTab('guide',this)"><i class="ti ti-book"></i> المساعدة</button>
+      </div>
+      <div class="market-status">
+        <span class="online-dot"></span> السوق مفتوح · <span id="liveClock"></span>
+      </div>
+    </div>
+
+    <div class="main-layout">
+
+      <div class="sidebar">
+        <div class="search-box">
+          <i class="ti ti-search search-icon"></i>
+          <input type="text" placeholder="ابحث عن سهم أو شركة..." id="searchInput" oninput="filterStocks(this.value)" />
+        </div>
+        <div>
+          <div class="section-label">القطاعات</div>
+          <div class="sector-filter">
+            <button class="sector-chip active" onclick="filterSector('all',this)">الكل</button>
+            <button class="sector-chip" onclick="filterSector('banking',this)">البنوك</button>
+            <button class="sector-chip" onclick="filterSector('energy',this)">الطاقة</button>
+            <button class="sector-chip" onclick="filterSector('telecom',this)">الاتصالات</button>
+            <button class="sector-chip" onclick="filterSector('retail',this)">التجزئة</button>
+            <button class="sector-chip" onclick="filterSector('health',this)">الصحة</button>
+            <button class="sector-chip" onclick="filterSector('insurance',this)">التأمين</button>
+            <button class="sector-chip" onclick="filterSector('realestate',this)">العقارات</button>
+            <button class="sector-chip" onclick="filterSector('industrial',this)">الصناعة</button>
+            <button class="sector-chip" onclick="filterSector('financial',this)">خدمات مالية</button>
+          </div>
+        </div>
+        <div>
+          <div class="section-label">الترتيب</div>
+          <div class="sort-filter">
+            <button class="sort-chip active" onclick="sortStocks('default',this)"><i class="ti ti-list"></i>
+              افتراضي</button>
+            <button class="sort-chip" onclick="sortStocks('topGain',this)"><i class="ti ti-trending-up"></i> أكثر
+              ارتفاعاً</button>
+            <button class="sort-chip" onclick="sortStocks('topLoss',this)"><i class="ti ti-trending-down"></i> أكثر
+              انخفاضاً</button>
+            <button class="sort-chip" onclick="sortStocks('topVol',this)"><i class="ti ti-activity"></i> أكثر
+              تداولاً</button>
+          </div>
+        </div>
+        <div>
+          <div class="section-label">الأسهم</div>
+          <div class="stocks-list" id="stocksList"></div>
+        </div>
+      </div>
+
+      <div class="content-area" id="contentArea">
+
+        <div class="home-view active" id="homeView">
+          <div class="color-legend-banner">
+            <div class="legend-title"><i class="ti ti-palette"></i> دليل الألوان في المنصة</div>
+            <div class="legend-items">
+              <div class="legend-item">
+                <div class="legend-dot" style="background:#0F6E56"></div>
+                <div>
+                  <div class="legend-color-name" style="color:#0F6E56">أخضر</div>
+                  <div class="legend-desc">ارتفاع السعر · إشارة شراء · توصية إيجابية</div>
+                </div>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="background:#993C1D"></div>
+                <div>
+                  <div class="legend-color-name" style="color:#993C1D">أحمر</div>
+                  <div class="legend-desc">انخفاض السعر · إشارة بيع · خسارة · مخاطرة</div>
+                </div>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="background:#854F0B"></div>
+                <div>
+                  <div class="legend-color-name" style="color:#854F0B">عنبري</div>
+                  <div class="legend-desc">تحذير · محايد · مراقبة · حذر</div>
+                </div>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="background:#1B4F72"></div>
+                <div>
+                  <div class="legend-color-name" style="color:#1B4F72">أزرق</div>
+                  <div class="legend-desc">التنقل والاختيار · عناصر رئيسية · السهم المحدد</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="welcome-banner">
+            <div class="welcome-title">مرحباً في تداول ذكي 📈</div>
+            <div class="welcome-sub">منصة متكاملة لتحليل الأسهم السعودية بالذكاء الاصطناعي · البيانات من سوق تداول Saudi
+              Exchange · آخر تحديث: مايو 2026</div>
+            <div class="welcome-stats">
+              <div class="wstat">
+                <div class="wstat-num">201</div>
+                <div class="wstat-label">شركة مدرجة</div>
+              </div>
+              <div class="wstat">
+                <div class="wstat-num">98+</div>
+                <div class="wstat-label">مؤشر فني</div>
+              </div>
+              <div class="wstat">
+                <div class="wstat-num">AI</div>
+                <div class="wstat-label">مستشار ذكي</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="market-overview">
+            <div class="mkt-card">
+              <div class="mkt-index">مؤشر تاسي</div>
+              <div class="mkt-val">11,847.32</div>
+              <div class="mkt-chg up"><i class="ti ti-trending-up"></i> +127.45 (+1.09%)</div>
+            </div>
+            <div class="mkt-card">
+              <div class="mkt-index">مؤشر نمو</div>
+              <div class="mkt-val">21,203.17</div>
+              <div class="mkt-chg up"><i class="ti ti-trending-up"></i> +89.21 (+0.42%)</div>
+            </div>
+            <div class="mkt-card">
+              <div class="mkt-index">حجم التداول</div>
+              <div class="mkt-val">4.2B</div>
+              <div class="mkt-chg muted">ريال سعودي اليوم</div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <div class="panel-title">الأكثر تداولاً اليوم</div>
+            </div>
+            <div class="panel-body">
+              <div class="top-movers">
+                <div>
+                  <div class="section-label up">الأكثر ارتفاعاً <i class="ti ti-arrow-up"></i></div>
+                  <div class="mover-list" id="gainers"></div>
+                </div>
+                <div>
+                  <div class="section-label down">الأكثر انخفاضاً <i class="ti ti-arrow-down"></i></div>
+                  <div class="mover-list" id="losers"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <div class="panel-title"><i class="ti ti-calendar-event" style="color:var(--primary)"></i> الأحداث القادمة
+                في السوق</div>
+            </div>
+            <div class="panel-body">
+              <div class="upcoming-events-home">
+                <div class="upcoming-event">
+                  <div class="upcoming-icon" style="background:var(--up-bg);color:var(--up)"><i
+                      class="ti ti-calendar-event"></i></div>
+                  <div>
+                    <div class="upcoming-date">15 يونيو 2026</div>
+                    <div class="upcoming-title">أرامكو: تاريخ استحقاق توزيعات Q1 2026</div>
+                  </div>
+                </div>
+                <div class="upcoming-event">
+                  <div class="upcoming-icon" style="background:var(--blue-bg);color:var(--blue-text)"><i
+                      class="ti ti-calendar-event"></i></div>
+                  <div>
+                    <div class="upcoming-date">20 يونيو 2026</div>
+                    <div class="upcoming-title">البنك الأهلي: توزيعات H1 2026 المتوقعة</div>
+                  </div>
+                </div>
+                <div class="upcoming-event">
+                  <div class="upcoming-icon" style="background:var(--up-bg);color:var(--up)"><i
+                      class="ti ti-calendar-event"></i></div>
+                  <div>
+                    <div class="upcoming-date">25 يونيو 2026</div>
+                    <div class="upcoming-title">مصرف الراجحي: توزيعات H1 2026 المتوقعة</div>
+                  </div>
+                </div>
+                <div class="upcoming-event">
+                  <div class="upcoming-icon" style="background:var(--up-bg);color:var(--up)"><i
+                      class="ti ti-calendar-event"></i></div>
+                  <div>
+                    <div class="upcoming-date">1 يوليو 2026</div>
+                    <div class="upcoming-title">اتحاد الاتصالات: تاريخ الاستحقاق لتوزيعات 2025</div>
+                  </div>
+                </div>
+                <div class="upcoming-event">
+                  <div class="upcoming-icon" style="background:var(--blue-bg);color:var(--blue-text)"><i
+                      class="ti ti-calendar-event"></i></div>
+                  <div>
+                    <div class="upcoming-date">10 يوليو 2025</div>
+                    <div class="upcoming-title">stc: توزيعات Q1 2025 المتوقعة</div>
+                  </div>
+                </div>
+                <div class="upcoming-event">
+                  <div class="upcoming-icon" style="background:var(--blue-bg);color:var(--blue-text)"><i
+                      class="ti ti-calendar-event"></i></div>
+                  <div>
+                    <div class="upcoming-date">10 يوليو 2025</div>
+                    <div class="upcoming-title">أرامكو: نتائج Q2 2025 المتوقعة</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <div class="panel-title">توزيعات الأرباح القادمة</div>
+            </div>
+            <div class="panel-body">
+              <table class="div-table">
+                <thead>
+                  <tr>
+                    <th>الشركة</th>
+                    <th>الرمز</th>
+                    <th>الأرباح/سهم</th>
+                    <th>تاريخ الاستحقاق</th>
+                    <th>العائد</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>أرامكو السعودية</td>
+                    <td>2222</td>
+                    <td class="up fw">0.35 ر.س</td>
+                    <td>15 يونيو 2026</td>
+                    <td><span class="yield-badge">3.8%</span></td>
+                  </tr>
+                  <tr>
+                    <td>البنك الأهلي</td>
+                    <td>1180</td>
+                    <td class="up fw">0.80 ر.س</td>
+                    <td>20 يونيو 2026</td>
+                    <td><span class="yield-badge">2.9%</span></td>
+                  </tr>
+                  <tr>
+                    <td>مصرف الراجحي</td>
+                    <td>1120</td>
+                    <td class="up fw">1.00 ر.س</td>
+                    <td>25 يونيو 2026</td>
+                    <td><span class="yield-badge">4.1%</span></td>
+                  </tr>
+                  <tr>
+                    <td>اتحاد الاتصالات</td>
+                    <td>4003</td>
+                    <td class="up fw">0.50 ر.س</td>
+                    <td>1 يوليو 2026</td>
+                    <td><span class="yield-badge">5.2%</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="analysis-view" id="analysisView">
+          <div class="panel">
+            <div class="panel-body">
+              <div class="stock-hero">
+                <div class="hero-main">
+                  <div class="stock-avatar" id="heroAvatar">أر</div>
+                  <div>
+                    <div class="hero-name" id="heroName">أرامكو السعودية</div>
+                    <div class="hero-code" id="heroCode">2222 · قطاع الطاقة</div>
+                    <div class="hero-price-row">
+                      <span class="hero-price" id="heroPrice">27.10 ر.س</span>
+                      <span class="hero-change-badge badge-up" id="heroBadge"><i class="ti ti-trending-up"></i> +0.10
+                        ر.س (+0.37%)</span>
+                    </div>
+                    <div class="price-data-row">
+                      <div class="price-data-item"><span class="price-data-label">الإغلاق السابق</span><span
+                          class="price-data-val" id="heroPrevClose">27.00 ر.س</span></div>
+                      <div class="price-data-item"><span class="price-data-label">الافتتاح</span><span
+                          class="price-data-val" id="heroOpen">27.00 ر.س</span></div>
+                      <div class="price-data-item"><span class="price-data-label">أعلى اليوم</span><span
+                          class="price-data-val up" id="heroDayHigh">27.25 ر.س</span></div>
+                      <div class="price-data-item"><span class="price-data-label">أدنى اليوم</span><span
+                          class="price-data-val down" id="heroDayLow">26.95 ر.س</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-actions">
+                  <div class="time-selector">
+                    <button class="time-btn active" onclick="setTime('1W',this)">1أ</button>
+                    <button class="time-btn" onclick="setTime('1M',this)">1ش</button>
+                    <button class="time-btn" onclick="setTime('3M',this)">3ش</button>
+                    <button class="time-btn" onclick="setTime('6M',this)">6ش</button>
+                    <button class="time-btn" onclick="setTime('1Y',this)">1س</button>
+                    <button class="time-btn" onclick="setTime('3Y',this)">3س</button>
+                  </div>
+                  <div class="chart-type-selector">
+                    <button class="chart-type-btn active" onclick="setChartType('line',this)" title="خطي"><i
+                        class="ti ti-chart-line"></i></button>
+                    <button class="chart-type-btn" onclick="setChartType('candle',this)" title="شموع يابانية"><i
+                        class="ti ti-chart-candle"></i></button>
+                    <button class="chart-type-btn" onclick="setChartType('area',this)" title="منطقة"><i
+                        class="ti ti-chart-area"></i></button>
+                    <button class="chart-type-btn" onclick="setChartType('bar',this)" title="أعمدة"><i
+                        class="ti ti-chart-bar"></i></button>
+                    <button class="chart-type-btn" onclick="setChartType('heikinashi',this)"
+                      title="هيكن آشي">HA</button>
+                  </div>
+                  <button class="consult-btn"
+                    onclick="sendQuick('حلل لي ' + selectedStock.name + ' (' + selectedStock.code + ') بسعر ' + selectedStock.price.toFixed(2) + ' ريال')"><i
+                      class="ti ti-robot"></i> استشر AI</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <div class="panel-title">
+                <span id="chartTitle">الرسم البياني للسعر</span>
+                <span class="chart-live-badge"><span class="live-dot"></span> مباشر</span>
+              </div>
+              <div class="chart-header-right">
+                <div class="chart-stats">
+                  <span class="chart-stat">أعلى 52 أسبوع: <strong id="chartHigh" class="up">31.45 ر.س</strong></span>
+                  <span class="chart-stat">أدنى 52 أسبوع: <strong id="chartLow" class="down">25.50 ر.س</strong></span>
+                </div>
+                <div class="chart-overlays">
+                  <button class="overlay-btn active" onclick="toggleOverlay('ma20',this)">MA20</button>
+                  <button class="overlay-btn active" onclick="toggleOverlay('ma50',this)">MA50</button>
+                  <button class="overlay-btn" onclick="toggleOverlay('ma200',this)">MA200</button>
+                  <button class="overlay-btn" onclick="toggleOverlay('bb',this)">BB</button>
+                  <button class="overlay-btn" onclick="toggleOverlay('vol',this)">الحجم</button>
+                </div>
+              </div>
+            </div>
+            <div class="chart-quick-stats" id="chartQuickStats"></div>
+            <div class="panel-body" style="padding-bottom:0">
+              <div class="chart-wrapper" style="height:360px">
+                <canvas id="priceChart"></canvas>
+              </div>
+              <div class="rsi-wrapper" id="rsiWrapper" style="height:80px;padding:0 18px 8px">
+                <div class="rsi-label">RSI (14)</div>
+                <canvas id="rsiChart"></canvas>
+              </div>
+            </div>
+            <div class="chart-crosshair-info" id="chartCrosshairInfo" style="display:none"></div>
+          </div>
+
+          <div class="metrics-grid" id="metricsGrid"></div>
+
+          <div class="panel">
+            <div class="analysis-tabs">
+              <button class="analysis-tab-btn active" onclick="switchAnalysisTab('tabTechnical',this)">📈 المؤشرات
+                الفنية</button>
+              <button class="analysis-tab-btn valuation-tab" onclick="switchAnalysisTab('tabValuation',this)">📊 التقييم
+                الجوهري</button>
+              <button class="analysis-tab-btn study-tab" onclick="switchAnalysisTab('tabStudy',this)">🔍 دراسة
+                السهم</button>
+              <button class="analysis-tab-btn" onclick="switchAnalysisTab('tabAnnouncements',this)">📣
+                الإعلانات</button>
+              <button class="analysis-tab-btn" onclick="switchAnalysisTab('tabDividends',this)">💰 التوزيعات</button>
+              <button class="analysis-tab-btn" onclick="switchAnalysisTab('tabFinancials',this)">📋 البيانات
+                المالية</button>
+              <button class="analysis-tab-btn" onclick="switchAnalysisTab('tabProfile',this)">🏢 ملف الشركة</button>
+              <button class="analysis-tab-btn" onclick="switchAnalysisTab('tabOwnership',this)">👥 الملكية</button>
+              <button class="analysis-tab-btn" onclick="switchAnalysisTab('tabPeers',this)">⚖️ المنافسون</button>
+              <button class="analysis-tab-btn" onclick="switchAnalysisTab('tabAdvice',this)">💡 التوصيات</button>
+            </div>
+
+            <div class="analysis-tab-panel" id="tabStudy">
+              <div style="padding:18px">
+                <div id="studyContent"></div>
+              </div>
+            </div>
+
+            <div class="analysis-tab-panel" id="tabValuation">
+              <div style="padding:18px 18px 6px">
+                <div
+                  style="font-size:13px;color:var(--text-secondary);background:var(--blue-bg);border-radius:8px;padding:10px 14px;border:0.5px solid rgba(24,95,165,0.2)">
+                  <i class="ti ti-info-circle" style="color:var(--blue-text)"></i> التحليل الجوهري يقيّم القيمة الحقيقية
+                  للشركة بناءً على أرباحها وأصولها وديونها وتدفقاتها النقدية.
+                </div>
+              </div>
+              <div id="valContent" style="padding:18px"></div>
+            </div>
+
+            <div class="analysis-tab-panel active" id="tabTechnical">
+              <div class="analysis-grid" style="padding:18px">
+                <div id="technicalIndicatorsList">
+                  <div class="section-label" style="margin-bottom:12px">المؤشرات الفنية</div>
+                </div>
+                <div id="technicalForecast">
+                  <div class="section-label" style="margin-bottom:12px">التوصية والتوقعات</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="analysis-tab-panel" id="tabAnnouncements">
+              <div style="padding:18px">
+                <div class="section-label" style="margin-bottom:16px">الإعلانات وإجراءات الشركة الأخيرة</div>
+                <div class="events-list" id="eventsList"></div>
+                <div class="section-label" style="margin:20px 0 12px">الأحداث القادمة</div>
+                <div class="upcoming-events-home" id="upcomingEventsList"></div>
+              </div>
+            </div>
+
+            <div class="analysis-tab-panel" id="tabDividends">
+              <div style="padding:18px">
+                <div class="section-label" style="margin-bottom:16px">تاريخ توزيعات الأرباح</div>
+                <table class="div-table">
+                  <thead>
+                    <tr>
+                      <th>الفترة</th>
+                      <th>التوزيع/سهم</th>
+                      <th>تاريخ الصرف</th>
+                      <th>العائد</th>
+                    </tr>
+                  </thead>
+                  <tbody id="dividendHistory"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="analysis-tab-panel" id="tabFinancials">
+              <div style="padding:18px">
+                <div class="section-label" style="margin-bottom:16px">البيانات المالية السنوية (مليار ر.س)</div>
+                <table class="div-table">
+                  <tbody id="financialTable"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="analysis-tab-panel" id="tabProfile">
+              <div style="padding:18px">
+                <div class="section-label" style="margin-bottom:16px">تفاصيل الشركة وملف الشركة</div>
+                <div id="companyProfile"></div>
+              </div>
+            </div>
+
+            <div class="analysis-tab-panel" id="tabOwnership">
+              <div style="padding:18px">
+                <div class="section-label" style="margin-bottom:12px">أعضاء مجلس الإدارة وكبار التنفيذيين</div>
+                <div style="overflow-x:auto">
+                  <table class="div-table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>الاسم</th>
+                        <th>المنصب</th>
+                        <th>مجموع الأسهم (آخر يوم)</th>
+                        <th>الأسهم (اليوم السابق)</th>
+                        <th>التغير</th>
+                      </tr>
+                    </thead>
+                    <tbody id="boardTable"></tbody>
+                  </table>
+                </div>
+                <div class="section-label" style="margin:20px 0 12px">كبار المساهمين</div>
+                <div style="overflow-x:auto">
+                  <table class="div-table">
+                    <thead>
+                      <tr>
+                        <th>المساهم</th>
+                        <th>نسبة الملكية</th>
+                        <th>مجموع الأسهم</th>
+                        <th>تاريخ آخر تداول</th>
+                        <th>الأسهم السابقة</th>
+                        <th>التغير</th>
+                      </tr>
+                    </thead>
+                    <tbody id="shareholdersTable"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="analysis-tab-panel" id="tabPeers">
+              <div style="padding:18px">
+                <div class="section-label" style="margin-bottom:12px">مقارنة مع شركات مماثلة</div>
+                <div style="overflow-x:auto">
+                  <table class="div-table">
+                    <thead>
+                      <tr>
+                        <th>الشركة</th>
+                        <th>السعر</th>
+                        <th>التغير</th>
+                        <th>القيمة السوقية</th>
+                        <th>P/E</th>
+                        <th>عائد التوزيعات</th>
+                        <th>P/BV</th>
+                      </tr>
+                    </thead>
+                    <tbody id="peersTable"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="analysis-tab-panel" id="tabAdvice">
+              <div style="padding:18px">
+                <div class="advice-cards" id="adviceList">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-view" id="newsView">
+          <div class="news-header-bar">
+            <div class="news-title-main"><i class="ti ti-news" style="color:var(--primary)"></i> أخبار السوق المالي —
+              مايو 2026</div>
+            <div class="news-sources-info">المصادر: تداول · أرقامي · TradingView · Investing.com · Bloomberg · CNN
+              اقتصاد · الجزيرة الاقتصادية · العربية الاقتصادية</div>
+          </div>
+
+          <div class="news-filter-bar">
+            <button class="news-filter-chip active" onclick="filterNews('all',this)"><i class="ti ti-world"></i>
+              الكل</button>
+            <button class="news-filter-chip" onclick="filterNews('saudi',this)"><i class="ti ti-building"></i> السوق
+              السعودي</button>
+            <button class="news-filter-chip" onclick="filterNews('companies',this)"><i class="ti ti-chart-bar"></i>
+              إعلانات شركات</button>
+            <button class="news-filter-chip" onclick="filterNews('oil',this)"><i class="ti ti-flame"></i> النفط
+              والطاقة</button>
+            <button class="news-filter-chip" onclick="filterNews('global',this)"><i class="ti ti-globe"></i> أخبار
+              عالمية</button>
+            <button class="news-filter-chip" onclick="filterNews('economy',this)"><i class="ti ti-coin"></i> اقتصاد
+              كلي</button>
+            <button class="news-refresh-btn news-filter-chip" onclick="loadNews()"><i class="ti ti-refresh"></i>
+              تحديث</button>
+          </div>
+
+          <div class="global-tickers" id="globalTickers">
+            <div class="ticker-item"><span class="ticker-name">تاسي</span><span class="ticker-val">11,847</span><span
+                class="ticker-chg up">+1.09%</span></div>
+            <div class="ticker-item"><span class="ticker-name">S&P 500</span><span class="ticker-val">5,942</span><span
+                class="ticker-chg up">+0.64%</span></div>
+            <div class="ticker-item"><span class="ticker-name">Nasdaq</span><span class="ticker-val">19,215</span><span
+                class="ticker-chg up">+0.97%</span></div>
+            <div class="ticker-item"><span class="ticker-name">النفط WTI</span><span
+                class="ticker-val">$61.40</span><span class="ticker-chg down">-1.12%</span></div>
+            <div class="ticker-item"><span class="ticker-name">برنت</span><span class="ticker-val">$65.18</span><span
+                class="ticker-chg down">-0.94%</span></div>
+            <div class="ticker-item"><span class="ticker-name">ذهب</span><span class="ticker-val">$3,347</span><span
+                class="ticker-chg up">+0.58%</span></div>
+            <div class="ticker-item"><span class="ticker-name">USD/SAR</span><span class="ticker-val">3.7503</span><span
+                class="ticker-chg muted">ثابت</span></div>
+            <div class="ticker-item"><span class="ticker-name">FTSE 100</span><span class="ticker-val">8,812</span><span
+                class="ticker-chg up">+0.31%</span></div>
+            <div class="ticker-item"><span class="ticker-name">Nikkei</span><span class="ticker-val">36,985</span><span
+                class="ticker-chg down">-0.18%</span></div>
+            <div class="ticker-item"><span class="ticker-name">DAX</span><span class="ticker-val">23,641</span><span
+                class="ticker-chg up">+0.42%</span></div>
+          </div>
+
+          <div class="news-loading" id="newsLoading" style="display:none">
+            <div class="news-loading-spinner"></div>
+            <div>جاري تحميل آخر الأخبار من المصادر...</div>
+          </div>
+
+          <div class="news-grid" id="newsGrid"></div>
+
+          <div class="news-disclaimer">
+            <i class="ti ti-info-circle"></i>
+            جميع الروابط تفتح مباشرةً من مصادرها الأصلية. هذه المنصة لا تتحمل مسؤولية محتوى المصادر الخارجية. اضغط على
+            الخبر لفتح رابطه المباشر من المصدر.
+          </div>
+        </div>
+
+        <div class="chat-view" id="chatView">
+          <div class="chat-panel">
+            <div class="chat-header">
+              <div class="ai-avatar"><i class="ti ti-robot"></i></div>
+              <div>
+                <div class="ai-name">مستشار الأسهم الذكي</div>
+                <div class="ai-status"><span class="online-dot"></span> متاح الآن · خبير في السوق السعودي</div>
+              </div>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+              <div class="msg ai">
+                <div class="msg-avatar"><i class="ti ti-robot"></i></div>
+                <div>
+                  <div class="msg-bubble">مرحباً! أنا مستشارك المالي الذكي المتخصص في الأسهم السعودية 📊<br><br>يمكنني
+                    مساعدتك في:<br>• تحليل أي سهم في السوق السعودي<br>• شرح المؤشرات الفنية والأساسية<br>• تقييم
+                    استراتيجيات الاستثمار<br>• الإجابة على أسئلتك عن السوق<br><br>اسألني عن أي سهم أو قطاع تريد!</div>
+                  <div class="msg-time">الآن</div>
+                </div>
+              </div>
+            </div>
+            <div class="quick-questions">
+              <button class="quick-q" onclick="sendQuick('ما رأيك في سهم أرامكو الآن؟')">أرامكو الآن?</button>
+              <button class="quick-q" onclick="sendQuick('كيف أقرأ مؤشر RSI؟')">كيف أقرأ RSI؟</button>
+              <button class="quick-q" onclick="sendQuick('ما هي أفضل أسهم التوزيعات؟')">أفضل توزيعات</button>
+              <button class="quick-q" onclick="sendQuick('كيف أبني محفظة استثمارية متنوعة؟')">بناء محفظة</button>
+              <button class="quick-q" onclick="sendQuick('ما توقعاتك لمؤشر تاسي؟')">توقعات تاسي</button>
+              <button class="quick-q" onclick="sendQuick('ما الفرق بين الاستثمار والمضاربة؟')">استثمار أم
+                مضاربة؟</button>
+            </div>
+            <div class="chat-input-area">
+              <input type="text" class="chat-input" id="chatInput" onkeydown="chatKeydown(event)"
+                placeholder="اسأل عن أي سهم أو استراتيجية استثمارية..."
+                onkeydown="if(event.key==='Enter')sendMessage()" />
+              <button class="send-btn" onclick="sendMessage()" aria-label="إرسال"><i class="ti ti-send"></i></button>
+            </div>
+          </div>
+          <div class="api-notice"><i class="ti ti-info-circle"></i> لتفعيل مستشار AI، أضف مفتاح Anthropic API في ملف
+            <code>app.js</code> (متغير <code>API_KEY</code>)
+          </div>
+        </div>
+
+        <div class="guide-view" id="guideView">
+          <div class="guide-header">
+            <div class="guide-title"><i class="ti ti-book-2"></i> دليل المستخدم الشامل — كتالوج المصطلحات والمؤشرات
+            </div>
+            <div class="guide-subtitle">مرجعك الكامل لفهم كل مصطلح، اختصار، لون، ومؤشر في منصة تداول ذكي</div>
+          </div>
+
+          <div class="guide-section-nav">
+            <button class="guide-nav-btn active" onclick="switchGuideSection('all',this)">🗂️ الكل</button>
+            <button class="guide-nav-btn" onclick="switchGuideSection('ratios',this)">📊 المضاعفات والنسب</button>
+            <button class="guide-nav-btn" onclick="switchGuideSection('technical',this)">📈 المؤشرات الفنية</button>
+            <button class="guide-nav-btn" onclick="switchGuideSection('financial',this)">💰 المصطلحات المالية</button>
+            <button class="guide-nav-btn" onclick="switchGuideSection('colors',this)">🎨 الألوان والرموز</button>
+            <button class="guide-nav-btn" onclick="switchGuideSection('chart',this)">📉 الرسوم البيانية</button>
+            <button class="guide-nav-btn" onclick="switchGuideSection('strategy',this)">🧠 الاستراتيجيات</button>
+            <button class="guide-nav-btn" onclick="switchGuideSection('orders',this)">📋 أوامر التداول</button>
+          </div>
+
+          <div class="guide-search-wrap">
+            <i class="ti ti-search"></i>
+            <input type="text" id="guideSearch" placeholder="ابحث عن أي مصطلح أو اختصار... (مثال: P/E، RSI، MACD)"
+              oninput="searchGuide(this.value)" />
+          </div>
+
+          <!-- ===== قسم الألوان ===== -->
+          <div class="guide-section guide-colors-section" data-section="colors">
+            <div class="guide-section-header">
+              <div class="guide-section-icon" style="background:#0F6E5620;color:#0F6E56">🎨</div>
+              <div>
+                <div class="guide-section-title">دليل الألوان في المنصة</div>
+                <div class="guide-section-desc">كل لون له معنى محدد — تعرّف عليها لفهم الإشارات بسرعة</div>
+              </div>
+            </div>
+            <div class="guide-colors-grid">
+              <div class="guide-color-card" style="background:#0F6E5610;border-color:#0F6E5640">
+                <div class="guide-color-swatch" style="background:#0F6E56"></div>
+                <div class="guide-color-name" style="color:#0F6E56">🟢 الأخضر</div>
+                <div class="guide-color-uses">يمثّل كل ما هو إيجابي في المنصة: ارتفاع السعر، إشارة شراء، توصية إيجابية،
+                  نمو في الأرباح، تدفق نقدي قوي.</div>
+                <div class="guide-color-examples">
+                  <span class="guide-color-ex" style="background:#0F6E5620;color:#0F6E56">↑ ارتفاع</span>
+                  <span class="guide-color-ex" style="background:#0F6E5620;color:#0F6E56">شراء</span>
+                  <span class="guide-color-ex" style="background:#0F6E5620;color:#0F6E56">نمو</span>
+                </div>
+              </div>
+              <div class="guide-color-card" style="background:#993C1D10;border-color:#993C1D40">
+                <div class="guide-color-swatch" style="background:#993C1D"></div>
+                <div class="guide-color-name" style="color:#993C1D">🔴 الأحمر</div>
+                <div class="guide-color-uses">يمثّل كل ما هو سلبي: انخفاض السعر، إشارة بيع، خسارة في الأرباح، مخاطرة
+                  عالية، ضغط بيعي.</div>
+                <div class="guide-color-examples">
+                  <span class="guide-color-ex" style="background:#993C1D20;color:#993C1D">↓ انخفاض</span>
+                  <span class="guide-color-ex" style="background:#993C1D20;color:#993C1D">بيع</span>
+                  <span class="guide-color-ex" style="background:#993C1D20;color:#993C1D">خسارة</span>
+                </div>
+              </div>
+              <div class="guide-color-card" style="background:#854F0B10;border-color:#854F0B40">
+                <div class="guide-color-swatch" style="background:#854F0B"></div>
+                <div class="guide-color-name" style="color:#854F0B">🟡 العنبري</div>
+                <div class="guide-color-uses">يمثّل التحذير والحياد: وضع محايد، مراقبة مستمرة، حذر قبل اتخاذ قرار، مؤشر
+                  في المنطقة الوسطى.</div>
+                <div class="guide-color-examples">
+                  <span class="guide-color-ex" style="background:#854F0B20;color:#854F0B">⚠️ تحذير</span>
+                  <span class="guide-color-ex" style="background:#854F0B20;color:#854F0B">محايد</span>
+                  <span class="guide-color-ex" style="background:#854F0B20;color:#854F0B">مراقبة</span>
+                </div>
+              </div>
+              <div class="guide-color-card" style="background:#1B4F7210;border-color:#1B4F7240">
+                <div class="guide-color-swatch" style="background:#1B4F72"></div>
+                <div class="guide-color-name" style="color:#1B4F72">🔵 الأزرق</div>
+                <div class="guide-color-uses">يمثّل عناصر التنقل والاختيار: الأزرار الرئيسية، السهم المحدد، المعلومات
+                  المحايدة، التبويبات النشطة.</div>
+                <div class="guide-color-examples">
+                  <span class="guide-color-ex" style="background:#1B4F7220;color:#1B4F72">مختار</span>
+                  <span class="guide-color-ex" style="background:#1B4F7220;color:#1B4F72">تنقل</span>
+                  <span class="guide-color-ex" style="background:#1B4F7220;color:#1B4F72">معلومة</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== قسم المضاعفات والنسب ===== -->
+          <div class="guide-section guide-ratios-section" data-section="ratios">
+            <div class="guide-section-header">
+              <div class="guide-section-icon" style="background:var(--blue-bg);color:var(--blue-text)">📊</div>
+              <div>
+                <div class="guide-section-title">مضاعفات التقييم والنسب المالية</div>
+                <div class="guide-section-desc">الأدوات الأساسية لتحديد إذا كان السهم غالياً أو رخيصاً</div>
+              </div>
+            </div>
+            <div class="guide-terms-grid">
+
+              <div class="guide-term-card" data-keywords="pe p/e مضاعف الأرباح">
+                <div class="guide-term-name">P/E <span style="font-size:11px;color:var(--text-secondary)">مضاعف
+                    الأرباح</span></div>
+                <div class="guide-term-ar">Price to Earnings Ratio</div>
+                <div class="guide-term-desc">يقيس كم ريالاً تدفع مقابل كل ريال ربح تحققه الشركة. كلما كان أقل كلما كان
+                  السهم أرخص نسبياً مقارنة بأرباحه.</div>
+                <div class="guide-term-formula">P/E = سعر السهم ÷ ربح السهم (EPS)</div>
+                <div class="guide-term-example">⭐ مثال: سعر 27 ر.س ÷ EPS 1.46 = P/E بقيمة 18.4x — يعني تدفع 18.4 ريال
+                  لكل ريال ربح</div>
+                <div class="guide-term-range">
+                  <span class="guide-range-item" style="background:var(--up-bg);color:var(--up)">أقل من 15x →
+                    رخيص</span>
+                  <span class="guide-range-item" style="background:var(--amber-bg);color:var(--amber)">15-25x →
+                    عادل</span>
+                  <span class="guide-range-item" style="background:var(--down-bg);color:var(--down)">فوق 25x →
+                    غالٍ</span>
+                </div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="eps ربح السهم عائد السهم">
+                <div class="guide-term-name">EPS <span style="font-size:11px;color:var(--text-secondary)">ربح
+                    السهم</span></div>
+                <div class="guide-term-ar">Earnings Per Share</div>
+                <div class="guide-term-desc">صافي الأرباح السنوية مقسوماً على عدد الأسهم المتداولة. هو المقياس الأهم
+                  لربحية الشركة على مستوى السهم الواحد.</div>
+                <div class="guide-term-formula">EPS = صافي الأرباح ÷ عدد الأسهم المتداولة</div>
+                <div class="guide-term-example">⭐ مثال: أرباح 121.3 مليار ÷ 269.1 مليار سهم = 0.45 ريال للسهم (سنوياً)
+                </div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="pbv p/bv القيمة الدفترية">
+                <div class="guide-term-name">P/BV <span style="font-size:11px;color:var(--text-secondary)">مضاعف القيمة
+                    الدفترية</span></div>
+                <div class="guide-term-ar">Price to Book Value</div>
+                <div class="guide-term-desc">يقارن سعر السهم السوقي بقيمته الدفترية (أصول - خصوم). أقل من 1 يعني السهم
+                  يُباع بأقل من قيمته الفعلية.</div>
+                <div class="guide-term-formula">P/BV = سعر السهم ÷ القيمة الدفترية للسهم</div>
+                <div class="guide-term-range">
+                  <span class="guide-range-item" style="background:var(--up-bg);color:var(--up)">أقل من 1x → تحت
+                    التقييم</span>
+                  <span class="guide-range-item" style="background:var(--amber-bg);color:var(--amber)">1-3x →
+                    طبيعي</span>
+                  <span class="guide-range-item" style="background:var(--down-bg);color:var(--down)">فوق 5x →
+                    مرتفع</span>
+                </div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="roe العائد على حقوق الملكية">
+                <div class="guide-term-name">ROE <span style="font-size:11px;color:var(--text-secondary)">العائد على
+                    حقوق الملكية</span></div>
+                <div class="guide-term-ar">Return on Equity</div>
+                <div class="guide-term-desc">يقيس مدى كفاءة الشركة في توليد الأرباح من أموال المساهمين. كلما كان أعلى دل
+                  على إدارة أكثر كفاءة.</div>
+                <div class="guide-term-formula">ROE = صافي الأرباح ÷ حقوق المساهمين × 100</div>
+                <div class="guide-term-range">
+                  <span class="guide-range-item" style="background:var(--down-bg);color:var(--down)">أقل من 10% →
+                    ضعيف</span>
+                  <span class="guide-range-item" style="background:var(--amber-bg);color:var(--amber)">10-20% →
+                    جيد</span>
+                  <span class="guide-range-item" style="background:var(--up-bg);color:var(--up)">فوق 20% → ممتاز</span>
+                </div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="div عائد التوزيعات توزيعات الأرباح">
+                <div class="guide-term-name">Div Yield <span style="font-size:11px;color:var(--text-secondary)">عائد
+                    التوزيعات</span></div>
+                <div class="guide-term-ar">Dividend Yield</div>
+                <div class="guide-term-desc">نسبة التوزيعات النقدية السنوية إلى سعر السهم. يهم المستثمر الباحث عن دخل
+                  ثابت من محفظته.</div>
+                <div class="guide-term-formula">Div Yield = التوزيع السنوي ÷ سعر السهم × 100</div>
+                <div class="guide-term-example">⭐ مثال: 1.40 ريال توزيع ÷ 27.10 سعر = 5.2% عائد سنوي</div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="ebitda ايبيتدا الأرباح قبل">
+                <div class="guide-term-name">EBITDA</div>
+                <div class="guide-term-ar">الأرباح قبل الفوائد والضرائب والإهلاك والاستهلاك</div>
+                <div class="guide-term-desc">مقياس يعكس الربحية التشغيلية الحقيقية للشركة بعيداً عن التأثيرات المحاسبية
+                  والضريبية. يُستخدم لمقارنة الشركات.</div>
+                <div class="guide-term-formula">EBITDA = الأرباح التشغيلية + الإهلاك + الاستهلاك</div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="market cap القيمة السوقية">
+                <div class="guide-term-name">Market Cap <span style="font-size:11px;color:var(--text-secondary)">القيمة
+                    السوقية</span></div>
+                <div class="guide-term-ar">Market Capitalization</div>
+                <div class="guide-term-desc">إجمالي قيمة الشركة في السوق. تُحسب بضرب سعر السهم في عدد الأسهم الإجمالية.
+                  تُستخدم لتصنيف حجم الشركة.</div>
+                <div class="guide-term-formula">Market Cap = سعر السهم × عدد الأسهم الكلية</div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="ev enterprise value قيمة المنشأة">
+                <div class="guide-term-name">EV <span style="font-size:11px;color:var(--text-secondary)">قيمة
+                    المنشأة</span></div>
+                <div class="guide-term-ar">Enterprise Value</div>
+                <div class="guide-term-desc">القيمة الكاملة للشركة إذا أردت شراءها بالكامل (تشمل الديون وتطرح النقد).
+                  أشمل من القيمة السوقية وحدها.</div>
+                <div class="guide-term-formula">EV = القيمة السوقية + الديون - النقد والمعادلات</div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="beta بيتا مخاطرة تذبذب">
+                <div class="guide-term-name">Beta (β) <span style="font-size:11px;color:var(--text-secondary)">معامل
+                    بيتا</span></div>
+                <div class="guide-term-ar">Sensitivity to Market</div>
+                <div class="guide-term-desc">يقيس حساسية السهم للتحركات العامة في السوق. بيتا 1 = يتحرك مثل السوق. فوق 1
+                  = أكثر تذبذباً. أقل من 1 = أقل تذبذباً.</div>
+                <div class="guide-term-range">
+                  <span class="guide-range-item" style="background:var(--up-bg);color:var(--up)">أقل من 0.8 →
+                    دفاعي</span>
+                  <span class="guide-range-item" style="background:var(--amber-bg);color:var(--amber)">0.8-1.2 →
+                    طبيعي</span>
+                  <span class="guide-range-item" style="background:var(--down-bg);color:var(--down)">فوق 1.5 →
+                    متقلب</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ===== قسم المؤشرات الفنية ===== -->
+          <div class="guide-section guide-technical-section" data-section="technical">
+            <div class="guide-section-header">
+              <div class="guide-section-icon" style="background:var(--up-bg);color:var(--up)">📈</div>
+              <div>
+                <div class="guide-section-title">المؤشرات الفنية (Technical Indicators)</div>
+                <div class="guide-section-desc">أدوات التحليل الفني للتنبؤ بحركة السعر</div>
+              </div>
+            </div>
+            <div class="guide-indicator-table-wrap">
+              <table class="guide-indicator-table">
+                <thead>
+                  <tr>
+                    <th>المؤشر</th>
+                    <th>الاسم الكامل</th>
+                    <th>ماذا يخبرك؟</th>
+                    <th>إشارة شراء</th>
+                    <th>إشارة بيع</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>RSI</strong></td>
+                    <td>مؤشر القوة النسبية</td>
+                    <td>يقيس زخم السعر وسرعة تغيره (0-100)</td>
+                    <td class="up">أقل من 30 (تشبع بيعي)</td>
+                    <td class="down">فوق 70 (تشبع شرائي)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>MACD</strong></td>
+                    <td>تقارب وتباعد المتوسطات</td>
+                    <td>يكشف تغيرات الزخم والاتجاه</td>
+                    <td class="up">تقاطع MACD فوق خط الإشارة</td>
+                    <td class="down">تقاطع MACD تحت خط الإشارة</td>
+                  </tr>
+                  <tr>
+                    <td><strong>MA20</strong></td>
+                    <td>المتوسط المتحرك 20 يوم</td>
+                    <td>يُظهر الاتجاه قصير المدى (شهر)</td>
+                    <td class="up">السعر فوق MA20</td>
+                    <td class="down">السعر تحت MA20</td>
+                  </tr>
+                  <tr>
+                    <td><strong>MA50</strong></td>
+                    <td>المتوسط المتحرك 50 يوم</td>
+                    <td>يُظهر الاتجاه المتوسط (ربع سنة)</td>
+                    <td class="up">السعر فوق MA50</td>
+                    <td class="down">السعر تحت MA50</td>
+                  </tr>
+                  <tr>
+                    <td><strong>MA200</strong></td>
+                    <td>المتوسط المتحرك 200 يوم</td>
+                    <td>يُظهر الاتجاه طويل المدى (سنة)</td>
+                    <td class="up">السعر فوق MA200 → سوق صاعد</td>
+                    <td class="down">السعر تحت MA200 → سوق هابط</td>
+                  </tr>
+                  <tr>
+                    <td><strong>BB</strong></td>
+                    <td>بولينجر باند</td>
+                    <td>يحدد نطاق التذبذب الطبيعي للسعر</td>
+                    <td class="up">السعر يلمس الحد الأدنى</td>
+                    <td class="down">السعر يلمس الحد الأعلى</td>
+                  </tr>
+                  <tr>
+                    <td><strong>ATR</strong></td>
+                    <td>متوسط المدى الحقيقي</td>
+                    <td>يقيس مستوى التذبذب اليومي للسهم</td>
+                    <td class="up" colspan="2">يُستخدم لتحديد وقف الخسارة المناسب</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Stochastic</strong></td>
+                    <td>المذبذب العشوائي</td>
+                    <td>يقارن سعر الإغلاق بنطاق الأسعار الأخيرة</td>
+                    <td class="up">أقل من 20</td>
+                    <td class="down">فوق 80</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- ===== قسم المصطلحات المالية ===== -->
+          <div class="guide-section guide-financial-section" data-section="financial">
+            <div class="guide-section-header">
+              <div class="guide-section-icon" style="background:var(--amber-bg);color:var(--amber)">💰</div>
+              <div>
+                <div class="guide-section-title">المصطلحات المالية الأساسية</div>
+                <div class="guide-section-desc">مصطلحات تحليل الميزانية والقوائم المالية</div>
+              </div>
+            </div>
+            <div class="guide-terms-grid">
+
+              <div class="guide-term-card" data-keywords="الإيرادات revenue المبيعات">
+                <div class="guide-term-name">Revenue <span
+                    style="font-size:11px;color:var(--text-secondary)">الإيرادات</span></div>
+                <div class="guide-term-ar">إجمالي المبيعات قبل الخصم</div>
+                <div class="guide-term-desc">إجمالي الدخل من مبيعات المنتجات أو الخدمات. هو الرقم الأعلى في قائمة الدخل.
+                  الزيادة المستمرة علامة صحة.</div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="صافي الأرباح net income">
+                <div class="guide-term-name">Net Income <span style="font-size:11px;color:var(--text-secondary)">صافي
+                    الأرباح</span></div>
+                <div class="guide-term-ar">الربح الصافي بعد كل الخصومات</div>
+                <div class="guide-term-desc">الأرباح المتبقية بعد خصم جميع التكاليف والضرائب والفوائد. هو ما يُقسّم على
+                  المساهمين أو يُعاد استثماره.</div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="التدفق النقدي free cash flow">
+                <div class="guide-term-name">Free Cash Flow <span
+                    style="font-size:11px;color:var(--text-secondary)">التدفق النقدي الحر</span></div>
+                <div class="guide-term-ar">النقد المتاح بعد الإنفاق الرأسمالي</div>
+                <div class="guide-term-desc">النقد الفعلي الذي تولّده الشركة بعد دفع نفقات الاستثمار. أهم من صافي
+                  الأرباح لأنه حقيقي وغير قابل للتلاعب المحاسبي.</div>
+                <div class="guide-term-formula">FCF = التدفق التشغيلي - النفقات الرأسمالية</div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="الديون debt حقوق الملكية equity">
+                <div class="guide-term-name">Debt/Equity <span style="font-size:11px;color:var(--text-secondary)">نسبة
+                    الدين إلى الملكية</span></div>
+                <div class="guide-term-ar">مؤشر الرفع المالي</div>
+                <div class="guide-term-desc">تكشف مدى اعتماد الشركة على الاقتراض مقابل حقوق المساهمين. نسبة مرتفعة تعني
+                  مخاطرة أعلى في حالات ارتفاع الفوائد.</div>
+                <div class="guide-term-range">
+                  <span class="guide-range-item" style="background:var(--up-bg);color:var(--up)">أقل من 50% → آمن</span>
+                  <span class="guide-range-item" style="background:var(--amber-bg);color:var(--amber)">50-100% →
+                    مراقبة</span>
+                  <span class="guide-range-item" style="background:var(--down-bg);color:var(--down)">فوق 100% →
+                    خطر</span>
+                </div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="الاهلاك depreciation amortization">
+                <div class="guide-term-name">D&A <span style="font-size:11px;color:var(--text-secondary)">الإهلاك
+                    والاستهلاك</span></div>
+                <div class="guide-term-ar">Depreciation & Amortization</div>
+                <div class="guide-term-desc">توزيع تكلفة الأصول الثابتة والمعنوية على سنوات الاستخدام. مصروف محاسبي لا
+                  نقدي — لذا يُضاف مجدداً في حساب EBITDA.</div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="الأسهم المتداولة float shares">
+                <div class="guide-term-name">Float Shares <span
+                    style="font-size:11px;color:var(--text-secondary)">الأسهم الحرة</span></div>
+                <div class="guide-term-ar">الأسهم المتاحة للتداول العام</div>
+                <div class="guide-term-desc">الجزء من الأسهم المتاح فعلياً للشراء في السوق (بعد استبعاد أسهم المؤسسين
+                  والحكومة والمحجوزة). Float منخفض يعني تقلبات أشد.</div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="52 week high low أعلى أدنى 52 أسبوع">
+                <div class="guide-term-name">52W High / Low <span
+                    style="font-size:11px;color:var(--text-secondary)">نطاق 52 أسبوع</span></div>
+                <div class="guide-term-ar">أعلى وأدنى سعر خلال سنة</div>
+                <div class="guide-term-desc">يحدد النطاق السعري للسهم خلال العام الماضي. مفيد لتقييم موقع السعر الحالي:
+                  قريب من القاع؟ أم من القمة؟</div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="dcf القيمة العادلة تقييم">
+                <div class="guide-term-name">DCF <span style="font-size:11px;color:var(--text-secondary)">التدفقات
+                    النقدية المخصومة</span></div>
+                <div class="guide-term-ar">Discounted Cash Flow</div>
+                <div class="guide-term-desc">نموذج لحساب القيمة العادلة للسهم بناءً على التدفقات النقدية المستقبلية
+                  المتوقعة. يُستخدم لمعرفة هل السهم مقيّم بأقل أو أكثر من قيمته.</div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ===== قسم الرسوم البيانية ===== -->
+          <div class="guide-section guide-chart-section" data-section="chart">
+            <div class="guide-section-header">
+              <div class="guide-section-icon" style="background:var(--blue-bg);color:var(--blue-text)">📉</div>
+              <div>
+                <div class="guide-section-title">أنواع الرسوم البيانية</div>
+                <div class="guide-section-desc">كيف تقرأ كل نوع من الرسوم في المنصة</div>
+              </div>
+            </div>
+            <div class="guide-chart-types">
+              <div class="guide-chart-card">
+                <div class="guide-chart-icon">📈</div>
+                <div class="guide-chart-name">الرسم الخطي (Line)</div>
+                <div class="guide-chart-desc">يصل أسعار الإغلاق اليومية بخط مستمر. أبسط رسم وأوضحه لرؤية الاتجاه العام
+                  دون تشويش.</div>
+                <span class="guide-chart-use">مناسب للمقارنة</span>
+              </div>
+              <div class="guide-chart-card">
+                <div class="guide-chart-icon">🕯️</div>
+                <div class="guide-chart-name">الشموع اليابانية (Candlestick)</div>
+                <div class="guide-chart-desc">كل شمعة تمثل يوم تداول: الجسم يُظهر الافتتاح والإغلاق، والفتيلة تُظهر أعلى
+                  وأدنى سعر. الشمعة الخضراء = ارتفاع، الحمراء = انخفاض.</div>
+                <span class="guide-chart-use">الأفضل للتحليل الفني</span>
+              </div>
+              <div class="guide-chart-card">
+                <div class="guide-chart-icon">🏔️</div>
+                <div class="guide-chart-name">الرسم المنطقي (Area)</div>
+                <div class="guide-chart-desc">مثل الخطي لكن مع تظليل المساحة أسفله. يُبرز الاتجاه العام ومدى الارتفاع أو
+                  الانخفاض بشكل بصري.</div>
+                <span class="guide-chart-use">جيد للعرض العام</span>
+              </div>
+              <div class="guide-chart-card">
+                <div class="guide-chart-icon">📊</div>
+                <div class="guide-chart-name">الأعمدة (Bar)</div>
+                <div class="guide-chart-desc">مشابه للشموع لكن بتصميم مختلف. يُظهر فتح وإغلاق وأعلى وأدنى سعر لكل جلسة.
+                  شائع في الأسواق الغربية.</div>
+                <span class="guide-chart-use">للمحترفين</span>
+              </div>
+            </div>
+            <div style="padding:14px 16px 16px">
+              <div class="guide-section-title" style="font-size:13px;margin-bottom:10px">🔍 كيف تقرأ الشمعة اليابانية:
+              </div>
+              <div
+                style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;font-size:12px;">
+                <div style="background:var(--up-bg);padding:10px;border-radius:8px;border:0.5px solid #0F6E5640">
+                  <div style="color:var(--up);font-weight:700;margin-bottom:4px">🟢 شمعة خضراء = صعود</div>
+                  <div style="color:var(--text-secondary)">الإغلاق أعلى من الافتتاح. الجسم الطويل = ضغط شرائي قوي.</div>
+                </div>
+                <div style="background:var(--down-bg);padding:10px;border-radius:8px;border:0.5px solid #993C1D40">
+                  <div style="color:var(--down);font-weight:700;margin-bottom:4px">🔴 شمعة حمراء = هبوط</div>
+                  <div style="color:var(--text-secondary)">الإغلاق أقل من الافتتاح. الجسم الطويل = ضغط بيعي قوي.</div>
+                </div>
+                <div
+                  style="background:var(--bg-secondary);padding:10px;border-radius:8px;border:0.5px solid var(--border)">
+                  <div style="color:var(--text-primary);font-weight:700;margin-bottom:4px">📏 الفتيلة العلوية</div>
+                  <div style="color:var(--text-secondary)">تمثل أعلى سعر وصله السهم خلال الجلسة.</div>
+                </div>
+                <div
+                  style="background:var(--bg-secondary);padding:10px;border-radius:8px;border:0.5px solid var(--border)">
+                  <div style="color:var(--text-primary);font-weight:700;margin-bottom:4px">📏 الفتيلة السفلية</div>
+                  <div style="color:var(--text-secondary)">تمثل أدنى سعر وصله السهم خلال الجلسة.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== قسم الاستراتيجيات ===== -->
+          <div class="guide-section guide-strategy-section" data-section="strategy">
+            <div class="guide-section-header">
+              <div class="guide-section-icon" style="background:var(--amber-bg);color:var(--amber)">🧠</div>
+              <div>
+                <div class="guide-section-title">استراتيجيات الاستثمار</div>
+                <div class="guide-section-desc">المناهج المختلفة لبناء المحفظة وتحقيق الأهداف</div>
+              </div>
+            </div>
+            <div class="guide-strategy-list">
+
+              <div class="guide-strategy-card">
+                <div class="guide-strategy-title">🏦 الاستثمار طويل الأمد (Buy &amp; Hold)</div>
+                <div class="guide-strategy-desc">شراء أسهم شركات قوية والاحتفاظ بها لسنوات طويلة بغض النظر عن التقلبات
+                  اليومية. يعتمد على نمو الشركة مع الوقت وتراكم التوزيعات.</div>
+                <div class="guide-strategy-pros-cons">
+                  <div class="guide-pros">
+                    <div class="guide-pros-title">✅ المزايا</div>
+                    <ul>
+                      <li>أقل ضغطاً نفسياً</li>
+                      <li>ضرائب أقل</li>
+                      <li>يستفيد من الفائدة المركبة</li>
+                    </ul>
+                  </div>
+                  <div class="guide-cons">
+                    <div class="guide-cons-title">⚠️ العيوب</div>
+                    <ul>
+                      <li>يحتاج صبراً طويلاً</li>
+                      <li>ربح ورقي قد يختفي</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="guide-strategy-card">
+                <div class="guide-strategy-title">💰 استراتيجية التوزيعات (Dividend Investing)</div>
+                <div class="guide-strategy-desc">التركيز على أسهم تدفع توزيعات منتظمة وثابتة. تهدف لبناء دخل سلبي ثابت
+                  من المحفظة بغض النظر عن حركة السعر.</div>
+                <div class="guide-strategy-pros-cons">
+                  <div class="guide-pros">
+                    <div class="guide-pros-title">✅ المزايا</div>
+                    <ul>
+                      <li>دخل ثابت ومستمر</li>
+                      <li>أسهم دفاعية أقل تقلباً</li>
+                    </ul>
+                  </div>
+                  <div class="guide-cons">
+                    <div class="guide-cons-title">⚠️ العيوب</div>
+                    <ul>
+                      <li>نمو رأسمالي أبطأ</li>
+                      <li>خطر تخفيض التوزيع</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="guide-strategy-card">
+                <div class="guide-strategy-title">📈 استراتيجية الزخم (Momentum)</div>
+                <div class="guide-strategy-desc">شراء الأسهم التي ترتفع والتخلص من تلك التي تنخفض. تعتمد على فكرة أن
+                  الأسهم الصاعدة تميل للاستمرار في الصعود على المدى القريب.</div>
+                <div class="guide-strategy-pros-cons">
+                  <div class="guide-pros">
+                    <div class="guide-pros-title">✅ المزايا</div>
+                    <ul>
+                      <li>أرباح سريعة في السوق الصاعد</li>
+                    </ul>
+                  </div>
+                  <div class="guide-cons">
+                    <div class="guide-cons-title">⚠️ العيوب</div>
+                    <ul>
+                      <li>خطورة عالية</li>
+                      <li>يحتاج متابعة يومية</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="guide-strategy-card">
+                <div class="guide-strategy-title">🎯 القيمة (Value Investing)</div>
+                <div class="guide-strategy-desc">البحث عن أسهم تتداول بأقل من قيمتها العادلة (P/E و P/BV منخفضة)
+                  والانتظار حتى يتصحح التقييم. المنهج الذي أسسه بنيامين غراهام وطبّقه بافيت.</div>
+                <div class="guide-strategy-pros-cons">
+                  <div class="guide-pros">
+                    <div class="guide-pros-title">✅ المزايا</div>
+                    <ul>
+                      <li>هامش أمان مدمج</li>
+                      <li>منطقي وقائم على بيانات</li>
+                    </ul>
+                  </div>
+                  <div class="guide-cons">
+                    <div class="guide-cons-title">⚠️ العيوب</div>
+                    <ul>
+                      <li>قد يأخذ وقتاً طويلاً</li>
+                      <li>يحتاج تحليلاً عميقاً</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- ===== قسم أوامر التداول ===== -->
+          <div class="guide-section guide-orders-section" data-section="orders">
+            <div class="guide-section-header">
+              <div class="guide-section-icon" style="background:var(--blue-bg);color:var(--blue-text)">📋</div>
+              <div>
+                <div class="guide-section-title">أنواع أوامر التداول</div>
+                <div class="guide-section-desc">تعرّف على الأوامر المتاحة في سوق تداول السعودي</div>
+              </div>
+            </div>
+            <div class="guide-terms-grid">
+
+              <div class="guide-term-card" data-keywords="market order أمر السوق">
+                <div class="guide-term-name">Market Order <span style="font-size:11px;color:var(--text-secondary)">أمر
+                    السوق</span></div>
+                <div class="guide-term-desc">يُنفَّذ فوراً بأفضل سعر متاح في السوق. الأسرع تنفيذاً لكن قد يكون السعر
+                  مختلفاً قليلاً عن آخر سعر رأيته.</div>
+                <div class="guide-term-example">⭐ متى تستخدمه: عندما تريد الدخول أو الخروج بسرعة ولا تهمك فروق صغيرة في
+                  السعر.</div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="limit order أمر محدد">
+                <div class="guide-term-name">Limit Order <span style="font-size:11px;color:var(--text-secondary)">الأمر
+                    المحدد</span></div>
+                <div class="guide-term-desc">تحدد السعر الأقصى للشراء أو الأدنى للبيع. لن يُنفَّذ إلا بهذا السعر أو أفضل
+                  منه. يعطيك تحكماً كاملاً بالسعر.</div>
+                <div class="guide-term-example">⭐ متى تستخدمه: عندما تريد الشراء عند مستوى دعم معين أو البيع عند مقاومة.
+                </div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="stop loss وقف الخسارة">
+                <div class="guide-term-name">Stop Loss <span style="font-size:11px;color:var(--text-secondary)">وقف
+                    الخسارة</span></div>
+                <div class="guide-term-desc">أمر تلقائي للبيع إذا نزل السعر عن حد معين. يحميك من الخسائر الكبيرة في حالة
+                  انعكاس الاتجاه.</div>
+                <div class="guide-term-example">⭐ مثال: اشتريت بـ 27 ر.س، ضع stop loss عند 25.50 ر.س (خسارة 5.5% كحد
+                  أقصى).</div>
+              </div>
+
+              <div class="guide-term-card" data-keywords="take profit جني الأرباح">
+                <div class="guide-term-name">Take Profit <span style="font-size:11px;color:var(--text-secondary)">جني
+                    الأرباح</span></div>
+                <div class="guide-term-desc">أمر تلقائي للبيع عند بلوغ سعر مستهدف. يضمن تحقيق الربح المخطط دون الحاجة
+                  لمتابعة مستمرة.</div>
+                <div class="guide-term-example">⭐ مثال: اشتريت بـ 27 ر.س، ضع take profit عند 30 ر.س (ربح 11%).</div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="guide-no-results" id="guideNoResults" style="display:none">
+            <div style="font-size:32px;margin-bottom:10px">🔍</div>
+            <div>لم يُعثر على نتائج لـ "<span id="guideSearchTerm"></span>"</div>
+            <div style="font-size:12px;margin-top:6px;color:var(--text-tertiary)">جرّب كلمة مختلفة أو تصفّح الفئات</div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
