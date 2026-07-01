@@ -83,6 +83,37 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
+// ==========================================
+// محاكاة جلب البيانات الحية (Live API Service)
+// ==========================================
+let apiConnected = true;
+
+function fetchRealTimeData() {
+  const dot = document.getElementById("apiStatusDot");
+  const text = document.getElementById("apiStatusText");
+
+  if (!dot || !text) return;
+
+  if (Math.random() > 0.95) {
+    apiConnected = false;
+    dot.style.background = "var(--down)";
+    text.textContent = "جاري إعادة الاتصال...";
+  } else {
+    apiConnected = true;
+    dot.style.background = "var(--up)";
+    text.textContent = "متصل (تداول)";
+
+    if (selectedStock && document.getElementById("heroPrice")) {
+       const tick = (Math.random() - 0.5) * 0.04;
+       selectedStock.price = Math.max(0.1, selectedStock.price + tick);
+       document.getElementById("heroPrice").textContent = selectedStock.price.toFixed(2) + " ر.س";
+    }
+  }
+}
+
+setInterval(fetchRealTimeData, 3000);
+
+
 // ===== دوال صفحة المساعدة =====
 function switchGuideSection(sec, el) {
   // تحديث الأزرار
@@ -141,6 +172,9 @@ function searchGuide(q) {
 let selectedStock = stocks[0];
 let currentSector = 'all';
 let priceChart = null;
+let tvChart = null;
+let tvSeries = null;
+let tvVolumeSeries = null;
 let chatHistory = [];
 
 // ==========================================
@@ -665,7 +699,27 @@ function genPriceDataFallback(period) {
     else labels.push(i % 30 === 0 ? months[d.getMonth()] + ' ' + d.getFullYear() : '');
   }
   data[data.length - 1] = s.price;
-  return { labels, data, highs: data, lows: data, opens: data, volume };
+
+  // Create realistic candlestick highs/lows/opens
+  const opens = data.map((close, i) => {
+    if (i === 0) return close;
+    // slightly randomize the open based on the previous close
+    return data[i-1] + (Math.random() - 0.5) * data[i-1] * 0.01;
+  });
+
+  const highs = data.map((close, i) => {
+    const o = opens[i];
+    const maxVal = Math.max(o, close);
+    return maxVal + (Math.random() * maxVal * 0.015);
+  });
+
+  const lows = data.map((close, i) => {
+    const o = opens[i];
+    const minVal = Math.min(o, close);
+    return minVal - (Math.random() * minVal * 0.015);
+  });
+
+  return { labels, data, highs, lows, opens, volume };
 }
 
 // ==========================================
@@ -675,306 +729,157 @@ let currentChartType = 'line';
 let rsiChart = null;
 let activeOverlays = { ma20: true, ma50: true, ma200: false, bb: false, vol: true };
 
+function initTradingViewChart() {
+  const container = document.getElementById('tvChartContainer');
+  if (!container) return;
+
+  if (!tvChart) {
+    const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
+
+    tvChart = LightweightCharts.createChart(container, {
+      width: container.clientWidth,
+      height: 440,
+      layout: {
+        background: { type: 'solid', color: 'transparent' },
+        textColor: isDark ? '#d1d5db' : '#4b5563',
+      },
+      grid: {
+        vertLines: { color: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.04)' },
+        horzLines: { color: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.04)' },
+      },
+      crosshair: {
+        mode: LightweightCharts.CrosshairMode.Normal,
+      },
+      rightPriceScale: {
+        borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)',
+      },
+      timeScale: {
+        borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)',
+        timeVisible: true,
+      },
+    });
+
+    tvSeries = tvChart.addCandlestickSeries({
+      upColor: '#0F6E56',
+      downColor: '#993C1D',
+      borderVisible: false,
+      wickUpColor: '#0F6E56',
+      wickDownColor: '#993C1D',
+    });
+
+    tvVolumeSeries = tvChart.addHistogramSeries({
+      color: '#26a69a',
+      priceFormat: {
+        type: 'volume',
+      },
+      priceScaleId: '',
+    });
+
+    tvVolumeSeries.priceScale().applyOptions({
+        scaleMargins: {
+            top: 0.8,
+            bottom: 0,
+        },
+    });
+
+    window.addEventListener('resize', () => {
+      tvChart.applyOptions({ width: container.clientWidth });
+    });
+  }
+}
+
 function buildChart(period) {
-  const ctx = document.getElementById('priceChart');
-  if (!ctx) return;
-  const context = ctx.getContext('2d');
-  if (priceChart) priceChart.destroy();
+  const container = document.getElementById('tvChartContainer');
+  if (!container) return;
+
+  initTradingViewChart();
 
   const { labels, data, highs, lows, opens, volume: volumeData = [] } = genPriceData(period);
 
-  const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
-  const isUp = data[data.length - 1] >= data[0];
-  const upColor = '#0F6E56';
-  const downColor = '#993C1D';
-  const gridColor = isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.04)';
-  const tickColor = isDark ? '#5c5f66' : '#9ca3af';
-  const bgColor = isDark ? '#1a1b1e' : '#ffffff';
+  const formattedData = data.map((close, i) => {
+    const dateObj = new Date();
+    dateObj.setDate(dateObj.getDate() - (data.length - 1 - i));
+    const year = dateObj.getFullYear();
+    const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+    const day = String(dateObj.getDate()).padStart(2, '0');
 
-  // بناء بيانات OHLC
-  const ohlcData = data.map((close, i) => ({
-    x: labels[i] || i,
-    o: opens[i] || close,
-    h: highs[i] || close,
-    l: lows[i] || close,
-    c: close,
+    return {
+      time: `${year}-${month}-${day}`,
+      open: opens[i] || close,
+      high: highs[i] || close,
+      low: lows[i] || close,
+      close: close,
+    };
+  });
+
+  const formattedVolume = volumeData.map((vol, i) => ({
+    time: formattedData[i].time,
+    value: vol,
+    color: formattedData[i].close >= formattedData[i].open ? 'rgba(15, 110, 86, 0.5)' : 'rgba(153, 60, 29, 0.5)'
   }));
 
-  // حساب هيكن آشي
-  const haData = [];
-  for (let i = 0; i < ohlcData.length; i++) {
-    const cur = ohlcData[i];
-    const prev = haData[i - 1];
-    const haClose = (cur.o + cur.h + cur.l + cur.c) / 4;
-    const haOpen = prev ? (prev.o + prev.c) / 2 : (cur.o + cur.c) / 2;
-    const haHigh = Math.max(cur.h, haOpen, haClose);
-    const haLow = Math.min(cur.l, haOpen, haClose);
-    haData.push({ x: cur.x, o: haOpen, h: haHigh, l: haLow, c: haClose });
-  }
+  if (tvSeries) tvSeries.setData(formattedData);
+  if (tvVolumeSeries) tvVolumeSeries.setData(formattedVolume);
+  if (tvChart) tvChart.timeScale().fitContent();
 
-  const gradient = context.createLinearGradient(0, 0, 0, 340);
-  gradient.addColorStop(0, isUp ? 'rgba(15,110,86,0.22)' : 'rgba(153,60,29,0.22)');
-  gradient.addColorStop(1, isUp ? 'rgba(15,110,86,0.00)' : 'rgba(153,60,29,0.00)');
-
-  const lineColor = isUp ? upColor : downColor;
-  const volColor = isUp ? 'rgba(15,110,86,0.25)' : 'rgba(153,60,29,0.25)';
-
-  // اختيار نوع الرسم
-  let mainDataset;
-
-  if (currentChartType === 'candle') {
-    mainDataset = {
-      type: 'candlestick',
-      label: 'السعر',
-      data: ohlcData,
-      color: {
-        up: upColor,
-        down: downColor,
-        unchanged: '#888',
-      },
-      borderColor: {
-        up: upColor,
-        down: downColor,
-        unchanged: '#888',
-      },
-      yAxisID: 'yPrice',
-      order: 1,
-    };
-  } else if (currentChartType === 'heikinashi') {
-    mainDataset = {
-      type: 'candlestick',
-      label: 'هيكن آشي',
-      data: haData,
-      color: {
-        up: upColor,
-        down: downColor,
-        unchanged: '#888',
-      },
-      borderColor: {
-        up: upColor,
-        down: downColor,
-        unchanged: '#888',
-      },
-      yAxisID: 'yPrice',
-      order: 1,
-    };
-  } else if (currentChartType === 'bar') {
-    mainDataset = {
-      type: 'ohlc',
-      label: 'السعر',
-      data: ohlcData,
-      color: {
-        up: upColor,
-        down: downColor,
-        unchanged: '#888',
-      },
-      yAxisID: 'yPrice',
-      order: 1,
-    };
-  } else if (currentChartType === 'area') {
-    mainDataset = {
-      type: 'line',
-      label: 'السعر',
-      data,
-      borderColor: lineColor,
-      borderWidth: 2,
-      fill: true,
-      backgroundColor: gradient,
-      tension: 0.3,
-      pointRadius: 0,
-      pointHoverRadius: 6,
-      pointHoverBackgroundColor: lineColor,
-      pointHoverBorderColor: bgColor,
-      pointHoverBorderWidth: 2,
-      yAxisID: 'yPrice',
-      order: 1,
-    };
-  } else {
-    // line (default)
-    mainDataset = {
-      type: 'line',
-      label: 'السعر',
-      data,
-      borderColor: lineColor,
-      borderWidth: 2,
-      fill: false,
-      tension: 0.3,
-      pointRadius: 0,
-      pointHoverRadius: 6,
-      pointHoverBackgroundColor: lineColor,
-      pointHoverBorderColor: bgColor,
-      pointHoverBorderWidth: 2,
-      yAxisID: 'yPrice',
-      order: 1,
-    };
-  }
-
-  const datasets = [mainDataset];
-
-  // المتوسطات المتحركة
   const calcMA = (arr, n) => arr.map((_, i) => {
     if (i < n - 1) return null;
     return arr.slice(i - n + 1, i + 1).reduce((s, v) => s + v, 0) / n;
   });
-
-  const calcBB = (arr, n = 20, mult = 2) => arr.map((_, i) => {
-    if (i < n - 1) return { upper: null, lower: null };
-    const slice = arr.slice(i - n + 1, i + 1);
-    const mean = slice.reduce((s, v) => s + v, 0) / n;
-    const std = Math.sqrt(slice.reduce((s, v) => s + (v - mean) ** 2, 0) / n);
-    return { upper: mean + mult * std, lower: mean - mult * std };
-  });
-
   const ma20 = calcMA(data, Math.min(20, Math.floor(data.length / 2)));
   const ma50 = calcMA(data, Math.min(50, Math.floor(data.length / 2)));
   const ma200 = calcMA(data, Math.min(200, Math.floor(data.length * 0.8)));
-  const bb = calcBB(data);
 
-  if (activeOverlays.ma20) datasets.push({
-    type: 'line', label: 'MA20', data: ma20,
-    borderColor: 'rgba(15,110,86,0.80)', borderWidth: 1.5,
-    borderDash: [3, 2], fill: false, pointRadius: 0,
-    tension: 0.3, yAxisID: 'yPrice', order: 2,
-  });
-
-  if (activeOverlays.ma50) datasets.push({
-    type: 'line', label: 'MA50', data: ma50,
-    borderColor: 'rgba(27,79,114,0.75)', borderWidth: 1.5,
-    borderDash: [4, 2], fill: false, pointRadius: 0,
-    tension: 0.3, yAxisID: 'yPrice', order: 2,
-  });
-
-  if (activeOverlays.ma200) datasets.push({
-    type: 'line', label: 'MA200', data: ma200,
-    borderColor: 'rgba(133,79,11,0.75)', borderWidth: 1.5,
-    borderDash: [6, 3], fill: false, pointRadius: 0,
-    tension: 0.3, yAxisID: 'yPrice', order: 3,
-  });
-
-  if (activeOverlays.bb) {
-    datasets.push({
-      type: 'line', label: 'BB Upper',
-      data: bb.map(b => b.upper),
-      borderColor: 'rgba(107,63,160,0.5)', borderWidth: 1,
-      borderDash: [3, 3], fill: false, pointRadius: 0,
-      yAxisID: 'yPrice', order: 4,
-    });
-    datasets.push({
-      type: 'line', label: 'BB Lower',
-      data: bb.map(b => b.lower),
-      borderColor: 'rgba(107,63,160,0.5)', borderWidth: 1,
-      borderDash: [3, 3], fill: false, pointRadius: 0,
-      yAxisID: 'yPrice', order: 4,
-    });
-  }
-
-  if (activeOverlays.vol) datasets.push({
-    type: 'bar', label: 'الحجم',
-    data: volumeData,
-    backgroundColor: volColor,
-    borderColor: 'transparent',
-    borderRadius: 2,
-    yAxisID: 'yVolume', order: 10,
-  });
-
-  priceChart = new Chart(context, {
-    type: 'bar',
-    data: { labels, datasets },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      interaction: { mode: 'index', intersect: false },
-      animation: { duration: 350, easing: 'easeOutQuart' },
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: isDark ? '#25262b' : '#fff',
-          borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)',
-          borderWidth: 1,
-          titleColor: isDark ? '#e9ecef' : '#111827',
-          bodyColor: isDark ? '#909296' : '#6b7280',
-          padding: 12, cornerRadius: 10, rtl: true, textDirection: 'rtl',
-          callbacks: {
-            title: items => items[0]?.label || '',
-            label: item => {
-              const d = item.raw;
-              if (d && typeof d === 'object' && 'o' in d) {
-                return [
-                  ` افتتاح: ${d.o?.toFixed(2)} ر.س`,
-                  ` أعلى: ${d.h?.toFixed(2)} ر.س`,
-                  ` أدنى: ${d.l?.toFixed(2)} ر.س`,
-                  ` إغلاق: ${d.c?.toFixed(2)} ر.س`,
-                ];
-              }
-              if (item.dataset.label === 'السعر' || item.dataset.label === 'هيكن آشي') {
-                return ` السعر: ${item.parsed.y?.toFixed(2)} ر.س`;
-              }
-              if (item.dataset.label === 'الحجم') return ` الحجم: ${item.parsed.y}M`;
-              if (item.dataset.label === 'MA20') return ` MA20: ${item.parsed.y?.toFixed(2)}`;
-              if (item.dataset.label === 'MA50') return ` MA50: ${item.parsed.y?.toFixed(2)}`;
-              if (item.dataset.label === 'MA200') return ` MA200: ${item.parsed.y?.toFixed(2)}`;
-              return '';
-            },
-          }
-        },
-      },
-      scales: {
-        x: {
-          grid: { display: false },
-          border: { display: false },
-          ticks: {
-            font: { size: 11, family: 'inherit' },
-            maxTicksLimit: 8,
-            color: tickColor,
-            maxRotation: 0,
-          }
-        },
-        yPrice: {
-          position: 'right',
-          grid: { color: gridColor, drawBorder: false },
-          border: { display: false, dash: [4, 4] },
-          ticks: {
-            font: { size: 11, family: 'inherit' },
-            callback: v => v.toFixed(1),
-            color: tickColor,
-            maxTicksLimit: 6,
-          }
-        },
-        yVolume: {
-          position: 'left',
-          grid: { display: false },
-          border: { display: false },
-          ticks: {
-            font: { size: 10, family: 'inherit' },
-            color: tickColor,
-            maxTicksLimit: 3,
-          },
-          max: activeOverlays.vol ? Math.max(...volumeData) * 5 : 100,
-          display: activeOverlays.vol,
-        }
-      }
-    }
-  });
-
-  buildRSIChart(data, isDark, tickColor, gridColor);
   updateChartQuickStats(data, volumeData, ma20, ma50, ma200);
 }
+
+
+
+currentChartType = 'candle';
+let tvLineSeries = null;
 
 function setChartType(type, el) {
   currentChartType = type;
   document.querySelectorAll('.chart-type-btn').forEach(b => b.classList.remove('active'));
-  el.classList.add('active');
-  const period = document.querySelector('.time-btn.active')?.textContent || '1أ';
-  const normPeriod = period === '1أ' ? '1W' : period === '1ش' ? '1M' : period === '3ش' ? '3M' : period === '6ش' ? '6M' : period === '1س' ? '1Y' : '3Y';
-  buildChart(normPeriod);
+  if(el) el.classList.add('active');
+
+  if (tvChart) {
+    if (type === 'line' || type === 'area') {
+      if(tvSeries) tvSeries.applyOptions({ visible: false });
+      if(!tvLineSeries) {
+         tvLineSeries = tvChart.addLineSeries({
+            color: '#2962FF',
+            lineWidth: 2,
+         });
+         const period = document.querySelector('.time-btn.active')?.textContent || '1أ';
+         const normPeriod = period === '1أ' ? '1W' : period === '1ش' ? '1M' : period === '3ش' ? '3M' : period === '6ش' ? '6M' : period === '1س' ? '1Y' : '3Y';
+
+         const { data } = genPriceData(normPeriod);
+         const formattedData = data.map((close, i) => {
+            const dateObj = new Date();
+            dateObj.setDate(dateObj.getDate() - (data.length - 1 - i));
+            const year = dateObj.getFullYear();
+            const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+            const day = String(dateObj.getDate()).padStart(2, '0');
+            return { time: `${year}-${month}-${day}`, value: close };
+         });
+         tvLineSeries.setData(formattedData);
+      } else {
+         tvLineSeries.applyOptions({ visible: true });
+      }
+    } else {
+      if(tvLineSeries) tvLineSeries.applyOptions({ visible: false });
+      if(tvSeries) tvSeries.applyOptions({ visible: true });
+    }
+  }
 }
 
-function toggleOverlay(name, el) {
-  activeOverlays[name] = !activeOverlays[name];
-  el.classList.toggle('active');
-  const period = document.querySelector('.time-btn.active')?.textContent || '1أ';
-  const normPeriod = period === '1أ' ? '1W' : period === '1ش' ? '1M' : period === '3ش' ? '3M' : period === '6ش' ? '6M' : period === '1س' ? '1Y' : '3Y';
-  buildChart(normPeriod);
+
+
+function toggleOverlay(id, el) {
+  activeOverlays[id] = !activeOverlays[id];
+  if (activeOverlays[id]) el.classList.add('active');
+  else el.classList.remove('active');
 }
 
 function setTime(period, el) {
@@ -982,6 +887,7 @@ function setTime(period, el) {
   el.classList.add('active');
   buildChart(period);
 }
+
 
 function buildRSIChart(data, isDark, tickColor, gridColor) {
   const canvas = document.getElementById('rsiChart');
@@ -1036,6 +942,9 @@ function buildRSIChart(data, isDark, tickColor, gridColor) {
 
 function calcRSI(data, period = 14) {
   const rsi = [];
+  if (data.length <= period) {
+     return data.map(() => 50);
+  }
   let gains = 0, losses = 0;
   for (let i = 1; i <= period; i++) {
     const d = data[i] - data[i - 1];
@@ -1095,6 +1004,9 @@ function calcStochastic(closes, highs, lows, period = 14) {
 
 function calcATR(highs, lows, closes, period = 14) {
   const atr = Array(closes.length).fill(null);
+  if (closes.length <= period) {
+     return atr;
+  }
   const tr = Array(closes.length).fill(0);
 
   for (let i = 1; i < closes.length; i++) {
@@ -1650,3 +1562,175 @@ document.addEventListener('DOMContentLoaded', async () => {
   renderGainersLosers();
   updateHero();
 });
+
+// ==========================================
+// أدوات متقدمة (Advanced Tools)
+// ==========================================
+function openHistoricalModal() {
+  document.getElementById('historicalModal').style.display = 'block';
+  document.getElementById('modalOverlay').style.display = 'block';
+}
+
+function openSimulatorModal() {
+  document.getElementById('simulatorModal').style.display = 'block';
+  document.getElementById('modalOverlay').style.display = 'block';
+  // set default target slightly above current price
+  document.getElementById('simTargetInput').value = (selectedStock.price * 1.05).toFixed(2);
+}
+
+function closeModals() {
+  document.getElementById('historicalModal').style.display = 'none';
+  document.getElementById('simulatorModal').style.display = 'none';
+  document.getElementById('modalOverlay').style.display = 'none';
+}
+
+function runHistoricalAnalysis() {
+  closeModals();
+  const days = parseInt(document.getElementById('histDaysInput').value) || 30;
+  calculateHistoricalAnalysis(days);
+}
+
+function calculateHistoricalAnalysis(days) {
+  const { data: closes, highs, lows } = genPriceData('3Y'); // fetch max data
+
+  if (closes.length < days) {
+    alert("لا توجد بيانات كافية لهذه الفترة.");
+    return;
+  }
+
+  const periodCloses = closes.slice(-days);
+  const periodHighs = highs.slice(-days);
+  const periodLows = lows.slice(-days);
+
+  const startPrice = periodCloses[0];
+  const endPrice = periodCloses[periodCloses.length - 1];
+  const maxPrice = Math.max(...periodHighs);
+  const minPrice = Math.min(...periodLows);
+  const chgPercent = ((endPrice - startPrice) / startPrice) * 100;
+
+  // Calculate Volatility (Standard Deviation)
+  const mean = periodCloses.reduce((a, b) => a + b, 0) / periodCloses.length;
+  const variance = periodCloses.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / periodCloses.length;
+  const stdDev = Math.sqrt(variance);
+  const volatilityPercent = (stdDev / mean) * 100;
+
+  let trendStr = chgPercent > 0 ? 'صاعد' : 'هابط';
+  let trendCls = chgPercent > 0 ? 'up' : 'down';
+  let volStatus = volatilityPercent > 3 ? 'عالي التذبذب' : volatilityPercent < 1.5 ? 'مستقر' : 'تذبذب متوسط';
+
+  const html = `
+    <div style="animation: fadeIn 0.3s;">
+      <h4 style="margin-top:0; color:var(--text-primary);"><i class="ti ti-clock"></i> نتائج التحليل لآخر ${days} يوم</h4>
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 15px;">
+        <div class="mkt-card">
+          <div class="mkt-index">العائد خلال الفترة</div>
+          <div class="mkt-val ${trendCls}">${chgPercent > 0 ? '+' : ''}${chgPercent.toFixed(2)}%</div>
+          <div class="mkt-chg muted">من ${startPrice.toFixed(2)} إلى ${endPrice.toFixed(2)}</div>
+        </div>
+        <div class="mkt-card">
+          <div class="mkt-index">حالة التذبذب (المخاطرة)</div>
+          <div class="mkt-val" style="color:var(--amber)">${volatilityPercent.toFixed(2)}%</div>
+          <div class="mkt-chg muted">${volStatus}</div>
+        </div>
+        <div class="mkt-card">
+          <div class="mkt-index">أعلى سعر (مقاومة الفترة)</div>
+          <div class="mkt-val up">${maxPrice.toFixed(2)}</div>
+        </div>
+        <div class="mkt-card">
+          <div class="mkt-index">أدنى سعر (دعم الفترة)</div>
+          <div class="mkt-val down">${minPrice.toFixed(2)}</div>
+        </div>
+      </div>
+      <div style="margin-top: 15px; padding: 12px; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border);">
+        <strong>الخلاصة:</strong> خلال الـ ${days} يوم الماضية، السهم في مسار <span class="${trendCls}">${trendStr}</span> ويتسم بكونه <span style="color:var(--amber)">${volStatus}</span>.
+        المستثمر القصير الأجل يمكنه الاعتماد على الدعم عند ${minPrice.toFixed(2)} لإيقاف الخسارة.
+      </div>
+    </div>
+  `;
+  document.getElementById('advancedResultsArea').innerHTML = html;
+}
+
+function runPredictionSimulator() {
+  closeModals();
+  const capital = parseFloat(document.getElementById('simCapitalInput').value) || 10000;
+  const targetPrice = parseFloat(document.getElementById('simTargetInput').value) || selectedStock.price * 1.05;
+  simulatePrediction(targetPrice, capital);
+}
+
+function simulatePrediction(targetPrice, capital) {
+  const { data: closes, highs, lows } = genPriceData('1Y');
+  const currentPrice = selectedStock.price;
+
+  if (targetPrice <= currentPrice) {
+    alert("الرجاء اختيار سعر مستهدف أعلى من السعر الحالي لمحاكاة الربح.");
+    return;
+  }
+
+  // Calculate ATR for dynamic stop loss sizing
+  const atrVals = calcATR(highs, lows, closes, 14);
+  const lastATR = atrVals[atrVals.length - 1] || (currentPrice * 0.02);
+
+  const targetDiff = targetPrice - currentPrice;
+  const stopLossDiff = lastATR * 2; // Stop loss at 2 ATR
+  const stopLossPrice = currentPrice - stopLossDiff;
+
+  const riskRewardRatio = targetDiff / stopLossDiff;
+
+  const sharesToBuy = Math.floor(capital / currentPrice);
+  const actualInvestment = sharesToBuy * currentPrice;
+  const potentialProfit = sharesToBuy * targetDiff;
+  const potentialLoss = sharesToBuy * stopLossDiff;
+
+  // Simple probability estimation based on distance to target vs ATR
+  // This is a naive statistical approach for demo purposes
+  const distanceInATRs = targetDiff / lastATR;
+  let probability = Math.max(10, 100 - (distanceInATRs * 15)); // rough estimate
+  if (probability > 90) probability = 90;
+
+  let safetyStr = probability > 60 ? 'آمن نسبياً' : probability > 40 ? 'مخاطرة متوسطة' : 'عالي المخاطرة';
+  let safetyColor = probability > 60 ? 'var(--up)' : probability > 40 ? 'var(--amber)' : 'var(--down)';
+
+  const html = `
+    <div style="animation: fadeIn 0.3s;">
+      <h4 style="margin-top:0; color:var(--text-primary);"><i class="ti ti-chart-arrows"></i> محاكاة خطة التداول</h4>
+
+      <div style="margin-bottom:15px; padding: 12px; background: rgba(24,95,165,0.05); border: 1px solid rgba(24,95,165,0.2); border-radius: 8px;">
+        <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+          <span>رأس المال الفعلي المستثمر:</span>
+          <strong>${actualInvestment.toFixed(2)} ر.س</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+          <span>عدد الأسهم الممكن شراؤها:</span>
+          <strong>${sharesToBuy} سهم</strong>
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 15px;">
+        <div class="mkt-card">
+          <div class="mkt-index">الربح المحتمل</div>
+          <div class="mkt-val up">+${potentialProfit.toFixed(2)}</div>
+          <div class="mkt-chg muted">عند الهدف ${targetPrice.toFixed(2)}</div>
+        </div>
+        <div class="mkt-card">
+          <div class="mkt-index">الخسارة المحتملة (المخاطرة)</div>
+          <div class="mkt-val down">-${potentialLoss.toFixed(2)}</div>
+          <div class="mkt-chg muted">عند الوقف ${stopLossPrice.toFixed(2)}</div>
+        </div>
+        <div class="mkt-card">
+          <div class="mkt-index">نسبة العائد للمخاطرة (R/R)</div>
+          <div class="mkt-val" style="color:var(--text-primary)">1 : ${riskRewardRatio.toFixed(2)}</div>
+          <div class="mkt-chg muted">${riskRewardRatio >= 2 ? 'ممتاز' : 'مقبول'}</div>
+        </div>
+        <div class="mkt-card">
+          <div class="mkt-index">احتمالية الوصول (تخيلية)</div>
+          <div class="mkt-val" style="color:${safetyColor}">${probability.toFixed(0)}%</div>
+          <div class="mkt-chg muted">${safetyStr}</div>
+        </div>
+      </div>
+      <div style="margin-top: 15px; padding: 12px; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border); font-size:13px; color:var(--text-secondary);">
+        <i class="ti ti-info-circle"></i> تعتمد هذه المحاكاة على مؤشر متوسط التذبذب (ATR) لوضع وقف خسارة منطقي بعيداً عن ضوضاء السعر اليومية. تذكر أن هذه أرقام رياضية ولا تضمن الربح.
+      </div>
+    </div>
+  `;
+  document.getElementById('advancedResultsArea').innerHTML = html;
+}
