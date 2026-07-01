@@ -3,6 +3,11 @@
 // ==========================================
 async function loadStocksData() {
   try {
+    // Check if we are running locally via file:// to avoid CORS errors
+    if (window.location.protocol === 'file:') {
+       console.log('Running locally via file:// protocol. Skipping data/stocks.json fetch to avoid CORS errors.');
+       return;
+    }
     const response = await fetch('data/stocks.json');
     const json = await response.json();
 
@@ -88,30 +93,57 @@ updateClock();
 // ==========================================
 let apiConnected = true;
 
-function fetchRealTimeData() {
+async function fetchRealTimeData() {
   const dot = document.getElementById("apiStatusDot");
   const text = document.getElementById("apiStatusText");
 
-  if (!dot || !text) return;
+  if (!dot || !text || !selectedStock) return;
 
-  if (Math.random() > 0.95) {
-    apiConnected = false;
-    dot.style.background = "var(--down)";
-    text.textContent = "جاري إعادة الاتصال...";
-  } else {
-    apiConnected = true;
-    dot.style.background = "var(--up)";
-    text.textContent = "متصل (تداول)";
-
-    if (selectedStock && document.getElementById("heroPrice")) {
+  // We check if we're on the local server or file protocol
+  if (window.location.protocol === 'file:') {
+     // fallback simulation for pure offline HTML view
+     if (Math.random() > 0.95) {
+       apiConnected = false;
+       dot.style.background = "var(--down)";
+       text.textContent = "جاري إعادة الاتصال...";
+     } else {
+       apiConnected = true;
+       dot.style.background = "var(--up)";
+       text.textContent = "محاكاة محلية";
        const tick = (Math.random() - 0.5) * 0.04;
        selectedStock.price = Math.max(0.1, selectedStock.price + tick);
        document.getElementById("heroPrice").textContent = selectedStock.price.toFixed(2) + " ر.س";
-    }
+     }
+     return;
+  }
+
+  try {
+     const res = await fetch(`/api/quote?symbol=${selectedStock.code}`);
+     if (!res.ok) throw new Error('API Error');
+     const data = await res.json();
+
+     if (data && data.price > 0) {
+        apiConnected = true;
+        dot.style.background = "var(--up)";
+        text.textContent = "مباشر (Yahoo)";
+
+        selectedStock.price = data.price;
+        selectedStock.prevClose = data.prevClose || selectedStock.prevClose;
+        selectedStock.changeAbs = data.change || (data.price - selectedStock.prevClose);
+        selectedStock.change = data.changePercent || ((selectedStock.changeAbs / selectedStock.prevClose) * 100);
+        selectedStock.up = selectedStock.changeAbs >= 0;
+
+        updateHero();
+     }
+  } catch (err) {
+     apiConnected = false;
+     dot.style.background = "var(--down)";
+     text.textContent = "مفصول (فشل API)";
   }
 }
 
-setInterval(fetchRealTimeData, 3000);
+// Fetch less frequently to avoid rate limits (every 10 seconds)
+setInterval(fetchRealTimeData, 10000);
 
 
 // ===== دوال صفحة المساعدة =====
