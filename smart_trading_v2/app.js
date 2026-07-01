@@ -852,6 +852,7 @@ function buildChart(period) {
 
   if (tvSeries) tvSeries.setData(formattedData);
   if (tvVolumeSeries) tvVolumeSeries.setData(formattedVolume);
+  if (tvLineSeries) tvLineSeries.setData(formattedData.map(d => ({ time: d.time, value: d.close })));
   if (tvChart) tvChart.timeScale().fitContent();
 
   const calcMA = (arr, n) => arr.map((_, i) => {
