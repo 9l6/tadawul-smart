@@ -5,10 +5,10 @@ async function loadStocksData() {
   try {
     // Check if we are running locally via file:// to avoid CORS errors
     if (window.location.protocol === 'file:') {
-       console.log('Running locally via file:// protocol. Skipping data/stocks.json fetch to avoid CORS errors.');
+       console.log('Running locally via file:// protocol. Skipping API fetch to avoid CORS errors.');
        return;
     }
-    const response = await fetch('data/stocks.json');
+    const response = await fetch('/api/stocks');
     const json = await response.json();
 
     if (json.stocks && json.stocks.length > 0) {
@@ -51,7 +51,7 @@ async function loadStocksData() {
       console.log(`✅ تم تحديث ${json.stocks.length} سهم — آخر تحديث: ${json.lastUpdated}`);
     }
   } catch (e) {
-    console.log('⚠️ لم يتم العثور على stocks.json — يتم استخدام البيانات الافتراضية');
+    console.log('⚠️ لم يتم العثور على قاعدة البيانات — يتم استخدام البيانات الافتراضية');
   }
 }
 
@@ -361,20 +361,41 @@ function updateTechnicalAndAdvice() {
   const getMACDSignal = (macd) => macd > 0 ? { text: 'شراء', cls: 'sig-b' } : { text: 'بيع', cls: 'sig-s' };
   const getStochSignal = (stoch) => stoch > 80 ? { text: 'بيع', cls: 'sig-s' } : stoch < 20 ? { text: 'شراء', cls: 'sig-b' } : { text: 'محايد', cls: 'sig-h' };
 
-  let buyScore = 0;
-  if (currentPrice > lastMA50) buyScore++; else buyScore--;
-  if (currentPrice > lastMA200) buyScore++; else buyScore--;
-  if (lastRSI < 40) buyScore++; else if (lastRSI > 60) buyScore--;
-  if (lastMACD > 0) buyScore++; else buyScore--;
-  if (lastStoch < 30) buyScore++; else if (lastStoch > 70) buyScore--;
+  // Advanced Weighted Scoring System (Trend, Momentum, Volatility)
+  let trendScore = 0;   // 35% weight
+  let momentumScore = 0;// 35% weight
+  let volScore = 0;     // 30% weight
+
+  // Trend Scoring
+  if (currentPrice > lastMA50) trendScore += 50; else trendScore -= 50;
+  if (currentPrice > lastMA200) trendScore += 50; else trendScore -= 50;
+
+  // Momentum Scoring
+  if (lastRSI < 30) momentumScore += 100; // Strong buy signal (Oversold)
+  else if (lastRSI > 70) momentumScore -= 100; // Strong sell (Overbought)
+  else if (lastRSI > 50) momentumScore += 20; // Mildly bullish
+  else momentumScore -= 20; // Mildly bearish
+
+  if (lastMACD > 0) momentumScore += 50; else momentumScore -= 50;
+  if (lastStoch < 20) momentumScore += 50; else if (lastStoch > 80) momentumScore -= 50;
+
+  // Volatility / Squeeze Scoring
+  if (currentPrice > lastBB.mean) volScore += 50; else volScore -= 50;
+  if (currentPrice <= lastBB.lower * 1.02) volScore += 100; // Reversal potential
+  if (currentPrice >= lastBB.upper * 0.98) volScore -= 100;
+
+  // Final Weighted Score (0 to 100 scale ideally, normalized)
+  const finalScoreRaw = (trendScore * 0.35) + (momentumScore * 0.35) + (volScore * 0.30);
+  const normalizedScore = Math.max(0, Math.min(100, (finalScoreRaw + 100) / 2)); // map -100..100 to 0..100
 
   let overallRec = 'محايد';
   let overallCls = 'sig-h';
-  let overallSigClass = 'sig-h'; // For forecast box
-  if (buyScore >= 2) { overallRec = 'شراء قوي'; overallCls = 'sig-b'; overallSigClass = 'sig-buy'; }
-  else if (buyScore === 1) { overallRec = 'شراء'; overallCls = 'sig-b'; overallSigClass = 'sig-buy'; }
-  else if (buyScore === -1) { overallRec = 'بيع'; overallCls = 'sig-s'; overallSigClass = 'sig-sell'; }
-  else if (buyScore <= -2) { overallRec = 'بيع قوي'; overallCls = 'sig-s'; overallSigClass = 'sig-sell'; }
+  let overallSigClass = 'sig-h';
+
+  if (normalizedScore >= 80) { overallRec = 'شراء قوي'; overallCls = 'sig-b'; overallSigClass = 'sig-buy'; }
+  else if (normalizedScore >= 60) { overallRec = 'شراء'; overallCls = 'sig-b'; overallSigClass = 'sig-buy'; }
+  else if (normalizedScore <= 20) { overallRec = 'بيع قوي'; overallCls = 'sig-s'; overallSigClass = 'sig-sell'; }
+  else if (normalizedScore <= 40) { overallRec = 'بيع'; overallCls = 'sig-s'; overallSigClass = 'sig-sell'; }
 
   // Update Technical Indicators List HTML
   const indListEl = document.getElementById('technicalIndicatorsList');
@@ -1503,9 +1524,31 @@ function renderNewsGrid(filter) {
 // ==========================================
 async function callAI(userMsg) {
   chatHistory.push({ role: 'user', content: userMsg });
-  if (!API_KEY) return "⚠️ لتفعيل مستشار AI، أضف مفتاح Anthropic API في المتغير <code>API_KEY</code> في بداية ملف app.js.";
+  const s = selectedStock;
+
+  // Fake AI Simulation for testing purposes when no API key is provided
+  if (!API_KEY) {
+     return new Promise(resolve => {
+        setTimeout(() => {
+           let mockResponse = `(وضع المحاكاة يعمل) بناءً على قراءتي لبيانات سهم ${s.name} (${s.code}):<br><br>`;
+
+           if (userMsg.includes('رأيك') || userMsg.includes('حلل') || userMsg.includes('الآن')) {
+               mockResponse += `• **التقييم الأساسي:** السهم يتداول بمكرر أرباح (P/E) يبلغ ${s.pe} وعائد توزيعات ${s.div}. <br>`;
+               mockResponse += `• **التحليل الفني:** السعر الحالي هو ${s.price} ر.س. يرجى مراقبة مستويات الدعم والمقاومة بدقة.<br>`;
+               mockResponse += `• **الخلاصة:** السهم ${s.up ? 'يظهر إيجابية وزخماً صاعداً' : 'يشهد تراجعاً ويحتاج لمراقبة مسار الهبوط'}. يُنصح بالانتظار وتأكيد الاتجاه قبل اتخاذ قرار الشراء.<br>`;
+           } else if (userMsg.includes('توزيعات')) {
+               mockResponse += `توزيعات السهم الحالية تعادل ${s.div}، وهذا يعتبر ${parseFloat(s.div) > 4 ? 'متازاً جداً' : 'عادلاً'} للمستثمر الذي يبحث عن دخل دوري ثابت.`;
+           } else if (userMsg.includes('RSI')) {
+               mockResponse += `مؤشر القوة النسبية (RSI) يقيس سرعة تغير السعر. إذا كان فوق 70 يعني تشبع شرائي (احتمال هبوط)، وإذا كان تحت 30 يعني تشبع بيعي (احتمال صعود).`;
+           } else {
+               mockResponse += `أنا المستشار الذكي، لا أستطيع فهم هذا السؤال بدقة في وضع المحاكاة بدون مفتاح الـ API، ولكنني أنصحك دائماً ببناء محفظة استثمارية متنوعة وعدم المخاطرة بكل رأس مالك في سهم واحد.`;
+           }
+           resolve(mockResponse);
+        }, 1500); // 1.5 second delay to simulate thinking
+     });
+  }
+
   try {
-    const s = selectedStock;
     const systemPrompt = `أنت خبير مالي ومحلل أسهم سعودي متخصص. تتحدث باللغة العربية الفصحى السهلة.
 السهم المحدد حالياً: ${s.name} (${s.code}) — قطاع ${s.sector_ar || sectorNames[s.sector]}
 السعر الحالي: ${s.price} ريال | P/E: ${s.pe} | عائد التوزيعات: ${s.div} | ROE: ${s.roe} | EPS: ${s.eps}
