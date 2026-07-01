@@ -699,7 +699,27 @@ function genPriceDataFallback(period) {
     else labels.push(i % 30 === 0 ? months[d.getMonth()] + ' ' + d.getFullYear() : '');
   }
   data[data.length - 1] = s.price;
-  return { labels, data, highs: data, lows: data, opens: data, volume };
+
+  // Create realistic candlestick highs/lows/opens
+  const opens = data.map((close, i) => {
+    if (i === 0) return close;
+    // slightly randomize the open based on the previous close
+    return data[i-1] + (Math.random() - 0.5) * data[i-1] * 0.01;
+  });
+
+  const highs = data.map((close, i) => {
+    const o = opens[i];
+    const maxVal = Math.max(o, close);
+    return maxVal + (Math.random() * maxVal * 0.015);
+  });
+
+  const lows = data.map((close, i) => {
+    const o = opens[i];
+    const minVal = Math.min(o, close);
+    return minVal - (Math.random() * minVal * 0.015);
+  });
+
+  return { labels, data, highs, lows, opens, volume };
 }
 
 // ==========================================
@@ -813,11 +833,48 @@ function buildChart(period) {
   updateChartQuickStats(data, volumeData, ma20, ma50, ma200);
 }
 
+
+
+currentChartType = 'candle';
+let tvLineSeries = null;
+
 function setChartType(type, el) {
   currentChartType = type;
   document.querySelectorAll('.chart-type-btn').forEach(b => b.classList.remove('active'));
-  el.classList.add('active');
+  if(el) el.classList.add('active');
+
+  if (tvChart) {
+    if (type === 'line' || type === 'area') {
+      if(tvSeries) tvSeries.applyOptions({ visible: false });
+      if(!tvLineSeries) {
+         tvLineSeries = tvChart.addLineSeries({
+            color: '#2962FF',
+            lineWidth: 2,
+         });
+         const period = document.querySelector('.time-btn.active')?.textContent || '1أ';
+         const normPeriod = period === '1أ' ? '1W' : period === '1ش' ? '1M' : period === '3ش' ? '3M' : period === '6ش' ? '6M' : period === '1س' ? '1Y' : '3Y';
+
+         const { data } = genPriceData(normPeriod);
+         const formattedData = data.map((close, i) => {
+            const dateObj = new Date();
+            dateObj.setDate(dateObj.getDate() - (data.length - 1 - i));
+            const year = dateObj.getFullYear();
+            const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+            const day = String(dateObj.getDate()).padStart(2, '0');
+            return { time: `${year}-${month}-${day}`, value: close };
+         });
+         tvLineSeries.setData(formattedData);
+      } else {
+         tvLineSeries.applyOptions({ visible: true });
+      }
+    } else {
+      if(tvLineSeries) tvLineSeries.applyOptions({ visible: false });
+      if(tvSeries) tvSeries.applyOptions({ visible: true });
+    }
+  }
 }
+
+
 
 function toggleOverlay(id, el) {
   activeOverlays[id] = !activeOverlays[id];
@@ -885,6 +942,9 @@ function buildRSIChart(data, isDark, tickColor, gridColor) {
 
 function calcRSI(data, period = 14) {
   const rsi = [];
+  if (data.length <= period) {
+     return data.map(() => 50);
+  }
   let gains = 0, losses = 0;
   for (let i = 1; i <= period; i++) {
     const d = data[i] - data[i - 1];
@@ -944,6 +1004,9 @@ function calcStochastic(closes, highs, lows, period = 14) {
 
 function calcATR(highs, lows, closes, period = 14) {
   const atr = Array(closes.length).fill(null);
+  if (closes.length <= period) {
+     return atr;
+  }
   const tr = Array(closes.length).fill(0);
 
   for (let i = 1; i < closes.length; i++) {
