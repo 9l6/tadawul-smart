@@ -302,8 +302,8 @@ function selectStock(code) {
 // تحديث بطاقة السهم الرئيسية
 // ==========================================
 
-function updateTechnicalAndAdvice() {
-  const { labels, data: closes, highs, lows, opens, volume: volumeData = [] } = genPriceData('1Y');
+async function updateTechnicalAndAdvice() {
+  const { labels, data: closes, highs, lows, opens, volume: volumeData = [] } = await genPriceDataAsync('1y');
 
   if (!closes || closes.length === 0) return;
 
@@ -670,6 +670,36 @@ function renderPeers() {
 // ==========================================
 // توليد بيانات الرسم البياني من البيانات الحقيقية
 // ==========================================
+
+async function genPriceDataAsync(period) {
+  const s = selectedStock;
+
+  if (window.location.protocol === 'file:') {
+     // fallback to mock for pure local view
+     return genPriceDataFallback(period);
+  }
+
+  try {
+     const res = await fetch(`/api/history?symbol=${s.code}&period=${period}`);
+     if (!res.ok) throw new Error('API Error');
+     const histData = await res.json();
+
+     if (histData && histData.length > 0) {
+        const labels = histData.map(d => d.time);
+        const opens = histData.map(d => d.open);
+        const highs = histData.map(d => d.high);
+        const lows = histData.map(d => d.low);
+        const data = histData.map(d => d.close);
+        const volume = histData.map(d => d.volume);
+        return { labels, data, highs, lows, opens, volume };
+     }
+  } catch (err) {
+     console.error("Failed to fetch historical data", err);
+  }
+
+  return genPriceDataFallback(period);
+}
+
 function genPriceData(period) {
   const s = selectedStock;
   const historical = s.historical || [];
@@ -841,23 +871,18 @@ function initTradingViewChart() {
   }
 }
 
-function buildChart(period) {
+async function buildChart(period) {
   const container = document.getElementById('tvChartContainer');
   if (!container) return;
 
   initTradingViewChart();
 
-  const { labels, data, highs, lows, opens, volume: volumeData = [] } = genPriceData(period);
+  let apiPeriod = '1y'; if(period==='1W') apiPeriod='5d'; else if(period==='1M') apiPeriod='1mo'; else if(period==='3M') apiPeriod='3mo'; else if(period==='6M') apiPeriod='6mo'; else if(period==='3Y') apiPeriod='5y';
+  const { labels, data, highs, lows, opens, volume: volumeData = [] } = await genPriceDataAsync(apiPeriod);
 
   const formattedData = data.map((close, i) => {
-    const dateObj = new Date();
-    dateObj.setDate(dateObj.getDate() - (data.length - 1 - i));
-    const year = dateObj.getFullYear();
-    const month = String(dateObj.getMonth() + 1).padStart(2, '0');
-    const day = String(dateObj.getDate()).padStart(2, '0');
-
     return {
-      time: `${year}-${month}-${day}`,
+      time: labels[i].includes('-') ? labels[i] : (new Date(new Date().setDate(new Date().getDate() - (data.length - 1 - i))).toISOString().split('T')[0]),
       open: opens[i] || close,
       high: highs[i] || close,
       low: lows[i] || close,
@@ -1660,14 +1685,14 @@ function closeModals() {
   document.getElementById('modalOverlay').style.display = 'none';
 }
 
-function runHistoricalAnalysis() {
+async function runHistoricalAnalysis() {
   closeModals();
   const days = parseInt(document.getElementById('histDaysInput').value) || 30;
-  calculateHistoricalAnalysis(days);
+  await calculateHistoricalAnalysis(days);
 }
 
-function calculateHistoricalAnalysis(days) {
-  const { data: closes, highs, lows } = genPriceData('3Y'); // fetch max data
+async function calculateHistoricalAnalysis(days) {
+  const { data: closes, highs, lows } = await genPriceDataAsync('5y'); // fetch max data
 
   if (closes.length < days) {
     alert("لا توجد بيانات كافية لهذه الفترة.");
@@ -1726,15 +1751,15 @@ function calculateHistoricalAnalysis(days) {
   document.getElementById('advancedResultsArea').innerHTML = html;
 }
 
-function runPredictionSimulator() {
+async function runPredictionSimulator() {
   closeModals();
   const capital = parseFloat(document.getElementById('simCapitalInput').value) || 10000;
   const targetPrice = parseFloat(document.getElementById('simTargetInput').value) || selectedStock.price * 1.05;
-  simulatePrediction(targetPrice, capital);
+  await simulatePrediction(targetPrice, capital);
 }
 
-function simulatePrediction(targetPrice, capital) {
-  const { data: closes, highs, lows } = genPriceData('1Y');
+async function simulatePrediction(targetPrice, capital) {
+  const { data: closes, highs, lows } = await genPriceDataAsync('1y');
   const currentPrice = selectedStock.price;
 
   if (targetPrice <= currentPrice) {
