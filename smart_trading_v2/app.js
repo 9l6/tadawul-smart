@@ -3,6 +3,11 @@
 // ==========================================
 async function loadStocksData() {
   try {
+    // Check if we are running locally via file:// to avoid CORS errors
+    if (window.location.protocol === 'file:') {
+       console.log('Running locally via file:// protocol. Skipping data/stocks.json fetch to avoid CORS errors.');
+       return;
+    }
     const response = await fetch('data/stocks.json');
     const json = await response.json();
 
