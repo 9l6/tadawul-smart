@@ -57,6 +57,52 @@ class TadawulHandler(http.server.SimpleHTTPRequestHandler):
                 self.wfile.write(json.dumps({"error": str(e)}).encode('utf-8'))
             return
 
+
+        if parsed_path.path == '/api/history':
+            query = urllib.parse.parse_qs(parsed_path.query)
+            symbol = query.get('symbol', [''])[0]
+            period = query.get('period', ['1y'])[0] # 1d, 5d, 1mo, 3mo, 6mo, 1y, 2y, 5y, 10y, ytd, max
+
+            if not symbol:
+                self.send_response(400)
+                self.end_headers()
+                self.wfile.write(b'{"error": "Symbol is required"}')
+                return
+
+            yf_symbol = f"{symbol}.SR"
+            try:
+                ticker = yf.Ticker(yf_symbol)
+                hist = ticker.history(period=period)
+
+                if hist.empty:
+                    self.send_response(404)
+                    self.end_headers()
+                    self.wfile.write(b'{"error": "No data found"}')
+                    return
+
+                data = []
+                for index, row in hist.iterrows():
+                    data.append({
+                        "time": index.strftime('%Y-%m-%d'),
+                        "open": row['Open'],
+                        "high": row['High'],
+                        "low": row['Low'],
+                        "close": row['Close'],
+                        "volume": row['Volume']
+                    })
+
+                self.send_response(200)
+                self.send_header('Content-type', 'application/json')
+                self.send_header('Access-Control-Allow-Origin', '*')
+                self.end_headers()
+                self.wfile.write(json.dumps(data).encode('utf-8'))
+
+            except Exception as e:
+                self.send_response(500)
+                self.end_headers()
+                self.wfile.write(json.dumps({"error": str(e)}).encode('utf-8'))
+            return
+
         if parsed_path.path == '/api/stocks':
             try:
                 db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../database/stocks.json')
