@@ -57,11 +57,28 @@ class TadawulHandler(http.server.SimpleHTTPRequestHandler):
                 self.wfile.write(json.dumps({"error": str(e)}).encode('utf-8'))
             return
 
+        if parsed_path.path == '/api/stocks':
+            try:
+                db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../database/stocks.json')
+                with open(db_path, 'r', encoding='utf-8') as f:
+                    data = f.read()
+                self.send_response(200)
+                self.send_header('Content-type', 'application/json')
+                self.send_header('Access-Control-Allow-Origin', '*')
+                self.end_headers()
+                self.wfile.write(data.encode('utf-8'))
+            except FileNotFoundError:
+                self.send_response(404)
+                self.end_headers()
+                self.wfile.write(b'{"error": "Database not found"}')
+            return
+
         return super().do_GET()
 
-# Change to the directory containing index.html
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+# Change to the directory containing index.html (frontend)
+frontend_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../frontend')
+os.chdir(frontend_dir)
 
 with socketserver.TCPServer(("", PORT), TadawulHandler) as httpd:
-    print(f"Serving at port {PORT}")
+    print(f"Serving at port {PORT} from {frontend_dir}")
     httpd.serve_forever()

@@ -5,10 +5,10 @@ async function loadStocksData() {
   try {
     // Check if we are running locally via file:// to avoid CORS errors
     if (window.location.protocol === 'file:') {
-       console.log('Running locally via file:// protocol. Skipping data/stocks.json fetch to avoid CORS errors.');
+       console.log('Running locally via file:// protocol. Skipping API fetch to avoid CORS errors.');
        return;
     }
-    const response = await fetch('data/stocks.json');
+    const response = await fetch('/api/stocks');
     const json = await response.json();
 
     if (json.stocks && json.stocks.length > 0) {
@@ -51,7 +51,7 @@ async function loadStocksData() {
       console.log(`✅ تم تحديث ${json.stocks.length} سهم — آخر تحديث: ${json.lastUpdated}`);
     }
   } catch (e) {
-    console.log('⚠️ لم يتم العثور على stocks.json — يتم استخدام البيانات الافتراضية');
+    console.log('⚠️ لم يتم العثور على قاعدة البيانات — يتم استخدام البيانات الافتراضية');
   }
 }
 
