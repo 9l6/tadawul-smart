@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03 18:16:39",
+  "lastUpdated": "2026-09-06 17:26:53",
   "totalStocks": 23,
   "failed": [],
   "stocks": [
@@ -8,24 +8,24 @@
       "name": "أرامكو السعودية",
       "sector": "energy",
       "sector_ar": "الطاقة",
-      "price": 25.96,
-      "change": -0.23,
-      "changeAbs": -0.06,
-      "up": false,
-      "prevClose": 26.02,
-      "open": 26.02,
-      "dayHigh": 26.1,
-      "dayLow": 25.9,
+      "price": 26.0,
+      "change": 0.15,
+      "changeAbs": 0.04,
+      "up": true,
+      "prevClose": 25.96,
+      "open": 26.0,
+      "dayHigh": 26.08,
+      "dayLow": 25.96,
       "high52": 27.96,
       "low52": 23.04,
-      "market": "6.28 تريليون",
-      "pe": "15.36x",
-      "div": "5.22%",
+      "market": "6.29 تريليون",
+      "pe": "15.38x",
+      "div": "5.23%",
       "divAmount": 0.34,
       "eps": 1.69,
-      "pbv": "4.02x",
+      "pbv": "4.03x",
       "roe": "23.75%",
-      "vol": "6.69M",
+      "vol": "3.17M",
       "shares": "241.91B",
       "employees": "غير متاح",
       "website": "https://www.aramco.com",
@@ -106,28 +106,28 @@
       "freeCashFlow": 375.15,
       "netIncomeB": 408.37,
       "debtToEquity": 19.78,
-      "evEbitda": 7.42,
+      "evEbitda": 7.43,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -150,22 +150,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 22.6,
-          "high": 22.7,
-          "low": 22.39,
-          "close": 22.43,
-          "volume": 7360919
-        },
-        {
-          "date": "2025-09-04",
-          "open": 22.43,
-          "high": 22.48,
-          "low": 22.4,
-          "close": 22.48,
-          "volume": 5901092
-        },
         {
           "date": "2025-09-07",
           "open": 22.48,
@@ -2189,6 +2173,14 @@
           "low": 25.9,
           "close": 25.96,
           "volume": 6688799
+        },
+        {
+          "date": "2026-09-06",
+          "open": 26.0,
+          "high": 26.08,
+          "low": 25.96,
+          "close": 26.0,
+          "volume": 3166372
         }
       ]
     },
@@ -2197,24 +2189,24 @@
       "name": "مصرف الراجحي",
       "sector": "banking",
       "sector_ar": "البنوك",
-      "price": 66.35,
-      "change": 0.23,
-      "changeAbs": 0.15,
+      "price": 66.8,
+      "change": 0.68,
+      "changeAbs": 0.45,
       "up": true,
-      "prevClose": 66.2,
-      "open": 66.35,
-      "dayHigh": 66.9,
-      "dayLow": 66.25,
+      "prevClose": 66.35,
+      "open": 66.65,
+      "dayHigh": 66.95,
+      "dayLow": 66.3,
       "high52": 73.4,
       "low52": 60.1,
-      "market": "398.10B",
-      "pe": "15.95x",
+      "market": "400.80B",
+      "pe": "16.06x",
       "div": "3.52%",
       "divAmount": 1.17,
       "eps": 4.16,
-      "pbv": "3.3x",
+      "pbv": "3.32x",
       "roe": "18.52%",
-      "vol": "7.13M",
+      "vol": "3.85M",
       "shares": "6.00B",
       "employees": "24712",
       "website": "https://www.alrajhibank.com.sa",
@@ -2257,13 +2249,13 @@
             "period": "2026",
             "amount": "1.17 ر.س",
             "date": "21 April 2026",
-            "yield": "1.8%"
+            "yield": "1.7%"
           },
           {
             "period": "2025",
             "amount": "0.5 ر.س",
             "date": "24 September 2025",
-            "yield": "0.8%"
+            "yield": "0.7%"
           },
           {
             "period": "2025",
@@ -2275,19 +2267,19 @@
             "period": "2024",
             "amount": "0.83 ر.س",
             "date": "13 August 2024",
-            "yield": "1.3%"
+            "yield": "1.2%"
           },
           {
             "period": "2024",
             "amount": "0.77 ر.س",
             "date": "25 March 2024",
-            "yield": "1.2%"
+            "yield": "1.1%"
           },
           {
             "period": "2023",
             "amount": "0.77 ر.س",
             "date": "01 August 2023",
-            "yield": "1.2%"
+            "yield": "1.1%"
           }
         ]
       },
@@ -2298,13 +2290,7 @@
       "evEbitda": 0.0,
       "announcements": [
         {
-          "date": "03 September 2026",
-          "type": "أحداث",
-          "title": "خبر الشركة",
-          "desc": "تفاصيل متاحة على موقع تداول الرسمي."
-        },
-        {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -2327,22 +2313,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 61.38,
-          "high": 61.67,
-          "low": 60.69,
-          "close": 60.69,
-          "volume": 4065009
-        },
-        {
-          "date": "2025-09-04",
-          "open": 60.95,
-          "high": 62.03,
-          "low": 60.79,
-          "close": 61.7,
-          "volume": 4628212
-        },
         {
           "date": "2025-09-07",
           "open": 61.8,
@@ -4366,6 +4336,14 @@
           "low": 66.25,
           "close": 66.35,
           "volume": 7132709
+        },
+        {
+          "date": "2026-09-06",
+          "open": 66.65,
+          "high": 66.95,
+          "low": 66.3,
+          "close": 66.8,
+          "volume": 3849035
         }
       ]
     },
@@ -4374,24 +4352,24 @@
       "name": "البنك الأهلي",
       "sector": "banking",
       "sector_ar": "البنوك",
-      "price": 42.28,
-      "change": 0.33,
-      "changeAbs": 0.14,
+      "price": 42.76,
+      "change": 1.14,
+      "changeAbs": 0.48,
       "up": true,
-      "prevClose": 42.14,
-      "open": 42.3,
-      "dayHigh": 42.78,
-      "dayLow": 42.2,
+      "prevClose": 42.28,
+      "open": 42.44,
+      "dayHigh": 42.76,
+      "dayLow": 42.38,
       "high52": 45.24,
       "low52": 33.3,
-      "market": "250.93B",
-      "pe": "10.09x",
-      "div": "5.46%",
+      "market": "253.78B",
+      "pe": "10.21x",
+      "div": "5.44%",
       "divAmount": 1.15,
       "eps": 4.19,
-      "pbv": "1.31x",
+      "pbv": "1.33x",
       "roe": "12.56%",
-      "vol": "1.64M",
+      "vol": "530,162",
       "shares": "5.93B",
       "employees": "15338",
       "website": "https://www.alahli.com",
@@ -4446,13 +4424,13 @@
             "period": "2025",
             "amount": "1.0 ر.س",
             "date": "04 August 2025",
-            "yield": "2.4%"
+            "yield": "2.3%"
           },
           {
             "period": "2025",
             "amount": "1.0 ر.س",
             "date": "10 February 2025",
-            "yield": "2.4%"
+            "yield": "2.3%"
           },
           {
             "period": "2024",
@@ -4475,7 +4453,7 @@
       "evEbitda": 0.0,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -4498,22 +4476,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 33.3,
-          "high": 33.55,
-          "low": 33.17,
-          "close": 33.22,
-          "volume": 2467065
-        },
-        {
-          "date": "2025-09-04",
-          "open": 33.15,
-          "high": 33.38,
-          "low": 33.15,
-          "close": 33.26,
-          "volume": 1668411
-        },
         {
           "date": "2025-09-07",
           "open": 33.26,
@@ -6537,6 +6499,14 @@
           "low": 42.2,
           "close": 42.28,
           "volume": 1637563
+        },
+        {
+          "date": "2026-09-06",
+          "open": 42.44,
+          "high": 42.76,
+          "low": 42.38,
+          "close": 42.76,
+          "volume": 530162
         }
       ]
     },
@@ -6545,24 +6515,24 @@
       "name": "stc الاتصالات",
       "sector": "telecom",
       "sector_ar": "الاتصالات",
-      "price": 43.86,
-      "change": 0.0,
-      "changeAbs": 0.0,
+      "price": 44.14,
+      "change": 0.64,
+      "changeAbs": 0.28,
       "up": true,
       "prevClose": 43.86,
-      "open": 43.9,
-      "dayHigh": 44.02,
-      "dayLow": 43.8,
+      "open": 43.88,
+      "dayHigh": 44.14,
+      "dayLow": 43.82,
       "high52": 45.38,
       "low52": 40.2,
-      "market": "218.85B",
-      "pe": "14.87x",
+      "market": "220.25B",
+      "pe": "14.96x",
       "div": "5.02%",
       "divAmount": 0.55,
       "eps": 2.95,
-      "pbv": "2.58x",
+      "pbv": "2.59x",
       "roe": "17.39%",
-      "vol": "2.18M",
+      "vol": "2.13M",
       "shares": "4.99B",
       "employees": "غير متاح",
       "website": "https://www.stc.com.sa",
@@ -6605,37 +6575,37 @@
             "period": "2026",
             "amount": "0.55 ر.س",
             "date": "04 August 2026",
-            "yield": "1.3%"
+            "yield": "1.2%"
           },
           {
             "period": "2026",
             "amount": "0.55 ر.س",
             "date": "03 May 2026",
-            "yield": "1.3%"
+            "yield": "1.2%"
           },
           {
             "period": "2026",
             "amount": "0.55 ر.س",
             "date": "24 February 2026",
-            "yield": "1.3%"
+            "yield": "1.2%"
           },
           {
             "period": "2025",
             "amount": "0.55 ر.س",
             "date": "09 November 2025",
-            "yield": "1.3%"
+            "yield": "1.2%"
           },
           {
             "period": "2025",
             "amount": "0.55 ر.س",
             "date": "31 July 2025",
-            "yield": "1.3%"
+            "yield": "1.2%"
           },
           {
             "period": "2025",
             "amount": "2.0 ر.س",
             "date": "14 May 2025",
-            "yield": "4.6%"
+            "yield": "4.5%"
           }
         ]
       },
@@ -6643,28 +6613,28 @@
       "freeCashFlow": 5.5,
       "netIncomeB": 14.73,
       "debtToEquity": 29.41,
-      "evEbitda": 9.88,
+      "evEbitda": 9.94,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -6687,22 +6657,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 39.89,
-          "high": 39.93,
-          "low": 39.74,
-          "close": 39.83,
-          "volume": 1815549
-        },
-        {
-          "date": "2025-09-04",
-          "open": 39.83,
-          "high": 39.91,
-          "low": 39.72,
-          "close": 39.74,
-          "volume": 2899038
-        },
         {
           "date": "2025-09-07",
           "open": 39.78,
@@ -8726,6 +8680,14 @@
           "low": 43.8,
           "close": 43.86,
           "volume": 2183047
+        },
+        {
+          "date": "2026-09-06",
+          "open": 43.88,
+          "high": 44.14,
+          "low": 43.82,
+          "close": 44.14,
+          "volume": 2133329
         }
       ]
     },
@@ -8734,24 +8696,24 @@
       "name": "اتحاد الاتصالات",
       "sector": "telecom",
       "sector_ar": "الاتصالات",
-      "price": 66.4,
-      "change": 0.53,
-      "changeAbs": 0.35,
+      "price": 67.15,
+      "change": 1.13,
+      "changeAbs": 0.75,
       "up": true,
-      "prevClose": 66.05,
-      "open": 66.2,
-      "dayHigh": 66.6,
-      "dayLow": 65.9,
+      "prevClose": 66.4,
+      "open": 66.5,
+      "dayHigh": 67.5,
+      "dayLow": 66.4,
       "high52": 93.5,
       "low52": 62.5,
-      "market": "5.14B",
-      "pe": "10.52x",
-      "div": "7.57%",
+      "market": "5.20B",
+      "pe": "10.64x",
+      "div": "7.53%",
       "divAmount": 2.0,
       "eps": 6.31,
-      "pbv": "3.08x",
+      "pbv": "3.11x",
       "roe": "28.13%",
-      "vol": "87,574",
+      "vol": "203,424",
       "shares": "77.37M",
       "employees": "غير متاح",
       "website": "https://www.extra.com",
@@ -8818,7 +8780,7 @@
             "period": "2024",
             "amount": "5.0 ر.س",
             "date": "24 December 2024",
-            "yield": "7.5%"
+            "yield": "7.4%"
           },
           {
             "period": "2024",
@@ -8832,10 +8794,10 @@
       "freeCashFlow": -0.07,
       "netIncomeB": 0.5,
       "debtToEquity": 121.65,
-      "evEbitda": 10.8,
+      "evEbitda": 10.88,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -8858,22 +8820,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 83.03,
-          "high": 83.45,
-          "low": 82.24,
-          "close": 82.56,
-          "volume": 125102
-        },
-        {
-          "date": "2025-09-04",
-          "open": 82.56,
-          "high": 82.75,
-          "low": 82.1,
-          "close": 82.38,
-          "volume": 61948
-        },
         {
           "date": "2025-09-07",
           "open": 82.38,
@@ -10897,6 +10843,14 @@
           "low": 65.9,
           "close": 66.4,
           "volume": 87616
+        },
+        {
+          "date": "2026-09-06",
+          "open": 66.5,
+          "high": 67.5,
+          "low": 66.4,
+          "close": 67.15,
+          "volume": 203424
         }
       ]
     },
@@ -10905,24 +10859,24 @@
       "name": "سابك",
       "sector": "energy",
       "sector_ar": "الطاقة",
-      "price": 49.44,
-      "change": -0.12,
-      "changeAbs": -0.06,
-      "up": false,
-      "prevClose": 49.5,
-      "open": 49.52,
-      "dayHigh": 49.74,
-      "dayLow": 49.42,
+      "price": 49.94,
+      "change": 1.01,
+      "changeAbs": 0.5,
+      "up": true,
+      "prevClose": 49.44,
+      "open": 49.68,
+      "dayHigh": 50.15,
+      "dayLow": 49.68,
       "high52": 64.0,
       "low52": 48.2,
-      "market": "148.32B",
-      "pe": "13.4x",
-      "div": "4.44%",
+      "market": "149.82B",
+      "pe": "13.53x",
+      "div": "4.45%",
       "divAmount": 1.1,
       "eps": -0.37,
-      "pbv": "1.2x",
+      "pbv": "1.21x",
       "roe": "-0.11%",
-      "vol": "1.32M",
+      "vol": "947,573",
       "shares": "3.00B",
       "employees": "غير متاح",
       "website": "https://www.sabic.com",
@@ -11003,28 +10957,28 @@
       "freeCashFlow": 8.92,
       "netIncomeB": -1.0,
       "debtToEquity": 30.61,
-      "evEbitda": 11.71,
+      "evEbitda": 11.81,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -11047,22 +11001,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 56.95,
-          "high": 58.09,
-          "low": 56.76,
-          "close": 57.67,
-          "volume": 1015223
-        },
-        {
-          "date": "2025-09-04",
-          "open": 57.67,
-          "high": 58.0,
-          "low": 57.0,
-          "close": 57.0,
-          "volume": 935830
-        },
         {
           "date": "2025-09-07",
           "open": 57.0,
@@ -13086,6 +13024,14 @@
           "low": 49.42,
           "close": 49.44,
           "volume": 1321237
+        },
+        {
+          "date": "2026-09-06",
+          "open": 49.68,
+          "high": 50.15,
+          "low": 49.68,
+          "close": 49.94,
+          "volume": 947573
         }
       ]
     },
@@ -13094,24 +13040,24 @@
       "name": "العثيم",
       "sector": "retail",
       "sector_ar": "التجزئة",
-      "price": 12.23,
-      "change": 0.49,
-      "changeAbs": 0.06,
+      "price": 12.53,
+      "change": 2.45,
+      "changeAbs": 0.3,
       "up": true,
-      "prevClose": 12.17,
-      "open": 12.2,
-      "dayHigh": 12.33,
-      "dayLow": 12.2,
+      "prevClose": 12.23,
+      "open": 12.17,
+      "dayHigh": 12.69,
+      "dayLow": 12.17,
       "high52": 17.52,
       "low52": 9.31,
-      "market": "385.24M",
+      "market": "394.69M",
       "pe": "غير متاح",
       "div": "غير متاح",
       "divAmount": 0.0,
-      "eps": -0.37,
-      "pbv": "1.58x",
+      "eps": -0.36,
+      "pbv": "1.62x",
       "roe": "-5.31%",
-      "vol": "161,762",
+      "vol": "1.05M",
       "shares": "31.50M",
       "employees": "غير متاح",
       "website": "https://anaamgroup.com",
@@ -13155,10 +13101,10 @@
       "freeCashFlow": -0.01,
       "netIncomeB": -0.01,
       "debtToEquity": 54.81,
-      "evEbitda": -182.95,
+      "evEbitda": -186.28,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -13181,22 +13127,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 15.01,
-          "high": 15.4,
-          "low": 15.0,
-          "close": 15.23,
-          "volume": 635553
-        },
-        {
-          "date": "2025-09-04",
-          "open": 15.23,
-          "high": 15.46,
-          "low": 15.13,
-          "close": 15.24,
-          "volume": 578733
-        },
         {
           "date": "2025-09-07",
           "open": 15.24,
@@ -15220,6 +15150,14 @@
           "low": 12.2,
           "close": 12.23,
           "volume": 161762
+        },
+        {
+          "date": "2026-09-06",
+          "open": 12.17,
+          "high": 12.69,
+          "low": 12.17,
+          "close": 12.53,
+          "volume": 1053696
         }
       ]
     },
@@ -15228,24 +15166,24 @@
       "name": "دله البركة",
       "sector": "health",
       "sector_ar": "الصحة",
-      "price": 17.67,
-      "change": 1.14,
-      "changeAbs": 0.2,
-      "up": true,
-      "prevClose": 17.47,
-      "open": 17.5,
-      "dayHigh": 18.36,
-      "dayLow": 17.5,
+      "price": 17.47,
+      "change": -1.13,
+      "changeAbs": -0.2,
+      "up": false,
+      "prevClose": 17.67,
+      "open": 17.98,
+      "dayHigh": 17.98,
+      "dayLow": 17.39,
       "high52": 31.16,
       "low52": 11.88,
-      "market": "2.03B",
-      "pe": "-16.51x",
+      "market": "2.00B",
+      "pe": "-16.33x",
       "div": "غير متاح",
       "divAmount": 1.83,
       "eps": -4.35,
-      "pbv": "-1.17x",
+      "pbv": "-1.15x",
       "roe": "غير متاح",
-      "vol": "3.90M",
+      "vol": "2.46M",
       "shares": "114.77M",
       "employees": "4107",
       "website": "https://www.cenomiretail.com",
@@ -15288,37 +15226,37 @@
             "period": "2015",
             "amount": "1.83 ر.س",
             "date": "01 July 2015",
-            "yield": "10.4%"
+            "yield": "10.5%"
           },
           {
             "period": "2014",
             "amount": "2.29 ر.س",
             "date": "26 October 2014",
-            "yield": "12.9%"
+            "yield": "13.1%"
           },
           {
             "period": "2014",
             "amount": "2.74 ر.س",
             "date": "27 April 2014",
-            "yield": "15.5%"
+            "yield": "15.7%"
           },
           {
             "period": "2013",
             "amount": "1.37 ر.س",
             "date": "07 November 2013",
-            "yield": "7.8%"
+            "yield": "7.9%"
           },
           {
             "period": "2013",
             "amount": "1.83 ر.س",
             "date": "27 April 2013",
-            "yield": "10.4%"
+            "yield": "10.5%"
           },
           {
             "period": "2012",
             "amount": "1.22 ر.س",
             "date": "18 January 2012",
-            "yield": "6.9%"
+            "yield": "7.0%"
           }
         ]
       },
@@ -15326,10 +15264,10 @@
       "freeCashFlow": -1.18,
       "netIncomeB": -0.5,
       "debtToEquity": 0.0,
-      "evEbitda": 26.58,
+      "evEbitda": 26.5,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -15352,22 +15290,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 23.15,
-          "high": 23.59,
-          "low": 22.95,
-          "close": 23.2,
-          "volume": 1242917
-        },
-        {
-          "date": "2025-09-04",
-          "open": 23.23,
-          "high": 24.44,
-          "low": 23.23,
-          "close": 24.1,
-          "volume": 3008105
-        },
         {
           "date": "2025-09-07",
           "open": 24.3,
@@ -17391,6 +17313,14 @@
           "low": 17.5,
           "close": 17.67,
           "volume": 3901605
+        },
+        {
+          "date": "2026-09-06",
+          "open": 17.98,
+          "high": 17.98,
+          "low": 17.39,
+          "close": 17.47,
+          "volume": 2461274
         }
       ]
     },
@@ -17399,24 +17329,24 @@
       "name": "بنك الرياض",
       "sector": "banking",
       "sector_ar": "البنوك",
-      "price": 20.71,
-      "change": 1.12,
-      "changeAbs": 0.23,
+      "price": 20.73,
+      "change": 0.1,
+      "changeAbs": 0.02,
       "up": true,
-      "prevClose": 20.48,
-      "open": 20.5,
-      "dayHigh": 20.73,
-      "dayLow": 20.5,
+      "prevClose": 20.71,
+      "open": 20.72,
+      "dayHigh": 20.82,
+      "dayLow": 20.68,
       "high52": 22.41,
       "low52": 18.98,
-      "market": "82.50B",
-      "pe": "8.28x",
-      "div": "5.14%",
+      "market": "82.58B",
+      "pe": "8.29x",
+      "div": "5.08%",
       "divAmount": 0.64,
       "eps": 2.5,
       "pbv": "1.22x",
       "roe": "13.88%",
-      "vol": "1.85M",
+      "vol": "512,952",
       "shares": "3.98B",
       "employees": "5583",
       "website": "https://www.riyadbank.com",
@@ -17500,25 +17430,25 @@
       "evEbitda": 0.0,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -17541,22 +17471,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 18.7,
-          "high": 18.79,
-          "low": 18.53,
-          "close": 18.53,
-          "volume": 1967715
-        },
-        {
-          "date": "2025-09-04",
-          "open": 18.49,
-          "high": 18.67,
-          "low": 18.49,
-          "close": 18.6,
-          "volume": 2300323
-        },
         {
           "date": "2025-09-07",
           "open": 18.67,
@@ -19580,6 +19494,14 @@
           "low": 20.5,
           "close": 20.71,
           "volume": 1850073
+        },
+        {
+          "date": "2026-09-06",
+          "open": 20.72,
+          "high": 20.82,
+          "low": 20.68,
+          "close": 20.73,
+          "volume": 512952
         }
       ]
     },
@@ -19588,24 +19510,24 @@
       "name": "نادك",
       "sector": "telecom",
       "sector_ar": "الاتصالات",
-      "price": 24.6,
-      "change": -0.12,
-      "changeAbs": -0.03,
-      "up": false,
-      "prevClose": 24.63,
-      "open": 24.68,
+      "price": 24.68,
+      "change": 0.33,
+      "changeAbs": 0.08,
+      "up": true,
+      "prevClose": 24.6,
+      "open": 24.67,
       "dayHigh": 24.71,
-      "dayLow": 24.54,
+      "dayLow": 24.61,
       "high52": 36.0,
       "low52": 23.42,
-      "market": "3.94B",
-      "pe": "16.85x",
-      "div": "4.38%",
+      "market": "3.95B",
+      "pe": "16.9x",
+      "div": "4.39%",
       "divAmount": 0.27,
       "eps": 1.46,
-      "pbv": "1.9x",
+      "pbv": "1.91x",
       "roe": "11.55%",
-      "vol": "329,178",
+      "vol": "117,462",
       "shares": "160.00M",
       "employees": "غير متاح",
       "website": "https://alhammadi.com",
@@ -19686,10 +19608,10 @@
       "freeCashFlow": -0.09,
       "netIncomeB": 0.23,
       "debtToEquity": 13.12,
-      "evEbitda": 13.73,
+      "evEbitda": 13.77,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -19712,22 +19634,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 32.42,
-          "high": 32.59,
-          "low": 32.14,
-          "close": 32.18,
-          "volume": 182089
-        },
-        {
-          "date": "2025-09-04",
-          "open": 32.2,
-          "high": 32.32,
-          "low": 31.99,
-          "close": 32.09,
-          "volume": 264454
-        },
         {
           "date": "2025-09-07",
           "open": 32.09,
@@ -21751,6 +21657,14 @@
           "low": 24.54,
           "close": 24.6,
           "volume": 329178
+        },
+        {
+          "date": "2026-09-06",
+          "open": 24.67,
+          "high": 24.71,
+          "low": 24.61,
+          "close": 24.68,
+          "volume": 117462
         }
       ]
     },
@@ -21759,24 +21673,24 @@
       "name": "ساب",
       "sector": "banking",
       "sector_ar": "البنوك",
-      "price": 34.2,
-      "change": 0.18,
-      "changeAbs": 0.06,
+      "price": 34.34,
+      "change": 0.41,
+      "changeAbs": 0.14,
       "up": true,
-      "prevClose": 34.14,
-      "open": 34.08,
-      "dayHigh": 34.38,
-      "dayLow": 34.04,
+      "prevClose": 34.2,
+      "open": 34.28,
+      "dayHigh": 34.34,
+      "dayLow": 34.2,
       "high52": 37.92,
       "low52": 29.9,
-      "market": "70.27B",
-      "pe": "8.95x",
-      "div": "5.86%",
+      "market": "70.56B",
+      "pe": "8.99x",
+      "div": "5.85%",
       "divAmount": 1.0,
       "eps": 3.82,
       "pbv": "1.03x",
       "roe": "11.08%",
-      "vol": "1.52M",
+      "vol": "187,021",
       "shares": "2.05B",
       "employees": "4473",
       "website": "https://www.sab.com",
@@ -21860,25 +21774,25 @@
       "evEbitda": 0.0,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -21901,22 +21815,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 28.65,
-          "high": 28.72,
-          "low": 28.42,
-          "close": 28.42,
-          "volume": 2556902
-        },
-        {
-          "date": "2025-09-04",
-          "open": 28.57,
-          "high": 28.7,
-          "low": 28.33,
-          "close": 28.33,
-          "volume": 2954602
-        },
         {
           "date": "2025-09-07",
           "open": 28.44,
@@ -23940,6 +23838,14 @@
           "low": 34.04,
           "close": 34.2,
           "volume": 1523053
+        },
+        {
+          "date": "2026-09-06",
+          "open": 34.28,
+          "high": 34.34,
+          "low": 34.2,
+          "close": 34.34,
+          "volume": 187021
         }
       ]
     },
@@ -23948,24 +23854,24 @@
       "name": "بنك البلاد",
       "sector": "banking",
       "sector_ar": "البنوك",
-      "price": 25.92,
-      "change": 1.01,
-      "changeAbs": 0.26,
-      "up": true,
-      "prevClose": 25.66,
-      "open": 25.56,
-      "dayHigh": 26.04,
-      "dayLow": 25.56,
+      "price": 25.74,
+      "change": -0.69,
+      "changeAbs": -0.18,
+      "up": false,
+      "prevClose": 25.92,
+      "open": 25.88,
+      "dayHigh": 25.96,
+      "dayLow": 25.7,
       "high52": 30.16,
       "low52": 23.72,
-      "market": "38.88B",
-      "pe": "13.09x",
-      "div": "3.9%",
+      "market": "38.61B",
+      "pe": "13.0x",
+      "div": "3.86%",
       "divAmount": 0.5,
       "eps": 1.98,
-      "pbv": "1.8x",
+      "pbv": "1.79x",
       "roe": "13.97%",
-      "vol": "779,826",
+      "vol": "405,480",
       "shares": "1.50B",
       "employees": "3665",
       "website": "https://www.bankalbilad.com.sa",
@@ -24049,7 +23955,7 @@
       "evEbitda": 0.0,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -24072,22 +23978,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 24.39,
-          "high": 24.55,
-          "low": 24.18,
-          "close": 24.2,
-          "volume": 897934
-        },
-        {
-          "date": "2025-09-04",
-          "open": 24.18,
-          "high": 24.41,
-          "low": 24.07,
-          "close": 24.35,
-          "volume": 816058
-        },
         {
           "date": "2025-09-07",
           "open": 24.22,
@@ -26111,6 +26001,14 @@
           "low": 25.56,
           "close": 25.92,
           "volume": 779826
+        },
+        {
+          "date": "2026-09-06",
+          "open": 25.88,
+          "high": 25.96,
+          "low": 25.7,
+          "close": 25.74,
+          "volume": 405480
         }
       ]
     },
@@ -26119,24 +26017,24 @@
       "name": "بنك الجزيرة",
       "sector": "banking",
       "sector_ar": "البنوك",
-      "price": 12.15,
-      "change": 0.33,
-      "changeAbs": 0.04,
+      "price": 12.26,
+      "change": 0.91,
+      "changeAbs": 0.11,
       "up": true,
-      "prevClose": 12.11,
-      "open": 12.08,
-      "dayHigh": 12.2,
-      "dayLow": 12.08,
+      "prevClose": 12.15,
+      "open": 12.15,
+      "dayHigh": 12.27,
+      "dayLow": 12.12,
       "high52": 13.31,
       "low52": 10.81,
-      "market": "15.50B",
-      "pe": "12.03x",
-      "div": "8.26%",
+      "market": "15.64B",
+      "pe": "12.14x",
+      "div": "8.23%",
       "divAmount": 0.5,
       "eps": 1.01,
-      "pbv": "1.02x",
+      "pbv": "1.03x",
       "roe": "7.58%",
-      "vol": "1.82M",
+      "vol": "1.39M",
       "shares": "1.28B",
       "employees": "2770",
       "website": "https://www.bankaljazira.com",
@@ -26220,19 +26118,19 @@
       "evEbitda": 0.0,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -26255,22 +26153,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 11.53,
-          "high": 11.57,
-          "low": 11.45,
-          "close": 11.45,
-          "volume": 2131470
-        },
-        {
-          "date": "2025-09-04",
-          "open": 11.45,
-          "high": 11.6,
-          "low": 11.45,
-          "close": 11.52,
-          "volume": 1885418
-        },
         {
           "date": "2025-09-07",
           "open": 11.53,
@@ -28294,6 +28176,14 @@
           "low": 12.08,
           "close": 12.15,
           "volume": 1821891
+        },
+        {
+          "date": "2026-09-06",
+          "open": 12.15,
+          "high": 12.27,
+          "low": 12.12,
+          "close": 12.26,
+          "volume": 1387797
         }
       ]
     },
@@ -28303,23 +28193,23 @@
       "sector": "banking",
       "sector_ar": "البنوك",
       "price": 25.2,
-      "change": 0.8,
-      "changeAbs": 0.2,
+      "change": 0.0,
+      "changeAbs": 0.0,
       "up": true,
-      "prevClose": 25.0,
-      "open": 25.0,
-      "dayHigh": 25.42,
-      "dayLow": 25.0,
+      "prevClose": 25.2,
+      "open": 25.1,
+      "dayHigh": 25.32,
+      "dayLow": 25.04,
       "high52": 26.0,
       "low52": 19.95,
       "market": "75.60B",
-      "pe": "12.66x",
-      "div": "4.0%",
+      "pe": "12.6x",
+      "div": "3.97%",
       "divAmount": 0.25,
-      "eps": 1.99,
+      "eps": 2.0,
       "pbv": "1.98x",
       "roe": "13.89%",
-      "vol": "4.47M",
+      "vol": "3.23M",
       "shares": "3.00B",
       "employees": "4216",
       "website": "https://www.alinma.com",
@@ -28403,7 +28293,7 @@
       "evEbitda": 0.0,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -28426,22 +28316,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 19.95,
-          "high": 20.04,
-          "low": 19.94,
-          "close": 19.98,
-          "volume": 4532515
-        },
-        {
-          "date": "2025-09-04",
-          "open": 19.97,
-          "high": 20.1,
-          "low": 19.92,
-          "close": 20.03,
-          "volume": 5433505
-        },
         {
           "date": "2025-09-07",
           "open": 20.04,
@@ -30465,6 +30339,14 @@
           "low": 25.0,
           "close": 25.2,
           "volume": 4470278
+        },
+        {
+          "date": "2026-09-06",
+          "open": 25.1,
+          "high": 25.32,
+          "low": 25.04,
+          "close": 25.2,
+          "volume": 3228527
         }
       ]
     },
@@ -30473,24 +30355,24 @@
       "name": "جرير للتسويق",
       "sector": "retail",
       "sector_ar": "التجزئة",
-      "price": 16.3,
-      "change": -1.39,
-      "changeAbs": -0.23,
-      "up": false,
-      "prevClose": 16.53,
-      "open": 16.53,
-      "dayHigh": 16.53,
-      "dayLow": 16.26,
+      "price": 16.38,
+      "change": 0.49,
+      "changeAbs": 0.08,
+      "up": true,
+      "prevClose": 16.3,
+      "open": 16.3,
+      "dayHigh": 16.44,
+      "dayLow": 16.17,
       "high52": 18.38,
       "low52": 12.26,
-      "market": "19.56B",
-      "pe": "17.53x",
-      "div": "4.84%",
+      "market": "19.66B",
+      "pe": "17.61x",
+      "div": "4.91%",
       "divAmount": 0.2,
       "eps": 0.93,
-      "pbv": "11.6x",
+      "pbv": "11.66x",
       "roe": "67.25%",
-      "vol": "1.92M",
+      "vol": "638,489",
       "shares": "1.20B",
       "employees": "غير متاح",
       "website": "https://www.jarir.com",
@@ -30571,10 +30453,10 @@
       "freeCashFlow": 1.15,
       "netIncomeB": 1.12,
       "debtToEquity": 43.34,
-      "evEbitda": 15.92,
+      "evEbitda": 16.0,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -30597,22 +30479,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 12.02,
-          "high": 12.09,
-          "low": 12.0,
-          "close": 12.07,
-          "volume": 894445
-        },
-        {
-          "date": "2025-09-04",
-          "open": 12.05,
-          "high": 12.09,
-          "low": 12.03,
-          "close": 12.08,
-          "volume": 822037
-        },
         {
           "date": "2025-09-07",
           "open": 12.06,
@@ -32636,6 +32502,14 @@
           "low": 16.26,
           "close": 16.3,
           "volume": 1923899
+        },
+        {
+          "date": "2026-09-06",
+          "open": 16.3,
+          "high": 16.44,
+          "low": 16.17,
+          "close": 16.38,
+          "volume": 638489
         }
       ]
     },
@@ -32644,24 +32518,24 @@
       "name": "بن داود التجارية",
       "sector": "retail",
       "sector_ar": "التجزئة",
-      "price": 4.65,
-      "change": -0.21,
-      "changeAbs": -0.01,
-      "up": false,
-      "prevClose": 4.66,
-      "open": 4.67,
-      "dayHigh": 4.68,
-      "dayLow": 4.64,
+      "price": 4.72,
+      "change": 1.51,
+      "changeAbs": 0.07,
+      "up": true,
+      "prevClose": 4.65,
+      "open": 4.66,
+      "dayHigh": 4.8,
+      "dayLow": 4.66,
       "high52": 5.92,
       "low52": 4.1,
-      "market": "5.31B",
-      "pe": "19.38x",
+      "market": "5.39B",
+      "pe": "19.67x",
       "div": "1.72%",
       "divAmount": 0.04,
       "eps": 0.24,
-      "pbv": "3.3x",
+      "pbv": "3.35x",
       "roe": "17.13%",
-      "vol": "257,970",
+      "vol": "829,514",
       "shares": "1.14B",
       "employees": "غير متاح",
       "website": "https://www.bindawoodholding.com",
@@ -32704,37 +32578,37 @@
             "period": "2026",
             "amount": "0.04 ر.س",
             "date": "08 June 2026",
-            "yield": "0.9%"
+            "yield": "0.8%"
           },
           {
             "period": "2025",
             "amount": "0.04 ر.س",
             "date": "07 December 2025",
-            "yield": "0.9%"
+            "yield": "0.8%"
           },
           {
             "period": "2025",
             "amount": "0.1 ر.س",
             "date": "18 May 2025",
-            "yield": "2.2%"
+            "yield": "2.1%"
           },
           {
             "period": "2024",
             "amount": "0.1 ر.س",
             "date": "26 November 2024",
-            "yield": "2.2%"
+            "yield": "2.1%"
           },
           {
             "period": "2024",
             "amount": "0.1 ر.س",
             "date": "27 May 2024",
-            "yield": "2.2%"
+            "yield": "2.1%"
           },
           {
             "period": "2023",
             "amount": "0.1 ر.س",
             "date": "19 November 2023",
-            "yield": "2.2%"
+            "yield": "2.1%"
           }
         ]
       },
@@ -32742,10 +32616,10 @@
       "freeCashFlow": 0.31,
       "netIncomeB": 0.27,
       "debtToEquity": 190.82,
-      "evEbitda": 14.16,
+      "evEbitda": 14.29,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -32768,22 +32642,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 5.28,
-          "high": 5.33,
-          "low": 5.23,
-          "close": 5.23,
-          "volume": 346920
-        },
-        {
-          "date": "2025-09-04",
-          "open": 5.22,
-          "high": 5.27,
-          "low": 5.17,
-          "close": 5.23,
-          "volume": 684224
-        },
         {
           "date": "2025-09-07",
           "open": 5.27,
@@ -34807,6 +34665,14 @@
           "low": 4.64,
           "close": 4.65,
           "volume": 257970
+        },
+        {
+          "date": "2026-09-06",
+          "open": 4.66,
+          "high": 4.8,
+          "low": 4.66,
+          "close": 4.72,
+          "volume": 829514
         }
       ]
     },
@@ -34815,24 +34681,24 @@
       "name": "التعاونية للتأمين",
       "sector": "insurance",
       "sector_ar": "التأمين",
-      "price": 136.0,
-      "change": 1.49,
-      "changeAbs": 2.0,
+      "price": 90.7,
+      "change": 0.06,
+      "changeAbs": 0.05,
       "up": true,
-      "prevClose": 134.0,
-      "open": 136.8,
-      "dayHigh": 137.5,
-      "dayLow": 134.0,
-      "high52": 161.6,
-      "low52": 111.8,
-      "market": "20.37B",
-      "pe": "20.76x",
-      "div": "1.49%",
-      "divAmount": 2.0,
-      "eps": 6.55,
-      "pbv": "3.59x",
+      "prevClose": 90.65,
+      "open": 90.4,
+      "dayHigh": 92.35,
+      "dayLow": 90.4,
+      "high52": 107.73,
+      "low52": 74.53,
+      "market": "13.59B",
+      "pe": "13.83x",
+      "div": "1.47%",
+      "divAmount": 1.33,
+      "eps": 6.56,
+      "pbv": "2.4x",
       "roe": "18.54%",
-      "vol": "209,014",
+      "vol": "141,402",
       "shares": "149.80M",
       "employees": "غير متاح",
       "website": "https://www.tawuniya.com",
@@ -34873,37 +34739,37 @@
         "dividendHistory": [
           {
             "period": "2026",
-            "amount": "2.0 ر.س",
+            "amount": "1.33 ر.س",
             "date": "29 June 2026",
             "yield": "1.5%"
           },
           {
             "period": "2025",
-            "amount": "1.5 ر.س",
+            "amount": "1.0 ر.س",
             "date": "28 May 2025",
             "yield": "1.1%"
           },
           {
             "period": "2024",
-            "amount": "1.0 ر.س",
+            "amount": "0.67 ر.س",
             "date": "24 June 2024",
             "yield": "0.7%"
           },
           {
             "period": "2023",
-            "amount": "0.83 ر.س",
+            "amount": "0.56 ر.س",
             "date": "08 June 2023",
             "yield": "0.6%"
           },
           {
             "period": "2021",
-            "amount": "0.67 ر.س",
+            "amount": "0.44 ر.س",
             "date": "02 May 2021",
             "yield": "0.5%"
           },
           {
             "period": "2017",
-            "amount": "2.67 ر.س",
+            "amount": "1.78 ر.س",
             "date": "22 March 2017",
             "yield": "2.0%"
           }
@@ -34913,10 +34779,10 @@
       "freeCashFlow": -4.65,
       "netIncomeB": 0.98,
       "debtToEquity": 10.11,
-      "evEbitda": 11.56,
+      "evEbitda": 11.57,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -34940,2044 +34806,2036 @@
       "peers": [],
       "historical": [
         {
-          "date": "2025-09-03",
-          "open": 117.51,
-          "high": 120.47,
-          "low": 116.92,
-          "close": 117.21,
-          "volume": 688086
-        },
-        {
-          "date": "2025-09-04",
-          "open": 116.33,
-          "high": 119.19,
-          "low": 116.33,
-          "close": 118.89,
-          "volume": 349982
-        },
-        {
           "date": "2025-09-07",
-          "open": 119.38,
-          "high": 122.44,
-          "low": 119.38,
-          "close": 122.05,
-          "volume": 341776
+          "open": 79.59,
+          "high": 81.63,
+          "low": 79.59,
+          "close": 81.37,
+          "volume": 512664
         },
         {
           "date": "2025-09-08",
-          "open": 122.05,
-          "high": 122.15,
-          "low": 118.2,
-          "close": 118.6,
-          "volume": 313024
+          "open": 81.37,
+          "high": 81.43,
+          "low": 78.8,
+          "close": 79.06,
+          "volume": 469536
         },
         {
           "date": "2025-09-09",
-          "open": 118.1,
-          "high": 120.08,
-          "low": 116.82,
-          "close": 119.38,
-          "volume": 427262
+          "open": 78.73,
+          "high": 80.05,
+          "low": 77.88,
+          "close": 79.59,
+          "volume": 640893
         },
         {
           "date": "2025-09-10",
-          "open": 119.38,
-          "high": 119.78,
-          "low": 117.9,
-          "close": 118.5,
-          "volume": 206675
+          "open": 79.59,
+          "high": 79.85,
+          "low": 78.6,
+          "close": 79.0,
+          "volume": 310012
         },
         {
           "date": "2025-09-11",
-          "open": 118.69,
-          "high": 118.99,
-          "low": 117.02,
-          "close": 117.41,
-          "volume": 240281
+          "open": 79.13,
+          "high": 79.33,
+          "low": 78.01,
+          "close": 78.27,
+          "volume": 360421
         },
         {
           "date": "2025-09-14",
-          "open": 116.92,
-          "high": 118.89,
-          "low": 116.92,
-          "close": 118.5,
-          "volume": 156656
+          "open": 77.95,
+          "high": 79.26,
+          "low": 77.95,
+          "close": 79.0,
+          "volume": 234984
         },
         {
           "date": "2025-09-15",
-          "open": 117.21,
-          "high": 119.58,
-          "low": 117.21,
-          "close": 119.58,
-          "volume": 350708
+          "open": 78.14,
+          "high": 79.72,
+          "low": 78.14,
+          "close": 79.72,
+          "volume": 526062
         },
         {
           "date": "2025-09-16",
-          "open": 119.58,
-          "high": 122.44,
-          "low": 119.29,
-          "close": 122.34,
-          "volume": 391998
+          "open": 79.72,
+          "high": 81.63,
+          "low": 79.52,
+          "close": 81.56,
+          "volume": 587997
         },
         {
           "date": "2025-09-17",
-          "open": 122.84,
-          "high": 124.02,
-          "low": 121.26,
-          "close": 123.73,
-          "volume": 401556
+          "open": 81.89,
+          "high": 82.68,
+          "low": 80.84,
+          "close": 82.48,
+          "volume": 602334
         },
         {
           "date": "2025-09-18",
-          "open": 123.73,
-          "high": 125.3,
-          "low": 122.74,
-          "close": 125.3,
-          "volume": 519668
+          "open": 82.48,
+          "high": 83.54,
+          "low": 81.83,
+          "close": 83.54,
+          "volume": 779502
         },
         {
           "date": "2025-09-21",
-          "open": 125.8,
-          "high": 127.48,
-          "low": 124.42,
-          "close": 127.48,
-          "volume": 298248
+          "open": 83.87,
+          "high": 84.98,
+          "low": 82.94,
+          "close": 84.98,
+          "volume": 447372
         },
         {
           "date": "2025-09-22",
-          "open": 125.21,
-          "high": 127.57,
-          "low": 125.11,
-          "close": 126.39,
-          "volume": 387277
+          "open": 83.47,
+          "high": 85.05,
+          "low": 83.4,
+          "close": 84.26,
+          "volume": 580915
         },
         {
           "date": "2025-09-24",
-          "open": 133.2,
-          "high": 138.92,
-          "low": 131.42,
-          "close": 135.57,
-          "volume": 2397695
+          "open": 88.8,
+          "high": 92.61,
+          "low": 87.61,
+          "close": 90.38,
+          "volume": 3596542
         },
         {
           "date": "2025-09-25",
-          "open": 135.57,
-          "high": 135.57,
-          "low": 135.57,
-          "close": 135.57,
+          "open": 90.38,
+          "high": 90.38,
+          "low": 90.38,
+          "close": 90.38,
           "volume": 0
         },
         {
           "date": "2025-09-28",
-          "open": 134.78,
-          "high": 135.86,
-          "low": 130.93,
-          "close": 132.01,
-          "volume": 260547
+          "open": 89.85,
+          "high": 90.57,
+          "low": 87.29,
+          "close": 88.01,
+          "volume": 390820
         },
         {
           "date": "2025-09-29",
-          "open": 131.13,
-          "high": 133.1,
-          "low": 131.13,
-          "close": 132.11,
-          "volume": 274382
+          "open": 87.42,
+          "high": 88.73,
+          "low": 87.42,
+          "close": 88.07,
+          "volume": 411573
         },
         {
           "date": "2025-09-30",
-          "open": 132.11,
-          "high": 134.38,
-          "low": 131.82,
-          "close": 134.18,
-          "volume": 282358
+          "open": 88.07,
+          "high": 89.59,
+          "low": 87.88,
+          "close": 89.46,
+          "volume": 423537
         },
         {
           "date": "2025-10-01",
-          "open": 132.11,
-          "high": 134.38,
-          "low": 131.82,
-          "close": 134.18,
-          "volume": 282358
+          "open": 88.07,
+          "high": 89.59,
+          "low": 87.88,
+          "close": 89.46,
+          "volume": 423537
         },
         {
           "date": "2025-10-02",
-          "open": 131.42,
-          "high": 133.0,
-          "low": 130.24,
-          "close": 131.72,
-          "volume": 316237
+          "open": 87.61,
+          "high": 88.67,
+          "low": 86.83,
+          "close": 87.81,
+          "volume": 474355
         },
         {
           "date": "2025-10-05",
-          "open": 132.41,
-          "high": 133.99,
-          "low": 131.52,
-          "close": 131.62,
-          "volume": 272582
+          "open": 88.27,
+          "high": 89.32,
+          "low": 87.68,
+          "close": 87.75,
+          "volume": 408873
         },
         {
           "date": "2025-10-06",
-          "open": 131.32,
-          "high": 137.93,
-          "low": 131.32,
-          "close": 136.16,
-          "volume": 673165
+          "open": 87.55,
+          "high": 91.96,
+          "low": 87.55,
+          "close": 90.77,
+          "volume": 1009747
         },
         {
           "date": "2025-10-07",
-          "open": 136.16,
-          "high": 138.13,
-          "low": 135.66,
-          "close": 136.65,
-          "volume": 390213
+          "open": 90.77,
+          "high": 92.09,
+          "low": 90.44,
+          "close": 91.1,
+          "volume": 585319
         },
         {
           "date": "2025-10-08",
-          "open": 137.14,
-          "high": 137.34,
-          "low": 133.89,
-          "close": 133.89,
-          "volume": 159934
+          "open": 91.43,
+          "high": 91.56,
+          "low": 89.26,
+          "close": 89.26,
+          "volume": 239901
         },
         {
           "date": "2025-10-09",
-          "open": 133.39,
-          "high": 135.66,
-          "low": 133.1,
-          "close": 135.66,
-          "volume": 148439
+          "open": 88.93,
+          "high": 90.44,
+          "low": 88.73,
+          "close": 90.44,
+          "volume": 222658
         },
         {
           "date": "2025-10-12",
-          "open": 132.21,
-          "high": 135.17,
-          "low": 131.22,
-          "close": 134.38,
-          "volume": 129220
+          "open": 88.14,
+          "high": 90.11,
+          "low": 87.48,
+          "close": 89.59,
+          "volume": 193830
         },
         {
           "date": "2025-10-13",
-          "open": 135.07,
-          "high": 136.06,
-          "low": 134.68,
-          "close": 135.76,
-          "volume": 250745
+          "open": 90.05,
+          "high": 90.71,
+          "low": 89.79,
+          "close": 90.51,
+          "volume": 376117
         },
         {
           "date": "2025-10-14",
-          "open": 135.76,
-          "high": 137.64,
-          "low": 135.27,
-          "close": 136.65,
-          "volume": 334171
+          "open": 90.51,
+          "high": 91.76,
+          "low": 90.18,
+          "close": 91.1,
+          "volume": 501256
         },
         {
           "date": "2025-10-15",
-          "open": 136.16,
-          "high": 136.85,
-          "low": 135.17,
-          "close": 135.76,
-          "volume": 234848
+          "open": 90.77,
+          "high": 91.23,
+          "low": 90.11,
+          "close": 90.51,
+          "volume": 352272
         },
         {
           "date": "2025-10-16",
-          "open": 135.47,
-          "high": 136.45,
-          "low": 133.69,
-          "close": 133.69,
-          "volume": 248920
+          "open": 90.31,
+          "high": 90.97,
+          "low": 89.13,
+          "close": 89.13,
+          "volume": 373380
         },
         {
           "date": "2025-10-19",
-          "open": 133.69,
-          "high": 133.89,
-          "low": 131.22,
-          "close": 131.22,
-          "volume": 268010
+          "open": 89.13,
+          "high": 89.26,
+          "low": 87.48,
+          "close": 87.48,
+          "volume": 402015
         },
         {
           "date": "2025-10-20",
-          "open": 131.22,
-          "high": 134.48,
-          "low": 130.93,
-          "close": 130.93,
-          "volume": 413453
+          "open": 87.48,
+          "high": 89.65,
+          "low": 87.29,
+          "close": 87.29,
+          "volume": 620179
         },
         {
           "date": "2025-10-21",
-          "open": 133.0,
-          "high": 133.0,
-          "low": 125.5,
-          "close": 125.8,
-          "volume": 704689
+          "open": 88.67,
+          "high": 88.67,
+          "low": 83.67,
+          "close": 83.87,
+          "volume": 1057033
         },
         {
           "date": "2025-10-22",
-          "open": 125.7,
-          "high": 128.07,
-          "low": 125.01,
-          "close": 126.78,
-          "volume": 260631
+          "open": 83.8,
+          "high": 85.38,
+          "low": 83.34,
+          "close": 84.52,
+          "volume": 390946
         },
         {
           "date": "2025-10-23",
-          "open": 127.28,
-          "high": 127.77,
-          "low": 126.39,
-          "close": 126.39,
-          "volume": 142656
+          "open": 84.85,
+          "high": 85.18,
+          "low": 84.26,
+          "close": 84.26,
+          "volume": 213984
         },
         {
           "date": "2025-10-26",
-          "open": 126.29,
-          "high": 127.08,
-          "low": 125.7,
-          "close": 126.59,
-          "volume": 100492
+          "open": 84.19,
+          "high": 84.72,
+          "low": 83.8,
+          "close": 84.39,
+          "volume": 150738
         },
         {
           "date": "2025-10-27",
-          "open": 128.66,
-          "high": 129.94,
-          "low": 126.29,
-          "close": 127.38,
-          "volume": 364946
+          "open": 85.77,
+          "high": 86.63,
+          "low": 84.19,
+          "close": 84.92,
+          "volume": 547419
         },
         {
           "date": "2025-10-28",
-          "open": 128.46,
-          "high": 130.34,
-          "low": 126.98,
-          "close": 128.96,
-          "volume": 415614
+          "open": 85.64,
+          "high": 86.89,
+          "low": 84.65,
+          "close": 85.97,
+          "volume": 623421
         },
         {
           "date": "2025-10-29",
-          "open": 129.05,
-          "high": 131.22,
-          "low": 128.96,
-          "close": 131.22,
-          "volume": 420016
+          "open": 86.04,
+          "high": 87.48,
+          "low": 85.97,
+          "close": 87.48,
+          "volume": 630024
         },
         {
           "date": "2025-10-30",
-          "open": 126.29,
-          "high": 136.65,
-          "low": 126.29,
-          "close": 134.38,
-          "volume": 766207
+          "open": 84.19,
+          "high": 91.1,
+          "low": 84.19,
+          "close": 89.59,
+          "volume": 1149310
         },
         {
           "date": "2025-11-02",
-          "open": 134.38,
-          "high": 135.17,
-          "low": 132.8,
-          "close": 133.0,
-          "volume": 171383
+          "open": 89.59,
+          "high": 90.11,
+          "low": 88.54,
+          "close": 88.67,
+          "volume": 257074
         },
         {
           "date": "2025-11-03",
-          "open": 132.8,
-          "high": 133.2,
-          "low": 129.25,
-          "close": 130.63,
-          "volume": 249853
+          "open": 88.54,
+          "high": 88.8,
+          "low": 86.17,
+          "close": 87.09,
+          "volume": 374779
         },
         {
           "date": "2025-11-04",
-          "open": 130.43,
-          "high": 131.22,
-          "low": 128.17,
-          "close": 128.86,
-          "volume": 298966
+          "open": 86.96,
+          "high": 87.48,
+          "low": 85.44,
+          "close": 85.9,
+          "volume": 448449
         },
         {
           "date": "2025-11-05",
-          "open": 128.07,
-          "high": 129.65,
-          "low": 127.48,
-          "close": 129.05,
-          "volume": 192845
+          "open": 85.38,
+          "high": 86.43,
+          "low": 84.98,
+          "close": 86.04,
+          "volume": 289267
         },
         {
           "date": "2025-11-06",
-          "open": 127.97,
-          "high": 133.1,
-          "low": 127.97,
-          "close": 131.72,
-          "volume": 225615
+          "open": 85.31,
+          "high": 88.73,
+          "low": 85.31,
+          "close": 87.81,
+          "volume": 338422
         },
         {
           "date": "2025-11-09",
-          "open": 130.53,
-          "high": 131.22,
-          "low": 128.46,
-          "close": 129.25,
-          "volume": 78918
+          "open": 87.02,
+          "high": 87.48,
+          "low": 85.64,
+          "close": 86.17,
+          "volume": 118377
         },
         {
           "date": "2025-11-10",
-          "open": 129.05,
-          "high": 133.39,
-          "low": 129.05,
-          "close": 131.72,
-          "volume": 390182
+          "open": 86.04,
+          "high": 88.93,
+          "low": 86.04,
+          "close": 87.81,
+          "volume": 585273
         },
         {
           "date": "2025-11-11",
-          "open": 131.72,
-          "high": 132.11,
-          "low": 129.84,
-          "close": 131.03,
-          "volume": 206345
+          "open": 87.81,
+          "high": 88.07,
+          "low": 86.56,
+          "close": 87.35,
+          "volume": 309517
         },
         {
           "date": "2025-11-12",
-          "open": 130.24,
-          "high": 131.82,
-          "low": 130.14,
-          "close": 130.73,
-          "volume": 315226
+          "open": 86.83,
+          "high": 87.88,
+          "low": 86.76,
+          "close": 87.15,
+          "volume": 472839
         },
         {
           "date": "2025-11-13",
-          "open": 129.74,
-          "high": 130.73,
-          "low": 128.96,
-          "close": 130.24,
-          "volume": 320768
+          "open": 86.5,
+          "high": 87.15,
+          "low": 85.97,
+          "close": 86.83,
+          "volume": 481152
         },
         {
           "date": "2025-11-16",
-          "open": 128.76,
-          "high": 128.86,
-          "low": 127.28,
-          "close": 128.07,
-          "volume": 76707
+          "open": 85.84,
+          "high": 85.9,
+          "low": 84.85,
+          "close": 85.38,
+          "volume": 115060
         },
         {
           "date": "2025-11-17",
-          "open": 128.07,
-          "high": 128.46,
-          "low": 124.61,
-          "close": 125.3,
-          "volume": 340741
+          "open": 85.38,
+          "high": 85.64,
+          "low": 83.08,
+          "close": 83.54,
+          "volume": 511111
         },
         {
           "date": "2025-11-18",
-          "open": 125.11,
-          "high": 125.9,
-          "low": 122.54,
-          "close": 125.9,
-          "volume": 268512
+          "open": 83.4,
+          "high": 83.93,
+          "low": 81.69,
+          "close": 83.93,
+          "volume": 402768
         },
         {
           "date": "2025-11-19",
-          "open": 126.0,
-          "high": 126.88,
-          "low": 122.64,
-          "close": 123.53,
-          "volume": 362796
+          "open": 84.0,
+          "high": 84.59,
+          "low": 81.76,
+          "close": 82.35,
+          "volume": 544194
         },
         {
           "date": "2025-11-20",
-          "open": 122.84,
-          "high": 124.22,
-          "low": 122.64,
-          "close": 123.33,
-          "volume": 286229
+          "open": 81.89,
+          "high": 82.81,
+          "low": 81.76,
+          "close": 82.22,
+          "volume": 429343
         },
         {
           "date": "2025-11-23",
-          "open": 123.33,
-          "high": 124.71,
-          "low": 123.33,
-          "close": 123.33,
-          "volume": 78771
+          "open": 82.22,
+          "high": 83.14,
+          "low": 82.22,
+          "close": 82.22,
+          "volume": 118156
         },
         {
           "date": "2025-11-24",
-          "open": 123.23,
-          "high": 123.53,
-          "low": 120.77,
-          "close": 120.77,
-          "volume": 646645
+          "open": 82.15,
+          "high": 82.35,
+          "low": 80.51,
+          "close": 80.51,
+          "volume": 969967
         },
         {
           "date": "2025-11-25",
-          "open": 121.16,
-          "high": 121.85,
-          "low": 119.68,
-          "close": 119.68,
-          "volume": 122745
+          "open": 80.77,
+          "high": 81.23,
+          "low": 79.79,
+          "close": 79.79,
+          "volume": 184117
         },
         {
           "date": "2025-11-26",
-          "open": 118.79,
-          "high": 120.57,
-          "low": 118.4,
-          "close": 120.37,
-          "volume": 231159
+          "open": 79.2,
+          "high": 80.38,
+          "low": 78.93,
+          "close": 80.25,
+          "volume": 346738
         },
         {
           "date": "2025-11-27",
-          "open": 119.48,
-          "high": 122.34,
-          "low": 118.89,
-          "close": 118.89,
-          "volume": 223147
+          "open": 79.66,
+          "high": 81.56,
+          "low": 79.26,
+          "close": 79.26,
+          "volume": 334720
         },
         {
           "date": "2025-11-30",
-          "open": 118.89,
-          "high": 120.47,
-          "low": 118.4,
-          "close": 118.4,
-          "volume": 89455
+          "open": 79.26,
+          "high": 80.31,
+          "low": 78.93,
+          "close": 78.93,
+          "volume": 134182
         },
         {
           "date": "2025-12-01",
-          "open": 118.89,
-          "high": 119.19,
-          "low": 116.92,
-          "close": 118.4,
-          "volume": 156511
+          "open": 79.26,
+          "high": 79.46,
+          "low": 77.95,
+          "close": 78.93,
+          "volume": 234766
         },
         {
           "date": "2025-12-02",
-          "open": 118.69,
-          "high": 119.88,
-          "low": 116.82,
-          "close": 117.71,
-          "volume": 236402
+          "open": 79.13,
+          "high": 79.92,
+          "low": 77.88,
+          "close": 78.47,
+          "volume": 354603
         },
         {
           "date": "2025-12-03",
-          "open": 117.81,
-          "high": 120.08,
-          "low": 117.41,
-          "close": 120.08,
-          "volume": 261017
+          "open": 78.54,
+          "high": 80.05,
+          "low": 78.27,
+          "close": 80.05,
+          "volume": 391525
         },
         {
           "date": "2025-12-04",
-          "open": 120.08,
-          "high": 121.36,
-          "low": 117.71,
-          "close": 117.71,
-          "volume": 386224
+          "open": 80.05,
+          "high": 80.91,
+          "low": 78.47,
+          "close": 78.47,
+          "volume": 579336
         },
         {
           "date": "2025-12-07",
-          "open": 117.71,
-          "high": 119.19,
-          "low": 116.92,
-          "close": 118.89,
-          "volume": 77944
+          "open": 78.47,
+          "high": 79.46,
+          "low": 77.95,
+          "close": 79.26,
+          "volume": 116916
         },
         {
           "date": "2025-12-08",
-          "open": 118.4,
-          "high": 121.16,
-          "low": 118.2,
-          "close": 120.37,
-          "volume": 264234
+          "open": 78.93,
+          "high": 80.77,
+          "low": 78.8,
+          "close": 80.25,
+          "volume": 396351
         },
         {
           "date": "2025-12-09",
-          "open": 120.37,
-          "high": 122.74,
-          "low": 119.78,
-          "close": 122.34,
-          "volume": 221485
+          "open": 80.25,
+          "high": 81.83,
+          "low": 79.85,
+          "close": 81.56,
+          "volume": 332227
         },
         {
           "date": "2025-12-10",
-          "open": 122.15,
-          "high": 124.52,
-          "low": 122.15,
-          "close": 122.34,
-          "volume": 136448
+          "open": 81.43,
+          "high": 83.01,
+          "low": 81.43,
+          "close": 81.56,
+          "volume": 204672
         },
         {
           "date": "2025-12-11",
-          "open": 123.23,
-          "high": 123.23,
-          "low": 121.36,
-          "close": 121.36,
-          "volume": 89868
+          "open": 82.15,
+          "high": 82.15,
+          "low": 80.91,
+          "close": 80.91,
+          "volume": 134802
         },
         {
           "date": "2025-12-14",
-          "open": 121.36,
-          "high": 122.05,
-          "low": 119.48,
-          "close": 120.27,
-          "volume": 106475
+          "open": 80.91,
+          "high": 81.37,
+          "low": 79.66,
+          "close": 80.18,
+          "volume": 159712
         },
         {
           "date": "2025-12-15",
-          "open": 120.37,
-          "high": 122.54,
-          "low": 119.29,
-          "close": 120.17,
-          "volume": 156155
+          "open": 80.25,
+          "high": 81.69,
+          "low": 79.52,
+          "close": 80.12,
+          "volume": 234232
         },
         {
           "date": "2025-12-16",
-          "open": 120.17,
-          "high": 120.17,
-          "low": 116.82,
-          "close": 116.82,
-          "volume": 261826
+          "open": 80.12,
+          "high": 80.12,
+          "low": 77.88,
+          "close": 77.88,
+          "volume": 392739
         },
         {
           "date": "2025-12-17",
-          "open": 115.93,
-          "high": 117.31,
-          "low": 114.94,
-          "close": 115.44,
-          "volume": 407940
+          "open": 77.29,
+          "high": 78.21,
+          "low": 76.63,
+          "close": 76.96,
+          "volume": 611910
         },
         {
           "date": "2025-12-18",
-          "open": 116.13,
-          "high": 116.13,
-          "low": 113.37,
-          "close": 113.46,
-          "volume": 535242
+          "open": 77.42,
+          "high": 77.42,
+          "low": 75.58,
+          "close": 75.64,
+          "volume": 802863
         },
         {
           "date": "2025-12-21",
-          "open": 113.96,
-          "high": 117.9,
-          "low": 113.96,
-          "close": 117.71,
-          "volume": 208808
+          "open": 75.97,
+          "high": 78.6,
+          "low": 75.97,
+          "close": 78.47,
+          "volume": 313212
         },
         {
           "date": "2025-12-22",
-          "open": 118.3,
-          "high": 118.3,
-          "low": 115.44,
-          "close": 116.62,
-          "volume": 317067
+          "open": 78.87,
+          "high": 78.87,
+          "low": 76.96,
+          "close": 77.75,
+          "volume": 475600
         },
         {
           "date": "2025-12-23",
-          "open": 116.42,
-          "high": 116.42,
-          "low": 114.94,
-          "close": 115.34,
-          "volume": 290373
+          "open": 77.62,
+          "high": 77.62,
+          "low": 76.63,
+          "close": 76.89,
+          "volume": 435559
         },
         {
           "date": "2025-12-24",
-          "open": 115.83,
-          "high": 116.03,
-          "low": 113.56,
-          "close": 113.56,
-          "volume": 268217
+          "open": 77.22,
+          "high": 77.35,
+          "low": 75.71,
+          "close": 75.71,
+          "volume": 402325
         },
         {
           "date": "2025-12-25",
-          "open": 113.86,
-          "high": 116.52,
-          "low": 113.46,
-          "close": 116.03,
-          "volume": 179255
+          "open": 75.91,
+          "high": 77.68,
+          "low": 75.64,
+          "close": 77.35,
+          "volume": 268882
         },
         {
           "date": "2025-12-28",
-          "open": 116.23,
-          "high": 116.23,
-          "low": 114.25,
-          "close": 114.94,
-          "volume": 74073
+          "open": 77.48,
+          "high": 77.48,
+          "low": 76.17,
+          "close": 76.63,
+          "volume": 111109
         },
         {
           "date": "2025-12-29",
-          "open": 115.34,
-          "high": 116.23,
-          "low": 114.16,
-          "close": 115.44,
-          "volume": 307712
+          "open": 76.89,
+          "high": 77.48,
+          "low": 76.1,
+          "close": 76.96,
+          "volume": 461568
         },
         {
           "date": "2025-12-30",
-          "open": 115.24,
-          "high": 115.24,
-          "low": 113.46,
-          "close": 113.76,
-          "volume": 246815
+          "open": 76.83,
+          "high": 76.83,
+          "low": 75.64,
+          "close": 75.84,
+          "volume": 370222
         },
         {
           "date": "2025-12-31",
-          "open": 113.96,
-          "high": 116.62,
-          "low": 113.96,
-          "close": 115.44,
-          "volume": 235029
+          "open": 75.97,
+          "high": 77.75,
+          "low": 75.97,
+          "close": 76.96,
+          "volume": 352543
         },
         {
           "date": "2026-01-01",
-          "open": 115.44,
-          "high": 117.02,
-          "low": 115.44,
-          "close": 116.62,
-          "volume": 67370
+          "open": 76.96,
+          "high": 78.01,
+          "low": 76.96,
+          "close": 77.75,
+          "volume": 101055
         },
         {
           "date": "2026-01-04",
-          "open": 116.62,
-          "high": 118.1,
-          "low": 116.33,
-          "close": 117.31,
-          "volume": 175152
+          "open": 77.75,
+          "high": 78.73,
+          "low": 77.55,
+          "close": 78.21,
+          "volume": 262728
         },
         {
           "date": "2026-01-05",
-          "open": 117.31,
-          "high": 118.3,
-          "low": 114.35,
-          "close": 115.44,
-          "volume": 264851
+          "open": 78.21,
+          "high": 78.87,
+          "low": 76.24,
+          "close": 76.96,
+          "volume": 397276
         },
         {
           "date": "2026-01-06",
-          "open": 116.42,
-          "high": 116.42,
-          "low": 111.49,
-          "close": 112.08,
-          "volume": 779844
+          "open": 77.62,
+          "high": 77.62,
+          "low": 74.33,
+          "close": 74.72,
+          "volume": 1169766
         },
         {
           "date": "2026-01-07",
-          "open": 114.45,
-          "high": 115.93,
-          "low": 111.29,
-          "close": 112.48,
-          "volume": 653945
+          "open": 76.3,
+          "high": 77.29,
+          "low": 74.2,
+          "close": 74.99,
+          "volume": 980917
         },
         {
           "date": "2026-01-08",
-          "open": 112.48,
-          "high": 113.37,
-          "low": 110.31,
-          "close": 111.69,
-          "volume": 532520
+          "open": 74.99,
+          "high": 75.58,
+          "low": 73.54,
+          "close": 74.46,
+          "volume": 798780
         },
         {
           "date": "2026-01-11",
-          "open": 112.87,
-          "high": 113.07,
-          "low": 111.79,
-          "close": 112.18,
-          "volume": 233809
+          "open": 75.25,
+          "high": 75.38,
+          "low": 74.52,
+          "close": 74.79,
+          "volume": 350713
         },
         {
           "date": "2026-01-12",
-          "open": 112.38,
-          "high": 112.87,
-          "low": 111.49,
-          "close": 112.87,
-          "volume": 791185
+          "open": 74.92,
+          "high": 75.25,
+          "low": 74.33,
+          "close": 75.25,
+          "volume": 1186777
         },
         {
           "date": "2026-01-13",
-          "open": 112.77,
-          "high": 117.71,
-          "low": 111.79,
-          "close": 117.71,
-          "volume": 1501013
+          "open": 75.18,
+          "high": 78.47,
+          "low": 74.52,
+          "close": 78.47,
+          "volume": 2251519
         },
         {
           "date": "2026-01-14",
-          "open": 117.71,
-          "high": 118.4,
-          "low": 113.27,
-          "close": 114.94,
-          "volume": 711698
+          "open": 78.47,
+          "high": 78.93,
+          "low": 75.51,
+          "close": 76.63,
+          "volume": 1067547
         },
         {
           "date": "2026-01-15",
-          "open": 114.94,
-          "high": 114.94,
-          "low": 112.77,
-          "close": 113.07,
-          "volume": 1299725
+          "open": 76.63,
+          "high": 76.63,
+          "low": 75.18,
+          "close": 75.38,
+          "volume": 1949587
         },
         {
           "date": "2026-01-18",
-          "open": 113.37,
-          "high": 117.41,
-          "low": 113.37,
-          "close": 116.92,
-          "volume": 514904
+          "open": 75.58,
+          "high": 78.27,
+          "low": 75.58,
+          "close": 77.95,
+          "volume": 772356
         },
         {
           "date": "2026-01-19",
-          "open": 116.92,
-          "high": 118.6,
-          "low": 115.54,
-          "close": 116.82,
-          "volume": 395368
+          "open": 77.95,
+          "high": 79.06,
+          "low": 77.02,
+          "close": 77.88,
+          "volume": 593052
         },
         {
           "date": "2026-01-20",
-          "open": 116.72,
-          "high": 117.12,
-          "low": 114.75,
-          "close": 114.75,
-          "volume": 264403
+          "open": 77.81,
+          "high": 78.08,
+          "low": 76.5,
+          "close": 76.5,
+          "volume": 396604
         },
         {
           "date": "2026-01-21",
-          "open": 117.41,
-          "high": 126.19,
-          "low": 116.42,
-          "close": 126.19,
-          "volume": 687589
+          "open": 78.27,
+          "high": 84.13,
+          "low": 77.62,
+          "close": 84.13,
+          "volume": 1031383
         },
         {
           "date": "2026-01-22",
-          "open": 131.03,
-          "high": 134.18,
-          "low": 128.96,
-          "close": 132.61,
-          "volume": 1871832
+          "open": 87.35,
+          "high": 89.46,
+          "low": 85.97,
+          "close": 88.4,
+          "volume": 2807748
         },
         {
           "date": "2026-01-25",
-          "open": 132.61,
-          "high": 132.9,
-          "low": 129.65,
-          "close": 132.21,
-          "volume": 326824
+          "open": 88.4,
+          "high": 88.6,
+          "low": 86.43,
+          "close": 88.14,
+          "volume": 490236
         },
         {
           "date": "2026-01-26",
-          "open": 131.42,
-          "high": 132.61,
-          "low": 129.55,
-          "close": 130.04,
-          "volume": 361801
+          "open": 87.61,
+          "high": 88.4,
+          "low": 86.36,
+          "close": 86.69,
+          "volume": 542701
         },
         {
           "date": "2026-01-27",
-          "open": 130.24,
-          "high": 133.49,
-          "low": 130.24,
-          "close": 133.0,
-          "volume": 381830
+          "open": 86.83,
+          "high": 89.0,
+          "low": 86.83,
+          "close": 88.67,
+          "volume": 572745
         },
         {
           "date": "2026-01-28",
-          "open": 133.2,
-          "high": 137.93,
-          "low": 133.2,
-          "close": 137.93,
-          "volume": 484599
+          "open": 88.8,
+          "high": 91.96,
+          "low": 88.8,
+          "close": 91.96,
+          "volume": 726898
         },
         {
           "date": "2026-01-29",
-          "open": 136.16,
-          "high": 137.83,
-          "low": 134.78,
-          "close": 135.17,
-          "volume": 521035
+          "open": 90.77,
+          "high": 91.89,
+          "low": 89.85,
+          "close": 90.11,
+          "volume": 781552
         },
         {
           "date": "2026-02-01",
-          "open": 135.17,
-          "high": 135.86,
-          "low": 131.52,
-          "close": 134.68,
-          "volume": 210000
+          "open": 90.11,
+          "high": 90.57,
+          "low": 87.68,
+          "close": 89.79,
+          "volume": 315000
         },
         {
           "date": "2026-02-02",
-          "open": 134.68,
-          "high": 137.05,
-          "low": 131.91,
-          "close": 137.05,
-          "volume": 327945
+          "open": 89.79,
+          "high": 91.36,
+          "low": 87.94,
+          "close": 91.36,
+          "volume": 491917
         },
         {
           "date": "2026-02-03",
-          "open": 137.05,
-          "high": 137.93,
-          "low": 135.17,
-          "close": 135.37,
-          "volume": 181319
+          "open": 91.36,
+          "high": 91.96,
+          "low": 90.11,
+          "close": 90.25,
+          "volume": 271978
         },
         {
           "date": "2026-02-04",
-          "open": 135.17,
-          "high": 136.65,
-          "low": 134.68,
-          "close": 136.45,
-          "volume": 145600
+          "open": 90.11,
+          "high": 91.1,
+          "low": 89.79,
+          "close": 90.97,
+          "volume": 218400
         },
         {
           "date": "2026-02-05",
-          "open": 135.27,
-          "high": 135.96,
-          "low": 133.79,
-          "close": 135.17,
-          "volume": 131582
+          "open": 90.18,
+          "high": 90.64,
+          "low": 89.19,
+          "close": 90.11,
+          "volume": 197373
         },
         {
           "date": "2026-02-08",
-          "open": 134.68,
-          "high": 136.16,
-          "low": 131.22,
-          "close": 131.22,
-          "volume": 276452
+          "open": 89.79,
+          "high": 90.77,
+          "low": 87.48,
+          "close": 87.48,
+          "volume": 414678
         },
         {
           "date": "2026-02-09",
-          "open": 132.9,
-          "high": 134.97,
-          "low": 132.51,
-          "close": 134.18,
-          "volume": 273402
+          "open": 88.6,
+          "high": 89.98,
+          "low": 88.34,
+          "close": 89.46,
+          "volume": 410103
         },
         {
           "date": "2026-02-10",
-          "open": 131.72,
-          "high": 136.35,
-          "low": 131.72,
-          "close": 136.16,
-          "volume": 594610
+          "open": 87.81,
+          "high": 90.9,
+          "low": 87.81,
+          "close": 90.77,
+          "volume": 891915
         },
         {
           "date": "2026-02-11",
-          "open": 136.16,
-          "high": 136.85,
-          "low": 132.61,
-          "close": 135.47,
-          "volume": 211457
+          "open": 90.77,
+          "high": 91.23,
+          "low": 88.4,
+          "close": 90.31,
+          "volume": 317185
         },
         {
           "date": "2026-02-12",
-          "open": 135.47,
-          "high": 141.88,
-          "low": 134.87,
-          "close": 138.92,
-          "volume": 520134
+          "open": 90.31,
+          "high": 94.59,
+          "low": 89.92,
+          "close": 92.61,
+          "volume": 780201
         },
         {
           "date": "2026-02-15",
-          "open": 138.13,
-          "high": 138.23,
-          "low": 135.57,
-          "close": 136.65,
-          "volume": 113964
+          "open": 92.09,
+          "high": 92.15,
+          "low": 90.38,
+          "close": 91.1,
+          "volume": 170946
         },
         {
           "date": "2026-02-16",
-          "open": 135.37,
-          "high": 137.54,
-          "low": 134.68,
-          "close": 137.34,
-          "volume": 144812
+          "open": 90.25,
+          "high": 91.69,
+          "low": 89.79,
+          "close": 91.56,
+          "volume": 217218
         },
         {
           "date": "2026-02-17",
-          "open": 136.75,
-          "high": 139.12,
-          "low": 135.17,
-          "close": 137.24,
-          "volume": 294352
+          "open": 91.17,
+          "high": 92.74,
+          "low": 90.11,
+          "close": 91.5,
+          "volume": 441528
         },
         {
           "date": "2026-02-18",
-          "open": 137.14,
-          "high": 140.89,
-          "low": 135.27,
-          "close": 139.12,
-          "volume": 516341
+          "open": 91.43,
+          "high": 93.93,
+          "low": 90.18,
+          "close": 92.74,
+          "volume": 774511
         },
         {
           "date": "2026-02-19",
-          "open": 139.12,
-          "high": 139.91,
-          "low": 136.16,
-          "close": 138.13,
-          "volume": 250797
+          "open": 92.74,
+          "high": 93.27,
+          "low": 90.77,
+          "close": 92.09,
+          "volume": 376195
         },
         {
           "date": "2026-02-23",
-          "open": 137.14,
-          "high": 139.22,
-          "low": 133.59,
-          "close": 136.85,
-          "volume": 298933
+          "open": 91.43,
+          "high": 92.81,
+          "low": 89.06,
+          "close": 91.23,
+          "volume": 448399
         },
         {
           "date": "2026-02-24",
-          "open": 133.99,
-          "high": 136.65,
-          "low": 133.99,
-          "close": 136.16,
-          "volume": 229452
+          "open": 89.32,
+          "high": 91.1,
+          "low": 89.32,
+          "close": 90.77,
+          "volume": 344178
         },
         {
           "date": "2026-02-25",
-          "open": 135.17,
-          "high": 136.45,
-          "low": 134.18,
-          "close": 136.45,
-          "volume": 201908
+          "open": 90.11,
+          "high": 90.97,
+          "low": 89.46,
+          "close": 90.97,
+          "volume": 302862
         },
         {
           "date": "2026-02-26",
-          "open": 136.65,
-          "high": 138.72,
-          "low": 133.1,
-          "close": 133.89,
-          "volume": 767120
+          "open": 91.1,
+          "high": 92.48,
+          "low": 88.73,
+          "close": 89.26,
+          "volume": 1150680
         },
         {
           "date": "2026-03-01",
-          "open": 126.29,
-          "high": 131.62,
-          "low": 123.63,
-          "close": 128.26,
-          "volume": 419984
+          "open": 84.19,
+          "high": 87.75,
+          "low": 82.42,
+          "close": 85.51,
+          "volume": 629976
         },
         {
           "date": "2026-03-02",
-          "open": 126.78,
-          "high": 130.14,
-          "low": 123.43,
-          "close": 127.38,
-          "volume": 472557
+          "open": 84.52,
+          "high": 86.76,
+          "low": 82.29,
+          "close": 84.92,
+          "volume": 708835
         },
         {
           "date": "2026-03-03",
-          "open": 127.28,
-          "high": 127.28,
-          "low": 121.65,
-          "close": 122.84,
-          "volume": 585662
+          "open": 84.85,
+          "high": 84.85,
+          "low": 81.1,
+          "close": 81.89,
+          "volume": 878493
         },
         {
           "date": "2026-03-04",
-          "open": 122.84,
-          "high": 128.46,
-          "low": 121.95,
-          "close": 127.28,
-          "volume": 230220
+          "open": 81.89,
+          "high": 85.64,
+          "low": 81.3,
+          "close": 84.85,
+          "volume": 345330
         },
         {
           "date": "2026-03-05",
-          "open": 127.87,
-          "high": 129.05,
-          "low": 126.88,
-          "close": 128.76,
-          "volume": 208564
+          "open": 85.25,
+          "high": 86.04,
+          "low": 84.59,
+          "close": 85.84,
+          "volume": 312846
         },
         {
           "date": "2026-03-08",
-          "open": 128.76,
-          "high": 132.51,
-          "low": 127.77,
-          "close": 128.26,
-          "volume": 289799
+          "open": 85.84,
+          "high": 88.34,
+          "low": 85.18,
+          "close": 85.51,
+          "volume": 434698
         },
         {
           "date": "2026-03-09",
-          "open": 128.46,
-          "high": 128.46,
-          "low": 121.56,
-          "close": 122.84,
-          "volume": 424757
+          "open": 85.64,
+          "high": 85.64,
+          "low": 81.04,
+          "close": 81.89,
+          "volume": 637135
         },
         {
           "date": "2026-03-10",
-          "open": 123.33,
-          "high": 131.22,
-          "low": 122.54,
-          "close": 127.28,
-          "volume": 397096
+          "open": 82.22,
+          "high": 87.48,
+          "low": 81.69,
+          "close": 84.85,
+          "volume": 595644
         },
         {
           "date": "2026-03-11",
-          "open": 127.28,
-          "high": 128.76,
-          "low": 125.3,
-          "close": 126.59,
-          "volume": 295259
+          "open": 84.85,
+          "high": 85.84,
+          "low": 83.54,
+          "close": 84.39,
+          "volume": 442888
         },
         {
           "date": "2026-03-12",
-          "open": 126.59,
-          "high": 126.88,
-          "low": 125.11,
-          "close": 126.29,
-          "volume": 162057
+          "open": 84.39,
+          "high": 84.59,
+          "low": 83.4,
+          "close": 84.19,
+          "volume": 243085
         },
         {
           "date": "2026-03-15",
-          "open": 126.19,
-          "high": 126.88,
-          "low": 123.53,
-          "close": 125.8,
-          "volume": 135963
+          "open": 84.13,
+          "high": 84.59,
+          "low": 82.35,
+          "close": 83.87,
+          "volume": 203944
         },
         {
           "date": "2026-03-16",
-          "open": 125.8,
-          "high": 127.18,
-          "low": 124.42,
-          "close": 127.08,
-          "volume": 214637
+          "open": 83.87,
+          "high": 84.79,
+          "low": 82.94,
+          "close": 84.72,
+          "volume": 321955
         },
         {
           "date": "2026-03-24",
-          "open": 128.26,
-          "high": 128.76,
-          "low": 125.6,
-          "close": 126.29,
-          "volume": 318908
+          "open": 85.51,
+          "high": 85.84,
+          "low": 83.73,
+          "close": 84.19,
+          "volume": 478362
         },
         {
           "date": "2026-03-25",
-          "open": 126.29,
-          "high": 127.67,
-          "low": 125.7,
-          "close": 127.08,
-          "volume": 201600
+          "open": 84.19,
+          "high": 85.11,
+          "low": 83.8,
+          "close": 84.72,
+          "volume": 302400
         },
         {
           "date": "2026-03-26",
-          "open": 126.49,
-          "high": 127.48,
-          "low": 126.0,
-          "close": 126.69,
-          "volume": 201013
+          "open": 84.33,
+          "high": 84.98,
+          "low": 84.0,
+          "close": 84.46,
+          "volume": 301519
         },
         {
           "date": "2026-03-29",
-          "open": 126.69,
-          "high": 128.66,
-          "low": 126.09,
-          "close": 128.46,
-          "volume": 96479
+          "open": 84.46,
+          "high": 85.77,
+          "low": 84.06,
+          "close": 85.64,
+          "volume": 144718
         },
         {
           "date": "2026-03-30",
-          "open": 126.69,
-          "high": 128.66,
-          "low": 126.09,
-          "close": 128.46,
-          "volume": 96479
+          "open": 84.46,
+          "high": 85.77,
+          "low": 84.06,
+          "close": 85.64,
+          "volume": 144718
         },
         {
           "date": "2026-03-31",
-          "open": 128.26,
-          "high": 129.94,
-          "low": 126.29,
-          "close": 126.29,
-          "volume": 271192
+          "open": 85.51,
+          "high": 86.63,
+          "low": 84.19,
+          "close": 84.19,
+          "volume": 406788
         },
         {
           "date": "2026-04-01",
-          "open": 125.9,
-          "high": 126.49,
-          "low": 125.3,
-          "close": 125.3,
-          "volume": 170655
+          "open": 83.93,
+          "high": 84.33,
+          "low": 83.54,
+          "close": 83.54,
+          "volume": 255982
         },
         {
           "date": "2026-04-02",
-          "open": 125.4,
-          "high": 126.29,
-          "low": 122.74,
-          "close": 124.22,
-          "volume": 556908
+          "open": 83.6,
+          "high": 84.19,
+          "low": 81.83,
+          "close": 82.81,
+          "volume": 835362
         },
         {
           "date": "2026-04-05",
-          "open": 124.12,
-          "high": 125.8,
-          "low": 123.33,
-          "close": 125.6,
-          "volume": 243673
+          "open": 82.75,
+          "high": 83.87,
+          "low": 82.22,
+          "close": 83.73,
+          "volume": 365509
         },
         {
           "date": "2026-04-06",
-          "open": 125.5,
-          "high": 126.39,
-          "low": 123.33,
-          "close": 123.92,
-          "volume": 175503
+          "open": 83.67,
+          "high": 84.26,
+          "low": 82.22,
+          "close": 82.62,
+          "volume": 263254
         },
         {
           "date": "2026-04-07",
-          "open": 123.92,
-          "high": 123.92,
-          "low": 122.15,
-          "close": 123.43,
-          "volume": 223664
+          "open": 82.62,
+          "high": 82.62,
+          "low": 81.43,
+          "close": 82.29,
+          "volume": 335496
         },
         {
           "date": "2026-04-08",
-          "open": 125.9,
-          "high": 128.76,
-          "low": 125.5,
-          "close": 127.28,
-          "volume": 640385
+          "open": 83.93,
+          "high": 85.84,
+          "low": 83.67,
+          "close": 84.85,
+          "volume": 960577
         },
         {
           "date": "2026-04-09",
-          "open": 127.08,
-          "high": 127.18,
-          "low": 124.91,
-          "close": 125.9,
-          "volume": 283995
+          "open": 84.72,
+          "high": 84.79,
+          "low": 83.27,
+          "close": 83.93,
+          "volume": 425992
         },
         {
           "date": "2026-04-12",
-          "open": 125.8,
-          "high": 127.18,
-          "low": 124.22,
-          "close": 125.8,
-          "volume": 85412
+          "open": 83.87,
+          "high": 84.79,
+          "low": 82.81,
+          "close": 83.87,
+          "volume": 128118
         },
         {
           "date": "2026-04-13",
-          "open": 126.98,
-          "high": 126.98,
-          "low": 125.7,
-          "close": 126.49,
-          "volume": 156338
+          "open": 84.65,
+          "high": 84.65,
+          "low": 83.8,
+          "close": 84.33,
+          "volume": 234507
         },
         {
           "date": "2026-04-14",
-          "open": 126.49,
-          "high": 129.65,
-          "low": 126.19,
-          "close": 128.86,
-          "volume": 378214
+          "open": 84.33,
+          "high": 86.43,
+          "low": 84.13,
+          "close": 85.9,
+          "volume": 567321
         },
         {
           "date": "2026-04-15",
-          "open": 128.96,
-          "high": 131.22,
-          "low": 128.96,
-          "close": 130.14,
-          "volume": 373892
+          "open": 85.97,
+          "high": 87.48,
+          "low": 85.97,
+          "close": 86.76,
+          "volume": 560838
         },
         {
           "date": "2026-04-16",
-          "open": 130.24,
-          "high": 130.63,
-          "low": 128.76,
-          "close": 129.74,
-          "volume": 287759
+          "open": 86.83,
+          "high": 87.09,
+          "low": 85.84,
+          "close": 86.5,
+          "volume": 431638
         },
         {
           "date": "2026-04-19",
-          "open": 129.74,
-          "high": 129.94,
-          "low": 126.78,
-          "close": 128.26,
-          "volume": 133169
+          "open": 86.5,
+          "high": 86.63,
+          "low": 84.52,
+          "close": 85.51,
+          "volume": 199753
         },
         {
           "date": "2026-04-20",
-          "open": 128.26,
-          "high": 128.46,
-          "low": 126.19,
-          "close": 127.97,
-          "volume": 224064
+          "open": 85.51,
+          "high": 85.64,
+          "low": 84.13,
+          "close": 85.31,
+          "volume": 336096
         },
         {
           "date": "2026-04-21",
-          "open": 127.38,
-          "high": 128.86,
-          "low": 127.38,
-          "close": 128.36,
-          "volume": 134635
+          "open": 84.92,
+          "high": 85.9,
+          "low": 84.92,
+          "close": 85.58,
+          "volume": 201952
         },
         {
           "date": "2026-04-22",
-          "open": 127.87,
-          "high": 128.46,
-          "low": 126.78,
-          "close": 127.67,
-          "volume": 147550
+          "open": 85.25,
+          "high": 85.64,
+          "low": 84.52,
+          "close": 85.11,
+          "volume": 221325
         },
         {
           "date": "2026-04-23",
-          "open": 132.31,
-          "high": 135.17,
-          "low": 129.05,
-          "close": 131.03,
-          "volume": 659309
+          "open": 88.21,
+          "high": 90.11,
+          "low": 86.04,
+          "close": 87.35,
+          "volume": 988963
         },
         {
           "date": "2026-04-26",
-          "open": 130.24,
-          "high": 131.52,
-          "low": 129.15,
-          "close": 130.93,
-          "volume": 127506
+          "open": 86.83,
+          "high": 87.68,
+          "low": 86.1,
+          "close": 87.29,
+          "volume": 191259
         },
         {
           "date": "2026-04-27",
-          "open": 130.93,
-          "high": 130.93,
-          "low": 126.98,
-          "close": 126.98,
-          "volume": 302208
+          "open": 87.29,
+          "high": 87.29,
+          "low": 84.65,
+          "close": 84.65,
+          "volume": 453312
         },
         {
           "date": "2026-04-28",
-          "open": 127.38,
-          "high": 128.66,
-          "low": 126.98,
-          "close": 128.46,
-          "volume": 163925
+          "open": 84.92,
+          "high": 85.77,
+          "low": 84.65,
+          "close": 85.64,
+          "volume": 245887
         },
         {
           "date": "2026-04-29",
-          "open": 128.66,
-          "high": 133.1,
-          "low": 127.97,
-          "close": 132.31,
-          "volume": 272866
+          "open": 85.77,
+          "high": 88.73,
+          "low": 85.31,
+          "close": 88.21,
+          "volume": 409299
         },
         {
           "date": "2026-04-30",
-          "open": 132.21,
-          "high": 132.21,
-          "low": 127.87,
-          "close": 128.46,
-          "volume": 358930
+          "open": 88.14,
+          "high": 88.14,
+          "low": 85.25,
+          "close": 85.64,
+          "volume": 538395
         },
         {
           "date": "2026-05-03",
-          "open": 128.36,
-          "high": 129.45,
-          "low": 128.07,
-          "close": 129.25,
-          "volume": 90057
+          "open": 85.58,
+          "high": 86.3,
+          "low": 85.38,
+          "close": 86.17,
+          "volume": 135085
         },
         {
           "date": "2026-05-04",
-          "open": 129.25,
-          "high": 129.25,
-          "low": 129.25,
-          "close": 129.25,
+          "open": 86.17,
+          "high": 86.17,
+          "low": 86.17,
+          "close": 86.17,
           "volume": 0
         },
         {
           "date": "2026-05-05",
-          "open": 129.25,
-          "high": 129.25,
-          "low": 127.38,
-          "close": 127.38,
-          "volume": 142053
+          "open": 86.17,
+          "high": 86.17,
+          "low": 84.92,
+          "close": 84.92,
+          "volume": 213079
         },
         {
           "date": "2026-05-06",
-          "open": 128.76,
-          "high": 135.76,
-          "low": 128.26,
-          "close": 135.27,
-          "volume": 1540841
+          "open": 85.84,
+          "high": 90.51,
+          "low": 85.51,
+          "close": 90.18,
+          "volume": 2311261
         },
         {
           "date": "2026-05-07",
-          "open": 135.27,
-          "high": 140.1,
-          "low": 135.27,
-          "close": 139.91,
-          "volume": 563026
+          "open": 90.18,
+          "high": 93.4,
+          "low": 90.18,
+          "close": 93.27,
+          "volume": 844539
         },
         {
           "date": "2026-05-10",
-          "open": 139.91,
-          "high": 141.39,
-          "low": 136.85,
-          "close": 141.09,
-          "volume": 262775
+          "open": 93.27,
+          "high": 94.26,
+          "low": 91.23,
+          "close": 94.06,
+          "volume": 394162
         },
         {
           "date": "2026-05-11",
-          "open": 141.58,
-          "high": 141.98,
-          "low": 138.13,
-          "close": 138.13,
-          "volume": 301946
+          "open": 94.39,
+          "high": 94.65,
+          "low": 92.09,
+          "close": 92.09,
+          "volume": 452919
         },
         {
           "date": "2026-05-12",
-          "open": 138.13,
-          "high": 139.02,
-          "low": 135.86,
-          "close": 136.35,
-          "volume": 203917
+          "open": 92.09,
+          "high": 92.68,
+          "low": 90.57,
+          "close": 90.9,
+          "volume": 305875
         },
         {
           "date": "2026-05-13",
-          "open": 135.86,
-          "high": 136.06,
-          "low": 132.41,
-          "close": 132.61,
-          "volume": 210708
+          "open": 90.57,
+          "high": 90.71,
+          "low": 88.27,
+          "close": 88.4,
+          "volume": 316062
         },
         {
           "date": "2026-05-14",
-          "open": 133.49,
-          "high": 135.86,
-          "low": 132.8,
-          "close": 134.97,
-          "volume": 168799
+          "open": 89.0,
+          "high": 90.57,
+          "low": 88.54,
+          "close": 89.98,
+          "volume": 253198
         },
         {
           "date": "2026-05-17",
-          "open": 137.74,
-          "high": 137.74,
-          "low": 133.79,
-          "close": 134.97,
-          "volume": 104121
+          "open": 91.82,
+          "high": 91.82,
+          "low": 89.19,
+          "close": 89.98,
+          "volume": 156181
         },
         {
           "date": "2026-05-18",
-          "open": 134.97,
-          "high": 136.35,
-          "low": 133.89,
-          "close": 134.28,
-          "volume": 188391
+          "open": 89.98,
+          "high": 90.9,
+          "low": 89.26,
+          "close": 89.52,
+          "volume": 282586
         },
         {
           "date": "2026-05-19",
-          "open": 134.28,
-          "high": 136.16,
-          "low": 133.2,
-          "close": 133.2,
-          "volume": 112377
+          "open": 89.52,
+          "high": 90.77,
+          "low": 88.8,
+          "close": 88.8,
+          "volume": 168565
         },
         {
           "date": "2026-05-20",
-          "open": 133.49,
-          "high": 135.17,
-          "low": 132.7,
-          "close": 134.18,
-          "volume": 135820
+          "open": 89.0,
+          "high": 90.11,
+          "low": 88.47,
+          "close": 89.46,
+          "volume": 203730
         },
         {
           "date": "2026-05-21",
-          "open": 135.17,
-          "high": 138.23,
-          "low": 134.78,
-          "close": 136.16,
-          "volume": 383029
+          "open": 90.11,
+          "high": 92.15,
+          "low": 89.85,
+          "close": 90.77,
+          "volume": 574543
         },
         {
           "date": "2026-05-24",
-          "open": 136.16,
-          "high": 136.16,
-          "low": 136.16,
-          "close": 136.16,
+          "open": 90.77,
+          "high": 90.77,
+          "low": 90.77,
+          "close": 90.77,
           "volume": 0
         },
         {
           "date": "2026-05-25",
-          "open": 136.16,
-          "high": 136.16,
-          "low": 136.16,
-          "close": 136.16,
+          "open": 90.77,
+          "high": 90.77,
+          "low": 90.77,
+          "close": 90.77,
           "volume": 0
         },
         {
           "date": "2026-05-26",
-          "open": 136.16,
-          "high": 136.16,
-          "low": 136.16,
-          "close": 136.16,
+          "open": 90.77,
+          "high": 90.77,
+          "low": 90.77,
+          "close": 90.77,
           "volume": 0
         },
         {
           "date": "2026-05-27",
-          "open": 136.16,
-          "high": 136.16,
-          "low": 136.16,
-          "close": 136.16,
+          "open": 90.77,
+          "high": 90.77,
+          "low": 90.77,
+          "close": 90.77,
           "volume": 0
         },
         {
           "date": "2026-05-28",
-          "open": 136.16,
-          "high": 136.16,
-          "low": 136.16,
-          "close": 136.16,
+          "open": 90.77,
+          "high": 90.77,
+          "low": 90.77,
+          "close": 90.77,
           "volume": 0
         },
         {
           "date": "2026-05-31",
-          "open": 141.09,
-          "high": 144.54,
-          "low": 140.1,
-          "close": 143.56,
-          "volume": 282998
+          "open": 94.06,
+          "high": 96.36,
+          "low": 93.4,
+          "close": 95.7,
+          "volume": 424497
         },
         {
           "date": "2026-06-01",
-          "open": 143.95,
-          "high": 146.71,
-          "low": 141.78,
-          "close": 145.33,
-          "volume": 247108
+          "open": 95.97,
+          "high": 97.81,
+          "low": 94.52,
+          "close": 96.89,
+          "volume": 370662
         },
         {
           "date": "2026-06-02",
-          "open": 145.33,
-          "high": 146.02,
-          "low": 143.46,
-          "close": 143.75,
-          "volume": 176401
+          "open": 96.89,
+          "high": 97.35,
+          "low": 95.64,
+          "close": 95.84,
+          "volume": 264601
         },
         {
           "date": "2026-06-03",
-          "open": 143.66,
-          "high": 148.79,
-          "low": 143.36,
-          "close": 146.12,
-          "volume": 502748
+          "open": 95.77,
+          "high": 99.19,
+          "low": 95.57,
+          "close": 97.42,
+          "volume": 754122
         },
         {
           "date": "2026-06-04",
-          "open": 146.12,
-          "high": 147.6,
-          "low": 144.64,
-          "close": 145.93,
-          "volume": 245542
+          "open": 97.42,
+          "high": 98.4,
+          "low": 96.43,
+          "close": 97.28,
+          "volume": 368313
         },
         {
           "date": "2026-06-07",
-          "open": 143.26,
-          "high": 147.41,
-          "low": 142.77,
-          "close": 147.01,
-          "volume": 132019
+          "open": 95.51,
+          "high": 98.27,
+          "low": 95.18,
+          "close": 98.01,
+          "volume": 198028
         },
         {
           "date": "2026-06-08",
-          "open": 145.23,
-          "high": 154.31,
-          "low": 145.23,
-          "close": 151.45,
-          "volume": 1018481
+          "open": 96.82,
+          "high": 102.87,
+          "low": 96.82,
+          "close": 100.97,
+          "volume": 1527721
         },
         {
           "date": "2026-06-09",
-          "open": 151.45,
-          "high": 156.78,
-          "low": 151.25,
-          "close": 155.79,
-          "volume": 591838
+          "open": 100.97,
+          "high": 104.52,
+          "low": 100.84,
+          "close": 103.86,
+          "volume": 887757
         },
         {
           "date": "2026-06-10",
-          "open": 155.89,
-          "high": 158.26,
-          "low": 154.41,
-          "close": 155.4,
-          "volume": 602963
+          "open": 103.93,
+          "high": 105.51,
+          "low": 102.94,
+          "close": 103.6,
+          "volume": 904444
         },
         {
           "date": "2026-06-11",
-          "open": 154.9,
-          "high": 155.2,
-          "low": 151.94,
-          "close": 153.92,
-          "volume": 286079
+          "open": 103.27,
+          "high": 103.47,
+          "low": 101.3,
+          "close": 102.61,
+          "volume": 429118
         },
         {
           "date": "2026-06-14",
-          "open": 157.47,
-          "high": 157.47,
-          "low": 153.62,
-          "close": 155.79,
-          "volume": 156715
+          "open": 104.98,
+          "high": 104.98,
+          "low": 102.41,
+          "close": 103.86,
+          "volume": 235072
         },
         {
           "date": "2026-06-15",
-          "open": 155.79,
-          "high": 156.78,
-          "low": 154.02,
-          "close": 155.79,
-          "volume": 557038
+          "open": 103.86,
+          "high": 104.52,
+          "low": 102.68,
+          "close": 103.86,
+          "volume": 835557
         },
         {
           "date": "2026-06-16",
-          "open": 155.79,
-          "high": 157.07,
-          "low": 154.9,
-          "close": 156.29,
-          "volume": 321576
+          "open": 103.86,
+          "high": 104.72,
+          "low": 103.27,
+          "close": 104.19,
+          "volume": 482364
         },
         {
           "date": "2026-06-17",
-          "open": 156.09,
-          "high": 157.67,
-          "low": 154.81,
-          "close": 155.4,
-          "volume": 308447
+          "open": 104.06,
+          "high": 105.11,
+          "low": 103.2,
+          "close": 103.6,
+          "volume": 462670
         },
         {
           "date": "2026-06-18",
-          "open": 155.4,
-          "high": 159.44,
-          "low": 155.4,
-          "close": 158.26,
-          "volume": 743362
+          "open": 103.6,
+          "high": 106.29,
+          "low": 103.6,
+          "close": 105.51,
+          "volume": 1115043
         },
         {
           "date": "2026-06-21",
-          "open": 158.26,
-          "high": 158.26,
-          "low": 154.11,
-          "close": 154.41,
-          "volume": 205297
+          "open": 105.51,
+          "high": 105.51,
+          "low": 102.74,
+          "close": 102.94,
+          "volume": 307945
         },
         {
           "date": "2026-06-22",
-          "open": 153.92,
-          "high": 156.48,
-          "low": 153.72,
-          "close": 154.51,
-          "volume": 287875
+          "open": 102.61,
+          "high": 104.32,
+          "low": 102.48,
+          "close": 103.01,
+          "volume": 431812
         },
         {
           "date": "2026-06-23",
-          "open": 154.41,
-          "high": 155.5,
-          "low": 153.13,
-          "close": 154.02,
-          "volume": 226274
+          "open": 102.94,
+          "high": 103.66,
+          "low": 102.09,
+          "close": 102.68,
+          "volume": 339411
         },
         {
           "date": "2026-06-24",
-          "open": 151.06,
-          "high": 153.72,
-          "low": 149.38,
-          "close": 150.86,
-          "volume": 461659
+          "open": 100.7,
+          "high": 102.48,
+          "low": 99.59,
+          "close": 100.57,
+          "volume": 692488
         },
         {
           "date": "2026-06-25",
-          "open": 150.86,
-          "high": 151.65,
-          "low": 149.38,
-          "close": 150.56,
-          "volume": 212912
+          "open": 100.57,
+          "high": 101.1,
+          "low": 99.59,
+          "close": 100.38,
+          "volume": 319368
         },
         {
           "date": "2026-06-28",
-          "open": 150.46,
-          "high": 150.86,
-          "low": 147.31,
-          "close": 147.8,
-          "volume": 95108
+          "open": 100.31,
+          "high": 100.57,
+          "low": 98.2,
+          "close": 98.53,
+          "volume": 142662
         },
         {
           "date": "2026-06-29",
-          "open": 147.5,
-          "high": 149.5,
-          "low": 146.6,
-          "close": 147.5,
-          "volume": 171714
+          "open": 98.33,
+          "high": 99.67,
+          "low": 97.73,
+          "close": 98.33,
+          "volume": 257571
         },
         {
           "date": "2026-06-30",
-          "open": 147.3,
-          "high": 147.5,
-          "low": 145.5,
-          "close": 147.1,
-          "volume": 168723
+          "open": 98.2,
+          "high": 98.33,
+          "low": 97.0,
+          "close": 98.07,
+          "volume": 253084
         },
         {
           "date": "2026-07-01",
-          "open": 145.5,
-          "high": 147.8,
-          "low": 145.5,
-          "close": 146.8,
-          "volume": 225806
+          "open": 97.0,
+          "high": 98.53,
+          "low": 97.0,
+          "close": 97.87,
+          "volume": 338709
         },
         {
           "date": "2026-07-02",
-          "open": 146.8,
-          "high": 147.0,
-          "low": 144.5,
-          "close": 144.5,
-          "volume": 134885
+          "open": 97.87,
+          "high": 98.0,
+          "low": 96.33,
+          "close": 96.33,
+          "volume": 202327
         },
         {
           "date": "2026-07-05",
-          "open": 144.0,
-          "high": 144.3,
-          "low": 139.0,
-          "close": 139.0,
-          "volume": 102252
+          "open": 96.0,
+          "high": 96.2,
+          "low": 92.67,
+          "close": 92.67,
+          "volume": 153378
         },
         {
           "date": "2026-07-06",
-          "open": 139.0,
-          "high": 144.2,
-          "low": 139.0,
-          "close": 142.0,
-          "volume": 354694
+          "open": 92.67,
+          "high": 96.13,
+          "low": 92.67,
+          "close": 94.67,
+          "volume": 532041
         },
         {
           "date": "2026-07-07",
-          "open": 142.0,
-          "high": 143.5,
-          "low": 140.8,
-          "close": 143.5,
-          "volume": 118045
+          "open": 94.67,
+          "high": 95.67,
+          "low": 93.87,
+          "close": 95.67,
+          "volume": 177067
         },
         {
           "date": "2026-07-08",
-          "open": 143.0,
-          "high": 143.4,
-          "low": 139.7,
-          "close": 140.4,
-          "volume": 270022
+          "open": 95.33,
+          "high": 95.6,
+          "low": 93.13,
+          "close": 93.6,
+          "volume": 405033
         },
         {
           "date": "2026-07-09",
-          "open": 140.5,
-          "high": 142.4,
-          "low": 139.5,
-          "close": 142.3,
-          "volume": 138984
+          "open": 93.67,
+          "high": 94.93,
+          "low": 93.0,
+          "close": 94.87,
+          "volume": 208476
         },
         {
           "date": "2026-07-12",
-          "open": 142.0,
-          "high": 142.0,
-          "low": 138.6,
-          "close": 138.6,
-          "volume": 28973
+          "open": 94.67,
+          "high": 94.67,
+          "low": 92.4,
+          "close": 92.4,
+          "volume": 43459
         },
         {
           "date": "2026-07-13",
-          "open": 138.6,
-          "high": 139.6,
-          "low": 136.9,
-          "close": 137.0,
-          "volume": 258633
+          "open": 92.4,
+          "high": 93.07,
+          "low": 91.27,
+          "close": 91.33,
+          "volume": 387949
         },
         {
           "date": "2026-07-14",
-          "open": 137.3,
-          "high": 138.0,
-          "low": 136.5,
-          "close": 137.6,
-          "volume": 137646
+          "open": 91.53,
+          "high": 92.0,
+          "low": 91.0,
+          "close": 91.73,
+          "volume": 206469
         },
         {
           "date": "2026-07-15",
-          "open": 136.6,
-          "high": 138.6,
-          "low": 134.8,
-          "close": 135.4,
-          "volume": 260459
+          "open": 91.07,
+          "high": 92.4,
+          "low": 89.87,
+          "close": 90.27,
+          "volume": 390688
         },
         {
           "date": "2026-07-16",
-          "open": 137.0,
-          "high": 137.3,
-          "low": 134.9,
-          "close": 137.3,
-          "volume": 143313
+          "open": 91.33,
+          "high": 91.53,
+          "low": 89.93,
+          "close": 91.53,
+          "volume": 214969
         },
         {
           "date": "2026-07-19",
-          "open": 136.0,
-          "high": 137.9,
-          "low": 135.3,
-          "close": 137.9,
-          "volume": 96777
+          "open": 90.67,
+          "high": 91.93,
+          "low": 90.2,
+          "close": 91.93,
+          "volume": 145165
         },
         {
           "date": "2026-07-20",
-          "open": 137.9,
-          "high": 138.5,
-          "low": 136.2,
-          "close": 137.4,
-          "volume": 82164
+          "open": 91.93,
+          "high": 92.33,
+          "low": 90.8,
+          "close": 91.6,
+          "volume": 123246
         },
         {
           "date": "2026-07-21",
-          "open": 138.0,
-          "high": 139.2,
-          "low": 137.1,
-          "close": 138.7,
-          "volume": 116773
+          "open": 92.0,
+          "high": 92.8,
+          "low": 91.4,
+          "close": 92.47,
+          "volume": 175159
         },
         {
           "date": "2026-07-22",
-          "open": 139.8,
-          "high": 139.8,
-          "low": 137.9,
-          "close": 138.9,
-          "volume": 144070
+          "open": 93.2,
+          "high": 93.2,
+          "low": 91.93,
+          "close": 92.6,
+          "volume": 216105
         },
         {
           "date": "2026-07-23",
-          "open": 138.8,
-          "high": 141.8,
-          "low": 137.6,
-          "close": 140.3,
-          "volume": 291650
+          "open": 92.53,
+          "high": 94.53,
+          "low": 91.73,
+          "close": 93.53,
+          "volume": 437475
         },
         {
           "date": "2026-07-26",
-          "open": 140.4,
-          "high": 142.0,
-          "low": 138.4,
-          "close": 138.7,
-          "volume": 88401
+          "open": 93.6,
+          "high": 94.67,
+          "low": 92.27,
+          "close": 92.47,
+          "volume": 132601
         },
         {
           "date": "2026-07-27",
-          "open": 138.7,
-          "high": 140.3,
-          "low": 138.1,
-          "close": 138.8,
-          "volume": 121113
+          "open": 92.47,
+          "high": 93.53,
+          "low": 92.07,
+          "close": 92.53,
+          "volume": 181669
         },
         {
           "date": "2026-07-28",
-          "open": 138.8,
-          "high": 138.8,
-          "low": 136.1,
-          "close": 136.1,
-          "volume": 76653
+          "open": 92.53,
+          "high": 92.53,
+          "low": 90.73,
+          "close": 90.73,
+          "volume": 114979
         },
         {
           "date": "2026-07-29",
-          "open": 136.1,
-          "high": 136.7,
-          "low": 133.4,
-          "close": 136.2,
-          "volume": 198472
+          "open": 90.73,
+          "high": 91.13,
+          "low": 88.93,
+          "close": 90.8,
+          "volume": 297708
         },
         {
           "date": "2026-07-30",
-          "open": 133.5,
-          "high": 133.9,
-          "low": 122.6,
-          "close": 122.6,
-          "volume": 1248257
+          "open": 89.0,
+          "high": 89.27,
+          "low": 81.73,
+          "close": 81.73,
+          "volume": 1872385
         },
         {
           "date": "2026-08-02",
-          "open": 124.8,
-          "high": 131.6,
-          "low": 123.0,
-          "close": 130.0,
-          "volume": 438753
+          "open": 83.2,
+          "high": 87.73,
+          "low": 82.0,
+          "close": 86.67,
+          "volume": 658129
         },
         {
           "date": "2026-08-03",
-          "open": 130.0,
-          "high": 133.7,
-          "low": 129.4,
-          "close": 132.6,
-          "volume": 520669
+          "open": 86.67,
+          "high": 89.13,
+          "low": 86.27,
+          "close": 88.4,
+          "volume": 781003
         },
         {
           "date": "2026-08-04",
-          "open": 133.6,
-          "high": 136.6,
-          "low": 132.1,
-          "close": 136.2,
-          "volume": 293026
+          "open": 89.07,
+          "high": 91.07,
+          "low": 88.07,
+          "close": 90.8,
+          "volume": 439539
         },
         {
           "date": "2026-08-05",
-          "open": 137.9,
-          "high": 138.9,
-          "low": 135.0,
-          "close": 137.2,
-          "volume": 301713
+          "open": 91.93,
+          "high": 92.6,
+          "low": 90.0,
+          "close": 91.47,
+          "volume": 452569
         },
         {
           "date": "2026-08-06",
-          "open": 138.0,
-          "high": 140.0,
-          "low": 137.5,
-          "close": 137.9,
-          "volume": 367739
+          "open": 92.0,
+          "high": 93.33,
+          "low": 91.67,
+          "close": 91.93,
+          "volume": 551608
         },
         {
           "date": "2026-08-09",
-          "open": 137.9,
-          "high": 139.9,
-          "low": 137.0,
-          "close": 137.8,
-          "volume": 113351
+          "open": 91.93,
+          "high": 93.27,
+          "low": 91.33,
+          "close": 91.87,
+          "volume": 170026
         },
         {
           "date": "2026-08-10",
-          "open": 139.0,
-          "high": 141.5,
-          "low": 137.5,
-          "close": 137.5,
-          "volume": 307604
+          "open": 92.67,
+          "high": 94.33,
+          "low": 91.67,
+          "close": 91.67,
+          "volume": 461406
         },
         {
           "date": "2026-08-11",
-          "open": 139.0,
-          "high": 139.9,
-          "low": 136.6,
-          "close": 136.8,
-          "volume": 273931
+          "open": 92.67,
+          "high": 93.27,
+          "low": 91.07,
+          "close": 91.2,
+          "volume": 410896
         },
         {
           "date": "2026-08-12",
-          "open": 136.1,
-          "high": 140.6,
-          "low": 135.7,
-          "close": 140.1,
-          "volume": 562152
+          "open": 90.73,
+          "high": 93.73,
+          "low": 90.47,
+          "close": 93.4,
+          "volume": 843228
         },
         {
           "date": "2026-08-13",
-          "open": 140.1,
-          "high": 143.0,
-          "low": 140.0,
-          "close": 142.7,
-          "volume": 160095
+          "open": 93.4,
+          "high": 95.33,
+          "low": 93.33,
+          "close": 95.13,
+          "volume": 240142
         },
         {
           "date": "2026-08-16",
-          "open": 142.7,
-          "high": 142.7,
-          "low": 142.7,
-          "close": 142.7,
+          "open": 95.13,
+          "high": 95.13,
+          "low": 95.13,
+          "close": 95.13,
           "volume": 0
         },
         {
           "date": "2026-08-17",
-          "open": 145.7,
-          "high": 146.2,
-          "low": 139.6,
-          "close": 139.9,
-          "volume": 348536
+          "open": 97.13,
+          "high": 97.47,
+          "low": 93.07,
+          "close": 93.27,
+          "volume": 522804
         },
         {
           "date": "2026-08-18",
-          "open": 139.9,
-          "high": 140.7,
-          "low": 138.3,
-          "close": 139.7,
-          "volume": 339052
+          "open": 93.27,
+          "high": 93.8,
+          "low": 92.2,
+          "close": 93.13,
+          "volume": 508578
         },
         {
           "date": "2026-08-19",
-          "open": 138.2,
-          "high": 140.7,
-          "low": 138.2,
-          "close": 138.9,
-          "volume": 166053
+          "open": 92.13,
+          "high": 93.8,
+          "low": 92.13,
+          "close": 92.6,
+          "volume": 249079
         },
         {
           "date": "2026-08-20",
-          "open": 138.3,
-          "high": 138.7,
-          "low": 137.1,
-          "close": 137.9,
-          "volume": 194828
+          "open": 92.2,
+          "high": 92.47,
+          "low": 91.4,
+          "close": 91.93,
+          "volume": 292242
         },
         {
           "date": "2026-08-23",
-          "open": 138.0,
-          "high": 139.6,
-          "low": 138.0,
-          "close": 139.2,
-          "volume": 121499
+          "open": 92.0,
+          "high": 93.07,
+          "low": 92.0,
+          "close": 92.8,
+          "volume": 182248
         },
         {
           "date": "2026-08-24",
-          "open": 140.0,
-          "high": 140.0,
-          "low": 137.2,
-          "close": 138.2,
-          "volume": 237409
+          "open": 93.33,
+          "high": 93.33,
+          "low": 91.47,
+          "close": 92.13,
+          "volume": 356113
         },
         {
           "date": "2026-08-25",
-          "open": 138.1,
-          "high": 141.8,
-          "low": 138.1,
-          "close": 141.4,
-          "volume": 398886
+          "open": 92.07,
+          "high": 94.53,
+          "low": 92.07,
+          "close": 94.27,
+          "volume": 598329
         },
         {
           "date": "2026-08-26",
-          "open": 142.3,
-          "high": 142.8,
-          "low": 139.4,
-          "close": 139.4,
-          "volume": 329750
+          "open": 94.87,
+          "high": 95.2,
+          "low": 92.93,
+          "close": 92.93,
+          "volume": 494625
         },
         {
           "date": "2026-08-27",
-          "open": 140.1,
-          "high": 140.5,
-          "low": 137.6,
-          "close": 139.0,
-          "volume": 115959
+          "open": 93.4,
+          "high": 93.67,
+          "low": 91.73,
+          "close": 92.67,
+          "volume": 173938
         },
         {
           "date": "2026-08-30",
-          "open": 139.5,
-          "high": 140.3,
-          "low": 138.0,
-          "close": 138.9,
-          "volume": 39296
+          "open": 93.0,
+          "high": 93.53,
+          "low": 92.0,
+          "close": 92.6,
+          "volume": 58944
         },
         {
           "date": "2026-08-31",
-          "open": 137.6,
-          "high": 138.4,
-          "low": 136.5,
-          "close": 136.5,
-          "volume": 348476
+          "open": 91.73,
+          "high": 92.27,
+          "low": 91.0,
+          "close": 91.0,
+          "volume": 522714
         },
         {
           "date": "2026-09-01",
-          "open": 137.5,
-          "high": 139.3,
-          "low": 136.0,
-          "close": 137.8,
-          "volume": 279015
+          "open": 91.67,
+          "high": 92.87,
+          "low": 90.67,
+          "close": 91.87,
+          "volume": 418522
         },
         {
           "date": "2026-09-02",
-          "open": 137.7,
-          "high": 137.7,
-          "low": 133.4,
-          "close": 134.0,
-          "volume": 460254
+          "open": 91.8,
+          "high": 91.8,
+          "low": 88.93,
+          "close": 89.33,
+          "volume": 690381
         },
         {
           "date": "2026-09-03",
-          "open": 136.8,
-          "high": 137.5,
-          "low": 134.0,
-          "close": 136.0,
-          "volume": 209014
+          "open": 91.2,
+          "high": 91.67,
+          "low": 89.33,
+          "close": 90.67,
+          "volume": 313521
+        },
+        {
+          "date": "2026-09-06",
+          "open": 90.4,
+          "high": 92.35,
+          "low": 90.4,
+          "close": 90.7,
+          "volume": 141402
         }
       ]
     },
@@ -36986,24 +36844,24 @@
       "name": "بوبا العربية للتأمين",
       "sector": "insurance",
       "sector_ar": "التأمين",
-      "price": 8.34,
-      "change": 0.12,
-      "changeAbs": 0.01,
-      "up": true,
-      "prevClose": 8.33,
-      "open": 8.32,
-      "dayHigh": 8.43,
+      "price": 8.31,
+      "change": -0.36,
+      "changeAbs": -0.03,
+      "up": false,
+      "prevClose": 8.34,
+      "open": 8.41,
+      "dayHigh": 8.46,
       "dayLow": 8.3,
       "high52": 12.36,
       "low52": 5.65,
-      "market": "242.69M",
+      "market": "241.82M",
       "pe": "غير متاح",
       "div": "غير متاح",
       "divAmount": 0.0,
       "eps": -2.08,
       "pbv": "1.11x",
       "roe": "-24.74%",
-      "vol": "355,273",
+      "vol": "411,267",
       "shares": "29.10M",
       "employees": "غير متاح",
       "website": "https://www.acig.com.sa",
@@ -37047,10 +36905,10 @@
       "freeCashFlow": -0.2,
       "netIncomeB": -0.06,
       "debtToEquity": 0.77,
-      "evEbitda": 6.44,
+      "evEbitda": 6.46,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -37073,22 +36931,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 10.2,
-          "high": 10.26,
-          "low": 10.02,
-          "close": 10.08,
-          "volume": 118178
-        },
-        {
-          "date": "2025-09-04",
-          "open": 10.08,
-          "high": 10.17,
-          "low": 10.05,
-          "close": 10.15,
-          "volume": 100649
-        },
         {
           "date": "2025-09-07",
           "open": 10.23,
@@ -39112,6 +38954,14 @@
           "low": 8.3,
           "close": 8.34,
           "volume": 355273
+        },
+        {
+          "date": "2026-09-06",
+          "open": 8.41,
+          "high": 8.46,
+          "low": 8.3,
+          "close": 8.31,
+          "volume": 411267
         }
       ]
     },
@@ -39120,24 +38970,24 @@
       "name": "ميلاء للتأمين",
       "sector": "insurance",
       "sector_ar": "التأمين",
-      "price": 16.95,
-      "change": 1.56,
-      "changeAbs": 0.26,
-      "up": true,
-      "prevClose": 16.69,
-      "open": 16.69,
-      "dayHigh": 17.2,
-      "dayLow": 16.69,
+      "price": 16.9,
+      "change": -0.29,
+      "changeAbs": -0.05,
+      "up": false,
+      "prevClose": 16.95,
+      "open": 17.06,
+      "dayHigh": 17.27,
+      "dayLow": 16.88,
       "high52": 17.84,
       "low52": 11.04,
-      "market": "2.34B",
-      "pe": "23.87x",
+      "market": "2.33B",
+      "pe": "23.8x",
       "div": "غير متاح",
       "divAmount": 3.0,
       "eps": 0.71,
       "pbv": "1.41x",
       "roe": "7.64%",
-      "vol": "414,551",
+      "vol": "281,670",
       "shares": "138.16M",
       "employees": "غير متاح",
       "website": "https://www.medgulf.com.sa",
@@ -39180,7 +39030,7 @@
             "period": "2012",
             "amount": "3.0 ر.س",
             "date": "01 April 2012",
-            "yield": "17.7%"
+            "yield": "17.8%"
           },
           {
             "period": "2011",
@@ -39192,7 +39042,7 @@
             "period": "2010",
             "amount": "1.13 ر.س",
             "date": "06 April 2010",
-            "yield": "6.6%"
+            "yield": "6.7%"
           }
         ]
       },
@@ -39200,10 +39050,10 @@
       "freeCashFlow": 0.31,
       "netIncomeB": 0.1,
       "debtToEquity": 1.0,
-      "evEbitda": 2.79,
+      "evEbitda": 2.72,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -39226,22 +39076,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 15.55,
-          "high": 15.9,
-          "low": 15.55,
-          "close": 15.62,
-          "volume": 724702
-        },
-        {
-          "date": "2025-09-04",
-          "open": 15.63,
-          "high": 15.78,
-          "low": 15.54,
-          "close": 15.66,
-          "volume": 328502
-        },
         {
           "date": "2025-09-07",
           "open": 15.75,
@@ -41265,6 +41099,14 @@
           "low": 16.69,
           "close": 16.95,
           "volume": 414551
+        },
+        {
+          "date": "2026-09-06",
+          "open": 17.06,
+          "high": 17.27,
+          "low": 16.88,
+          "close": 16.9,
+          "volume": 281670
         }
       ]
     },
@@ -41273,24 +41115,24 @@
       "name": "دار الأركان",
       "sector": "realestate",
       "sector_ar": "العقارات",
-      "price": 19.38,
-      "change": -0.46,
-      "changeAbs": -0.09,
-      "up": false,
-      "prevClose": 19.47,
-      "open": 19.47,
-      "dayHigh": 19.6,
-      "dayLow": 19.28,
+      "price": 19.41,
+      "change": 0.15,
+      "changeAbs": 0.03,
+      "up": true,
+      "prevClose": 19.38,
+      "open": 19.45,
+      "dayHigh": 19.69,
+      "dayLow": 19.4,
       "high52": 21.4,
       "low52": 14.58,
-      "market": "20.93B",
-      "pe": "17.62x",
+      "market": "20.96B",
+      "pe": "17.65x",
       "div": "غير متاح",
       "divAmount": 0.5,
       "eps": 1.1,
       "pbv": "0.92x",
       "roe": "5.36%",
-      "vol": "642,983",
+      "vol": "290,413",
       "shares": "1.08B",
       "employees": "غير متاح",
       "website": "https://www.daralarkan.com",
@@ -41341,10 +41183,10 @@
       "freeCashFlow": 0.62,
       "netIncomeB": 1.18,
       "debtToEquity": 76.83,
-      "evEbitda": 15.73,
+      "evEbitda": 15.74,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -41367,22 +41209,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 18.16,
-          "high": 18.49,
-          "low": 18.06,
-          "close": 18.31,
-          "volume": 425579
-        },
-        {
-          "date": "2025-09-04",
-          "open": 18.27,
-          "high": 18.7,
-          "low": 18.27,
-          "close": 18.5,
-          "volume": 451851
-        },
         {
           "date": "2025-09-07",
           "open": 18.5,
@@ -43406,6 +43232,14 @@
           "low": 19.28,
           "close": 19.38,
           "volume": 642983
+        },
+        {
+          "date": "2026-09-06",
+          "open": 19.45,
+          "high": 19.69,
+          "low": 19.4,
+          "close": 19.41,
+          "volume": 290413
         }
       ]
     },
@@ -43414,24 +43248,24 @@
       "name": "المملكة القابضة",
       "sector": "realestate",
       "sector_ar": "العقارات",
-      "price": 14.31,
-      "change": 1.06,
-      "changeAbs": 0.15,
-      "up": true,
-      "prevClose": 14.16,
-      "open": 14.12,
-      "dayHigh": 14.41,
-      "dayLow": 14.1,
+      "price": 14.0,
+      "change": -2.17,
+      "changeAbs": -0.31,
+      "up": false,
+      "prevClose": 14.31,
+      "open": 14.3,
+      "dayHigh": 14.31,
+      "dayLow": 13.98,
       "high52": 15.94,
       "low52": 7.03,
-      "market": "53.03B",
-      "pe": "28.06x",
-      "div": "1.98%",
+      "market": "51.88B",
+      "pe": "27.45x",
+      "div": "1.96%",
       "divAmount": 0.07,
       "eps": 0.51,
-      "pbv": "0.78x",
+      "pbv": "0.76x",
       "roe": "3.36%",
-      "vol": "1.03M",
+      "vol": "678,266",
       "shares": "3.71B",
       "employees": "غير متاح",
       "website": "https://www.kingdom.com.sa/homepage",
@@ -43512,10 +43346,10 @@
       "freeCashFlow": 1.01,
       "netIncomeB": 1.91,
       "debtToEquity": 17.88,
-      "evEbitda": 51.41,
+      "evEbitda": 50.5,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -43538,22 +43372,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 7.53,
-          "high": 7.53,
-          "low": 7.37,
-          "close": 7.37,
-          "volume": 71660
-        },
-        {
-          "date": "2025-09-04",
-          "open": 7.36,
-          "high": 7.44,
-          "low": 7.36,
-          "close": 7.37,
-          "volume": 53539
-        },
         {
           "date": "2025-09-07",
           "open": 7.4,
@@ -45577,6 +45395,14 @@
           "low": 14.1,
           "close": 14.31,
           "volume": 1025044
+        },
+        {
+          "date": "2026-09-06",
+          "open": 14.3,
+          "high": 14.31,
+          "low": 13.98,
+          "close": 14.0,
+          "volume": 678266
         }
       ]
     },
@@ -45585,24 +45411,24 @@
       "name": "المراعي",
       "sector": "industrial",
       "sector_ar": "الصناعة",
-      "price": 207.2,
-      "change": 1.12,
-      "changeAbs": 2.3,
+      "price": 207.7,
+      "change": 0.24,
+      "changeAbs": 0.5,
       "up": true,
-      "prevClose": 204.9,
-      "open": 205.0,
-      "dayHigh": 208.0,
-      "dayLow": 204.4,
+      "prevClose": 207.2,
+      "open": 207.3,
+      "dayHigh": 210.0,
+      "dayLow": 206.8,
       "high52": 297.2,
       "low52": 187.0,
-      "market": "6.62B",
-      "pe": "15.98x",
-      "div": "7.81%",
+      "market": "6.64B",
+      "pe": "16.01x",
+      "div": "7.72%",
       "divAmount": 8.0,
       "eps": 12.97,
-      "pbv": "4.0x",
+      "pbv": "4.01x",
       "roe": "24.22%",
-      "vol": "31,792",
+      "vol": "19,075",
       "shares": "31.96M",
       "employees": "غير متاح",
       "website": "https://www.sadafco.com",
@@ -45683,16 +45509,16 @@
       "freeCashFlow": 0.21,
       "netIncomeB": 0.41,
       "debtToEquity": 4.02,
-      "evEbitda": 14.25,
+      "evEbitda": 14.29,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
         },
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "أحداث",
           "title": "خبر الشركة",
           "desc": "تفاصيل متاحة على موقع تداول الرسمي."
@@ -45715,22 +45541,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 246.51,
-          "high": 248.01,
-          "low": 244.83,
-          "close": 245.2,
-          "volume": 10556
-        },
-        {
-          "date": "2025-09-04",
-          "open": 245.2,
-          "high": 245.76,
-          "low": 242.96,
-          "close": 245.76,
-          "volume": 13214
-        },
         {
           "date": "2025-09-07",
           "open": 244.83,
@@ -47754,6 +47564,14 @@
           "low": 204.4,
           "close": 207.2,
           "volume": 31792
+        },
+        {
+          "date": "2026-09-06",
+          "open": 207.3,
+          "high": 210.0,
+          "low": 206.8,
+          "close": 207.7,
+          "volume": 19075
         }
       ]
     },
@@ -47763,13 +47581,13 @@
       "sector": "energy",
       "sector_ar": "الطاقة",
       "price": 33.88,
-      "change": -0.06,
-      "changeAbs": -0.02,
-      "up": false,
-      "prevClose": 33.9,
-      "open": 34.0,
-      "dayHigh": 34.12,
-      "dayLow": 33.8,
+      "change": 0.0,
+      "changeAbs": 0.0,
+      "up": true,
+      "prevClose": 33.88,
+      "open": 33.94,
+      "dayHigh": 34.2,
+      "dayLow": 33.72,
       "high52": 38.44,
       "low52": 24.0,
       "market": "19.06B",
@@ -47779,7 +47597,7 @@
       "eps": 0.52,
       "pbv": "1.82x",
       "roe": "2.67%",
-      "vol": "432,625",
+      "vol": "1.36M",
       "shares": "562.50M",
       "employees": "غير متاح",
       "website": "https://www.yansab.com.sa",
@@ -47860,10 +47678,10 @@
       "freeCashFlow": 0.3,
       "netIncomeB": 0.29,
       "debtToEquity": 1.01,
-      "evEbitda": 14.19,
+      "evEbitda": 14.18,
       "announcements": [
         {
-          "date": "03 September 2026",
+          "date": "06 September 2026",
           "type": "تحديث",
           "title": "تحديث بيانات الشركة",
           "desc": "تم تحديث بيانات الشركة تلقائياً. للمزيد يرجى زيارة موقع تداول الرسمي."
@@ -47886,22 +47704,6 @@
       "subsidiaries": [],
       "peers": [],
       "historical": [
-        {
-          "date": "2025-09-03",
-          "open": 31.02,
-          "high": 31.63,
-          "low": 31.02,
-          "close": 31.38,
-          "volume": 239173
-        },
-        {
-          "date": "2025-09-04",
-          "open": 31.36,
-          "high": 31.56,
-          "low": 30.8,
-          "close": 30.96,
-          "volume": 371802
-        },
         {
           "date": "2025-09-07",
           "open": 30.92,
@@ -49925,6 +49727,14 @@
           "low": 33.8,
           "close": 33.88,
           "volume": 432625
+        },
+        {
+          "date": "2026-09-06",
+          "open": 33.94,
+          "high": 34.2,
+          "low": 33.72,
+          "close": 33.88,
+          "volume": 1355318
         }
       ]
     }
